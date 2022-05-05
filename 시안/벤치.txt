@@ -1,0 +1,58 @@
+# Bx_Playstation
+
+# 메뉴
+
+- 호버하면 컬러와 사진이 함께 나와 반복해서 움직임
+
+[Home](https://k72.ca/en)
+
+---
+
+# 인트로
+
+- 로고 왼쪽에서 오른쪽으로 이동 후 작아짐
+- 배경에 영상깔리고 가운데에는 로고 배치
+
+[Patta x Tommy](https://pattaxtommy.com/)
+
+---
+
+# 메인1
+
+- 타이틀 호버하면 위아래로 움직이고 색 채워지기
+- 원 확대되고 사진 나열되고 가로로 글씨와 사진 나오기
+
+[Niki Lauda](https://nikilauda.obys.agency/)
+
+제일 많이 참고한 사이트
+
+- 중간에 대각선 글씨랑 사진 지나감
+
+[TRWM - HOME](https://www.takearidewith.me/)
+
+# 메인2
+
+- 중간에 글씨 지나감
+- contact 페이지
+
+[2019 Portfolio of Abhishek Jha](https://abhishekjha.me/?ref=lapaninja)
+
+# 메인3
+
+- 사진확대되고, 글씨 휘리릭, 가로 글씨 움직임 (뚫려있는 글씨 안에 사진있고 휠움직일수록 사진 확대되고 다시 작아지는 부분 참고)
+
+[Stelvio Grotesk - A Italian Swiss Style Tyepface](https://stelvio.k95.it/)
+
+---
+
+# 서브
+
+1. 영상 풀사이즈로 나오고
+2. 마우스 휠 움직이면서 영상 점점 작아지고 글이 나옴
+3. 컬러 커스텀과 설명
+4. 글씨 지나다님
+5. 홈으로 이동할 수 있는 버튼
+
+[2022 Nightster 모터사이클 | Harley-Davidson Korea](https://www.harley-davidson.com/kr/ko/motorcycles/nightster.html)
+
+- 컬러 커스텀 참고한 래퍼런스 사이트 디자인 바뀜…

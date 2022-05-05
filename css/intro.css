@@ -1,0 +1,45 @@
+
+
+
+#section01{
+    background: orange;
+}
+
+
+#section01 .front{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background:blue;
+    z-index: 10;
+}
+
+#section01 .front .logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+#section01 .back{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background:orange;
+
+}
+
+
+
+
+
+
+
+
+
+
+

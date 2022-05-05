@@ -1,0 +1,93 @@
+
+
+
+.logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    z-index: 100;
+}
+
+#section01{
+    background: orange;
+}
+
+#section01 .cover{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+#section01 .txt_container{
+    font-size: 100px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+
+#section01 .txt_container > div{
+    margin-bottom: 50px;
+}
+#section01 .cover .left{
+    background: red;
+}
+#section01 .cover .right{
+    background: black;
+}
+#section01 .cover > div{
+    flex: 1;
+    position: relative;
+}
+
+#section02{
+    background: dodgerblue;
+}
+
+#section03{
+    height: initial;
+    background: gray;
+}
+
+
+#section03 .horizontal{
+    width: min-content;
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+
+#section03 .horizontal > section{
+    width: 100vw;
+    height: 100vh;
+    background: orange;
+}
+
+#section03 .horizontal > section:nth-child(even){
+    background: dodgerblue;
+}
+
+#section04{
+    background: hotpink;
+}
+
+
+#section05{
+    background: aqua;
+}
+
+
+
+
+
+
+
+
+
+
