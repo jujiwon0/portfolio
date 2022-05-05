@@ -64,13 +64,15 @@
 
 
 #section03 .horizontal > section{
+    flex-shrink: 0;
     width: 100vw;
     height: 100vh;
     background: orange;
+    position: relative;
 }
 
 #section03 .horizontal > section:nth-child(even){
-    background: dodgerblue;
+    background: green;
 }
 
 #section04{
