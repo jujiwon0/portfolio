@@ -77,7 +77,14 @@ window.addEventListener('DOMContentLoaded', function () {
 
     (function () {
 
-        gsap.to('.front',1,{width:350,height:200});
+
+        //  here
+
+        gsap.to('.front',{delay:0,duration:5,width:328,height:173});
+
+
+
+
 
 
 

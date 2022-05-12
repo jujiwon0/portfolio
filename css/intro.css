@@ -3,8 +3,8 @@
 #section01{
     /*background:url(../img/section01/01.jpg);*/
     /*Height:2136px;*/
-    background: blue;
-    Height:2136px;
+    background: black;
+    height: 100vh;
 }
 
 
@@ -12,11 +12,14 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
     background:blue;
     z-index: 10;
 }
+
+
 
 #section01 .front .logo_01{
     position: absolute;
@@ -36,16 +39,17 @@
 
 
 #section01 .back .mov_01{
-    left: 0;
-    top: 1067px;
+
     position: relative;
 }
 
 
 #section01 .back .logo_02{
     position: absolute;
-    left: 841px;
-    top: 1540px;
+    left: 0;
+    top: 0;
+    /*left: 841px;*/
+    /*top: 1540px;*/
     /*transform: translateX(-50%);*/
     /*opacity: 0;*/
     /*z-index: 1;*/
@@ -54,30 +58,39 @@
 
 
 #section01 .back .down_c{
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+}
+
+#section01 .arrow_container{
+    background:red;
     position: absolute;
-    left: 880px;
-    top: 1935px;
+    left: 50%;
+    transform:translateX(-50%);
+    bottom: 50px;
 }
 
 
-#section01 .back .arrow_01{
+#section01 .arrow_container .arrow{
     position: absolute;
-    left: 926px;
-    top: 1971px;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
 }
 
 
 #section01 .back .play_btn_c_01 {
     position: absolute;
-    left: 1787px;
-    top: 2045px;
+    left: 0;
+    top: 0;
 }
 
 
 #section01 .back .play_btn_01 {
     position: absolute;
-    left: 1807px;
-    top: 2063px;
+    left: 0;
+    top: 0;
 }
 
 

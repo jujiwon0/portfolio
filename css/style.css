@@ -22,7 +22,7 @@
 
 #section01{
     /*background:url(../img/section01/01_02.jpg);*/
-    Height:1078px;
+    height:1078px;
 
 }
 
@@ -45,11 +45,46 @@
 
 }
 
+#section01 .txt_container01 > div .float_img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section01 .txt_container01 > div:hover .float_img{
+    opacity: 1;
+}
+
+#section01 .txt_container01 > div:hover .text .fill{
+    opacity: 1;
+}
 
 #section01 .txt_container01 > div{
     margin-bottom: 35px;
+    position: relative;
 }
 
+
+#section01 .txt_container01 > div .text{
+    position: relative;
+}
+
+#section01 .txt_container01 > div .text .fill{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    margin-left:1px;
+    margin-top: 3px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#section01 .txt_container01 .title01_04{
+    margin-bottom: 0;
+}
 
 #section01 .main_rotate_c{
     position: absolute;
@@ -101,38 +136,46 @@
     /*background: black;*/
     /*background:url(../img/section02/02_00.jpg);*/
     height: 5534px;
+    background-color: dodgerblue;
 }
 
 
 #section02 .back_02{
     width: 1920px;
     height: 5534px;
-    background:url(../img/section02/back_02.png);
+
+    /*background:url("../img/section02/back_02.png");*/
 }
 
 
-#section02 .txt_container02{
+#section02 .title{
     position: absolute;
     left: 50%;
-    top: 27%;
-    transform: translate(-50%,-50%);
+    top: 200px;
+    transform: translateX(-50%);
     text-align: center;
 }
 
 
-#section02 .txt_container02 > div{
+#section02 .title > div{
     margin-bottom: 29px;
+}
+
+#section02 .title > div:last-child{
+    margin-bottom: 0;
 }
 
 
 
-#section02 .img02_01{
-    width: 663px;
-    height: 529px;
+#section02 .img01{
     position: absolute;
     left: 9%;
     top: 34%;
 }
+
+
+
+
 
 
 #section02 .img02_02{
@@ -218,6 +261,12 @@
 }
 
 
+#section03 .img01{
+
+}
+
+
+
 #section03 .horizontal{
     width: min-content;
     display: flex;
@@ -228,9 +277,11 @@
 
 #section03 .horizontal > section{
     flex-shrink: 0;
-    width: 100vw;
+    /*width: 100vw;*/
+    width: 5000px;
     height: 100vh;
-    background: orange;
+    /*background: orange;*/
+    background: linear-gradient(to left, dodgerblue,rebeccapurple,gainsboro,aquamarine);
     position: relative;
 }
 

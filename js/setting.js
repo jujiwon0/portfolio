@@ -1,7 +1,9 @@
 let container;
 let stage;
 
-import Animation from './Animation.js';
+
+import Animation from "./Animation.js";
+
 
 window.addEventListener('DOMContentLoaded', function () {
 
@@ -77,10 +79,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
     (function () {
 
+        // gsap.to('.front',1,{width:350,height:200});
 
 
         Animation();
-      
+
+
+
 
     })();
 

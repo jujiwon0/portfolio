@@ -6,7 +6,7 @@ export function Animation (){
 
     gsap.to('#section03 .horizontal', { // 누구를 ?
         // rotation: 360,
-        x: -innerWidth*3, // 어떻게 움직일 건지?
+        x: -(5000 - innerWidth), // 어떻게 움직일 건지?
         ease:'none', // 가속도 없음
         scrollTrigger: {
             trigger: "#section03", // 누구를 기준으로 ?
