@@ -1,9 +1,7 @@
-
-
 #section01{
-    /*background:url(../img/section01/01.jpg);*/
-    /*Height:2136px;*/
-    background: black;
+    /*background:url(../img/section01/00.jpg);*/
+    /*Height:1069px;*/
+    /*background: black;*/
     height: 100vh;
 }
 
@@ -21,12 +19,12 @@
 
 
 
-#section01 .front .logo_01{
+#section01 .front .logo01{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-
+    margin-top: -48px;
 }
 
 
@@ -34,37 +32,15 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    /*background: blue;*/
 }
 
 
-#section01 .back .mov_01{
-
+#section01 .back .mov01{
     position: relative;
 }
 
 
-#section01 .back .logo_02{
-    position: absolute;
-    left: 0;
-    top: 0;
-    /*left: 841px;*/
-    /*top: 1540px;*/
-    /*transform: translateX(-50%);*/
-    /*opacity: 0;*/
-    /*z-index: 1;*/
-
-}
-
-
-#section01 .back .down_c{
-    /*position: absolute;*/
-    /*left: 0;*/
-    /*top: 0;*/
-}
-
 #section01 .arrow_container{
-    background:red;
     position: absolute;
     left: 50%;
     transform:translateX(-50%);
@@ -76,35 +52,37 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin-top: -46px;
+    /*마우스올리면 호버되는 fill이미지준비하기*/
 }
 
 
-#section01 .back .play_btn_c_01 {
+
+#section01 .video_btn{
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 95%;
+    transform:translateX(-50%);
+    bottom: 50px;
 }
 
 
-#section01 .back .play_btn_01 {
+
+#section01 .video_btn .video_c{
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 95%;
+    transform:translateX(-50%);
+    margin-top: -46px;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+#section01 .video_btn .btn_play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -20px;
+    /*작은 원을 기준으로 가운데 정렬하고싶었는데 정렬안됨. 마진탑으로 이동하는게 맞는지 모르겠음*/
+}
 

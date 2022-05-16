@@ -80,7 +80,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
         //  here
 
-        gsap.to('.front',{delay:0,duration:5,width:328,height:173});
+        gsap.to('.front',{delay:0.5,duration:1,width:328,height:173});
+        gsap.to('.logo01',{delay:0,duration:0.5,width:328,height:173,y:50});
+        // gsap.from('.logo01',{delay:0,duration:0.5,width:228,height:73,y:50});
+        // 로고 크기 커졌다가 작아지게하고 싶었음
+
+        gsap.to('.arrow',{delay:0.5,duration:0.5,width:69,height:89,y:50});
+
 
 
 

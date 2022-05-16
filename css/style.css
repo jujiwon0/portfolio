@@ -1,11 +1,9 @@
 
-
-
 .logo{
     position: absolute;
     left: 50%;
+    top: 6%;
     transform: translateX(-50%);
-    top: 52px;
     z-index: 100;
 }
 
@@ -17,13 +15,8 @@
     z-index: 100;
 }
 
-
-
-
 #section01{
-    /*background:url(../img/section01/01_02.jpg);*/
-    height:1078px;
-
+    height: 1078px;
 }
 
 
@@ -51,13 +44,15 @@
     top: 0;
     opacity: 0;
     transition: all 1s;
+    margin-top: -104px;
+    margin-right: -145px;
 }
 
 #section01 .txt_container01 > div:hover .float_img{
     opacity: 1;
 }
 
-#section01 .txt_container01 > div:hover .text .fill{
+#section01 .txt_container01 > div:hover .text01 .fill01{
     opacity: 1;
 }
 
@@ -67,46 +62,109 @@
 }
 
 
-#section01 .txt_container01 > div .text{
+#section01 .txt_container01 > div .text01{
     position: relative;
 }
 
-#section01 .txt_container01 > div .text .fill{
+#section01 .txt_container01 > div .text01 .fill01{
     position: absolute;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    margin-left:1px;
     margin-top: 3px;
     opacity: 0;
     transition: all 1s;
 }
 
-#section01 .txt_container01 .title01_04{
+
+
+
+#section01 .txt_container01 > div:hover .text02 .fill02{
+    opacity: 1;
+}
+
+
+#section01 .txt_container01 > div .text02{
+    position: relative;
+}
+
+
+#section01 .txt_container01 > div .text02 .fill02{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    margin-top: 3px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+
+#section01 .txt_container01 > div:hover .text03 .fill03{
+    opacity: 1;
+}
+
+
+#section01 .txt_container01 > div .text03{
+    position: relative;
+}
+
+
+#section01 .txt_container01 > div .text03 .fill03{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    margin-top: 3px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+
+#section01 .txt_container01 > div:hover .text04 .fill04{
+    opacity: 1;
+}
+
+
+#section01 .txt_container01 > div .text04{
+    position: relative;
+}
+
+
+#section01 .txt_container01 > div .text04 .fill04{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    margin-top: 3px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+
+#section01 .txt_container01 .title04{
     margin-bottom: 0;
 }
 
-#section01 .main_rotate_c{
+
+
+
+#section01 .rotate_c{
     position: absolute;
     left: 470px;
     top: 280px;
     z-index: 500;
 
-    animation: main_rotate_c 6s linear infinite;transform-origin: 50% 50%;}
-@keyframes main_rotate_c{
+    animation: rotate_c 5s linear infinite;transform-origin: 50% 50%;}
+@keyframes rotate_c{
     100% {
         transform: rotate(360deg);
     }
 }
 
 
-#section01 .cover .video_dim{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 400;
-
-}
 
 
 #section01 .cover .video_main{
@@ -117,43 +175,40 @@
 
 
 
+#section01 .cover .video_dim{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+
+
 #section01 .cover .right{
     background: black;
 }
 
 
-
-#section01 .cover > div{
-    flex: 1;
-    position: relative;
-}
-
-
-
+/*#section01 .cover > div{*/
+/*    flex: 1;*/
+/*    position: relative;*/
+/*}*/
 
 
 #section02{
-    /*background: black;*/
-    /*background:url(../img/section02/02_00.jpg);*/
     height: 5534px;
-    background-color: dodgerblue;
-}
-
-
-#section02 .back_02{
-    width: 1920px;
-    height: 5534px;
-
-    /*background:url("../img/section02/back_02.png");*/
+    background:url("../img/section02/back.jpg");
+    /*background-color: blue;*/
 }
 
 
 #section02 .title{
     position: absolute;
     left: 50%;
-    top: 200px;
+    /*top: 50%;*/
     transform: translateX(-50%);
     text-align: center;
+    margin-top: 1400px;
 }
 
 
@@ -174,83 +229,62 @@
 }
 
 
-
-
-
-
-#section02 .img02_02{
-    width: 446px;
-    height: 516px;
+#section02 .img02{
     position: absolute;
     left: 68%;
     top: 42%;
 }
 
 
-#section02 .img02_03{
-    width: 529px;
-    height: 663px;
+#section02 .img03{
     position: absolute;
     left: 27%;
     top: 46%;
 }
 
 
-#section02 .img02_03{
-    width: 529px;
-    height: 663px;
-    position: absolute;
-    left: 27%;
-    top: 46%;
-}
-
-
-#section02 .img02_04{
-    width: 446px;
-    height: 663px;
+#section02 .img04{
     position: absolute;
     left: 49%;
     top: 55%;
 }
 
 
-#section02 .img02_05{
-    width: 446px;
-    height: 663px;
+#section02 .img05{
     position: absolute;
     left: 9%;
     top: 68%;
 }
 
 
-#section02 .img02_06{
-    width: 794px;
-    height: 634px;
+
+#section02 .img06{
     position: absolute;
     left: 49%;
     top: 73%;
 }
 
 
-#section02 .txt_container02_02{
+
+
+
+#section02 .title02{
     position: absolute;
     left: 50%;
-    top: 94%;
-    transform: translate(-50%,-50%);
+    /*top: 50%;*/
+    transform: translateX(-50%);
     text-align: center;
+    margin-top: 4800px;
 }
 
 
-#section02 .txt_container02_02 > div{
+#section02 .title02 > div{
     margin-bottom: 29px;
 }
 
-
-
-
-
-
-
+#section02 .title02 > div:last-child{
+    margin-bottom: 0;
+}
 
 
 
@@ -278,20 +312,177 @@
 #section03 .horizontal > section{
     flex-shrink: 0;
     /*width: 100vw;*/
-    width: 5000px;
+    width: 4749px;
+    /*이미지 사이즈는 4749인데 무조건 5000으로 해야하는지 몰겠음. 4749하니깐 끝에 회색나옴*/
     height: 100vh;
     /*background: orange;*/
-    background: linear-gradient(to left, dodgerblue,rebeccapurple,gainsboro,aquamarine);
+    background:url("../img/section03/back.jpg");
     position: relative;
 }
 
 #section03 .horizontal > section:nth-child(even){
     background: green;
 }
+/*이 코드는 왜 들어가야하는지 이유를 몰겠어요*/
+
+
+
+#section03 .horizontal .title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/*#section03 .horizontal .img{*/
+/*    position: absolute;*/
+/*    !*margin-right: 20px;*!*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%,-50%);*/
+/*    z-index: 100;*/
+/*}*/
+
+/*사진이 안떠요,,,*/
+
+
+
+
 
 #section04{
-    background: hotpink;
+    height: 3040px;
+    background:url("../img/section04/back.jpg");
 }
+
+
+#section04 .title{
+    position: relative;
+    left: 50%;
+    /*top: 50%;*/
+    transform: translateX(-50%);
+    margin-top: 317px;
+    text-align: center;
+    z-index: 600;
+}
+
+
+
+#section04 .title .title1{
+    position: absolute;
+}
+
+
+
+
+#section04 .rotate_c{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 170px;
+    margin-left: 1200px;
+    /*left: 470px;*/
+    /*top: 280px;*/
+    z-index: 500;
+
+    animation: rotate_c 5s linear infinite;transform-origin: 50% 50%;}
+@keyframes rotate_c{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+#section04 .img01{
+    position: absolute;
+    left: 392px;
+    top: 553px;
+    /*margin-top: 170px;*/
+    /*margin-left: 200px;*/
+}
+
+
+#section04 .img02{
+    position: absolute;
+    left: 925px;
+    top: 785px;
+}
+
+
+
+#section04 .txt_container{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+
+#section04 .txt_container .title02{
+    position: absolute;
+    left: 161px;
+    /*top: 0;*/
+    margin-top: 1516px;
+}
+
+
+/*#section04 .txt_container .aroow{*/
+/*    position: absolute;*/
+/*    left: 160px;*/
+/*    top: 2110px;*/
+/*    !*margin-right: 200px;*!*/
+/*    !*z-index: 500;*!*/
+/*}*/
+
+/*화살표가 화면에 안보여요*/
+
+
+
+#section04 .txt_container .title03{
+    position: absolute;
+    left: 161px;
+    /*top: 0;*/
+    margin-top: 1816px;
+}
+
+
+
+#section04 .txt_container .txt{
+    position: absolute;
+    left: 961px;
+    margin-top: 1816px;
+}
+
+/*이미지이동할때 left로 이동하는게 맞는지..? 마진 레프트로 이동해야하는건지 모르겠음*/
+
+
+
+#section04 .line{
+    position: relative;
+}
+
+
+#section04 .line .line01{
+    position: absolute;
+    left: 0;
+    margin-top: 1656px;
+}
+
+
+#section04 .line .line02{
+    position: absolute;
+    left: 960px;
+    margin-top: 2037px;
+}
+
+
+
+
+
+
 
 
 #section05{
