@@ -22,6 +22,36 @@ export function Animation (){
     });
 
 
+    gsap.to('#section02 .fix-this-2', { // 누구를 ?
+
+        scrollTrigger: {
+            trigger: ".trigger-this-2", // 누구를 기준으로 ?
+            start: "top top", // 어디서부터 시작할건지?
+            end: 'bottom bottom',
+            pin: true,
+            scrub: true,
+
+        }
+    });
+
+
+    gsap.to('#section02 .circle', { // 누구를 ?
+        clipPath: 'circle( 100vw at 50% 50%)',
+        ease:'none',
+        scrollTrigger: {
+            trigger: "#section02", // 누구를 기준으로 ?
+            start: "top top", // 어디서부터 시작할건지?
+            // end: 'bottom bottom',
+            end: ()=> `+=${1500}`,
+            scrub: true,
+
+        }
+    });
+
+
+
+
+
 
 
 

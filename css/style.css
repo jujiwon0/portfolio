@@ -48,6 +48,11 @@
     margin-right: -145px;
 }
 
+#section01 .txt_container01 .title03 .float_img{
+    margin-top: -82px;
+    margin-right: -301px;
+}
+
 #section01 .txt_container01 > div:hover .float_img{
     opacity: 1;
 }
@@ -168,18 +173,40 @@
 
 
 #section01 .cover .video_main{
+    width: 50vw;
     position: relative;
-    left: 0;
-    top: 0;
+    overflow: hidden;
+
 }
 
 
+#section01 .cover .video_main video{
+    /*width: 100%;*/
+    /*height: auto;*/
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    z-index: -1;
+    transition: all .5s;
+}
+
+#section01 .cover .video_main video.on{
+    opacity: 1;
+    z-index: 1;
+}
+
 
 #section01 .cover .video_dim{
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 100;
+    background-color: rgba(0,0,0,0.5);
 }
 
 
@@ -197,18 +224,45 @@
 
 #section02{
     height: 5534px;
-    background:url("../img/section02/back.jpg");
+    background:url("../img/section02/back_black.png");
+
     /*background-color: blue;*/
+}
+
+#section02 .circle{
+    width: 100vw;
+    height: 100vh;
+    background:url("../img/section02/back.jpg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    clip-path: circle( 0px at 50% 50%);
+}
+
+.trigger-this-2{
+    height: 100%;
+    z-index: 100;
+    position: relative;
+}
+
+.fix-this-2{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+
 }
 
 
 #section02 .title{
     position: absolute;
     left: 50%;
-    /*top: 50%;*/
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%,-50%);
     text-align: center;
-    margin-top: 1400px;
+    z-index: 10;
+
+    /*margin-top: 1400px;*/
 }
 
 
@@ -220,7 +274,9 @@
     margin-bottom: 0;
 }
 
-
+#section02 .img > div{
+    z-index: 10000;
+}
 
 #section02 .img01{
     position: absolute;
@@ -336,16 +392,16 @@
 
 
 
-/*#section03 .horizontal .img{*/
-/*    position: absolute;*/
-/*    !*margin-right: 20px;*!*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translateX(-50%,-50%);*/
-/*    z-index: 100;*/
-/*}*/
+#section03 .horizontal .img{
+    position: absolute;
+    /*margin-right: 20px;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+}
 
-/*사진이 안떠요,,,*/
+/*사진이 안떠요,,, 됐습니다.*/
 
 
 

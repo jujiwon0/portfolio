@@ -87,6 +87,31 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
+
+    //     글자 항목들에게 마우스를 올리면 비디오가 보인다.
+        // 첫 번째 글자에게 마우스를 올리면 첫 번재 비디오가 보인다.
+
+
+
+
+        $('#section01 .txt_container01 > div').mouseenter(function () {
+
+            let idx = $('#section01 .txt_container01 > div').index(this);
+
+            $('#section01 .cover .video_main video').removeClass('on');
+
+
+            $('#section01 .cover .video_main video').eq(idx).addClass('on');
+
+
+        });
+
+
+
+
+
     })();
 
 
