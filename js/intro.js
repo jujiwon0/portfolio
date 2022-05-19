@@ -82,25 +82,43 @@ window.addEventListener('DOMContentLoaded', function () {
 
         let tl = gsap.timeline();
 
-        tl.to('.logo01',{delay:1,duration:0.5,opacity:1,marginTop:0});
-        tl.to('.front',{duration:1,width:328,height:173,scale:0.8});
-
-        // gsap.to('.logo01',{delay:1,duration:0.5,opacity:1,marginTop:0});
-        // gsap.to('.front',{duration:1,width:328,height:173,scale:0.8});
-
-
-        // translate = x , y
-        // scale = scale
-        // margin-top = marginTop
-        // border-radius = borderRadius
-        // rotate = rotation
+        tl.to('.logo01',{delay:0.8,duration:0.5,opacity:1,marginTop:0});
+        tl.to('.front',{duration:0.9,width:328,height:173,scale:0.8});
+        tl.to('.arrow_container',{duration:0.5,opacity:1,marginTop:0});
 
 
 
-        // tl.to('.front',{delay:0,duration:0.5,});
-        // 로고 크기 커졌다가 작아지게하고 싶었음
 
-        // gsap.to('.arrow',{delay:0.5,duration:0.5,width:69,height:89,y:50});
+
+
+
+
+
+
+
+
+
+        // let tl = gsap.timeline();
+        //
+        // tl.to('.logo01',{delay:1,duration:0.5,opacity:1,marginTop:0});
+        // tl.to('.front',{duration:1,width:328,height:173,scale:0.8});
+        //
+        // // gsap.to('.logo01',{delay:1,duration:0.5,opacity:1,marginTop:0});
+        // // gsap.to('.front',{duration:1,width:328,height:173,scale:0.8});
+        //
+        //
+        // // translate = x , y
+        // // scale = scale
+        // // margin-top = marginTop
+        // // border-radius = borderRadius
+        // // rotate = rotation
+        //
+        //
+        //
+        // // tl.to('.front',{delay:0,duration:0.5,});
+        // // 로고 크기 커졌다가 작아지게하고 싶었음
+        //
+        // // gsap.to('.arrow',{delay:0.5,duration:0.5,width:69,height:89,y:50});
 
 
 

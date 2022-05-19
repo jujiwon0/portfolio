@@ -4,22 +4,6 @@ export function Animation (){
 
     // console.log('hello');
 
-    gsap.to('#section03 .horizontal', { // 누구를 ?
-        // rotation: 360,
-        x: -(4749 - innerWidth), // 어떻게 움직일 건지?
-        ease:'none', // 가속도 없음
-        scrollTrigger: {
-            trigger: "#section03", // 누구를 기준으로 ?
-            start: "top top", // 어디서부터 시작할건지?
-            end: () => "+=" + document.querySelector('#section03 .horizontal').offsetWidth, // 어디까지
-            // end: 'bottom bottom',
-            pin: true,
-            // pinSpace:false,
-            // pinSpacing: false,
-            scrub: true,
-            // markers: true
-        }
-    });
 
 
     gsap.to('#section02 .fix-this-2', { // 누구를 ?
@@ -47,6 +31,54 @@ export function Animation (){
 
         }
     });
+
+
+    gsap.to('#section03 .horizontal', { // 누구를 ?
+        // rotation: 360,
+        x: -(4749 - innerWidth), // 어떻게 움직일 건지?
+        ease:'none', // 가속도 없음
+        scrollTrigger: {
+            trigger: "#section03", // 누구를 기준으로 ?
+            start: "top top", // 어디서부터 시작할건지?
+            end: () => "+=" + document.querySelector('#section03 .horizontal').offsetWidth, // 어디까지
+            // end: 'bottom bottom',
+            pin: true,
+            // pinSpace:false,
+            // pinSpacing: false,
+            scrub: true,
+            // markers: true
+        }
+    });
+
+
+
+    gsap.to('#section05 .horizontal', { // 누구를 ?
+        // rotation: 360,
+        x: -(5000 - innerWidth), // 어떻게 움직일 건지?
+        ease:'none', // 가속도 없음
+        scrollTrigger: {
+            trigger: "#section05", // 누구를 기준으로 ?
+            start: "top top", // 어디서부터 시작할건지?
+            end: () => "+=" + document.querySelector('#section05 .horizontal').offsetWidth, // 어디까지
+            // end: 'bottom bottom',
+            pin: true,
+            // pinSpace:false,
+            // pinSpacing: false,
+            scrub: true,
+            // markers: true
+        }
+    });
+
+
+
+
+
+
+
+
+
+
+
 
 
 

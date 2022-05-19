@@ -79,7 +79,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     (function () {
 
-        // gsap.to('.front',1,{width:350,height:200});
+        gsap.to('.front',1,{width:350,height:200});
 
 
         Animation();
@@ -96,9 +96,11 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
-        $('#section01 .txt_container01 > div').mouseenter(function () {
 
-            let idx = $('#section01 .txt_container01 > div').index(this);
+
+        $('#section01 .txt_container > div').mouseenter(function () {
+
+            let idx = $('#section01 .txt_container > div').index(this);
 
             $('#section01 .cover .video_main video').removeClass('on');
 
@@ -107,7 +109,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
         });
-
 
 
 
