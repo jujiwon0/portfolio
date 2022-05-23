@@ -50,7 +50,7 @@
 }
 
 #section01 .txt_container .title01 .float_img {
-  margin-left: 1260px;
+  margin-left: 1131px;
   margin-top: -102px;
 }
 
@@ -78,7 +78,7 @@
 }
 
 #section01 .txt_container .title02 .float_img {
-  margin-left: 1313px;
+  margin-left: 1183px;
   margin-top: -102px;
 }
 
@@ -101,7 +101,7 @@
 }
 
 #section01 .txt_container .title03 .float_img {
-  margin-left: 1409px;
+  margin-left: 964px;
   margin-top: -81px;
 }
 
@@ -114,7 +114,7 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  margin-top: 3px;
+  /*margin-top: 3px;*/
   opacity: 0;
   transition: all 1s;
 }
@@ -124,7 +124,7 @@
 }
 
 #section01 .txt_container .title04 .float_img {
-  margin-left: 1289px;
+  margin-left: 1160px;
   margin-top: -72px;
 }
 
@@ -146,17 +146,17 @@
   opacity: 1;
 }
 
-#section01 .txt_container .text04 {
+#section01 .txt_container .title04 {
   margin-bottom: 0;
 }
 
 #section01 .rotate_c {
   position: absolute;
-  left: 470px;
-  top: 280px;
+  left: 458px;
+  top: 230px;
   z-index: 300;
 
-  animation: rotate_c 5s linear infinite;
+  animation: rotate_c 6s linear infinite;
   transform-origin: 50% 50%;
 }
 @keyframes rotate_c {
@@ -203,13 +203,13 @@
 
 #section02 {
   height: 5534px;
-  background: url('../img/section02/back_black.png');
+  background: url('../img/section02/back_black.jpg');
 }
 
 #section02 .circle {
   width: 100vw;
   height: 100vh;
-  background: url('../img/section02/back.png');
+  background: url('../img/section02/back.jpg');
   position: absolute;
   left: 0;
   top: 0;
@@ -266,6 +266,14 @@
   margin-bottom: 0;
 }
 
+
+#section02 .bottom_text {
+  overflow: hidden;
+  height: 77px;
+  position: relative;
+}
+
+
 #section02 .img > div {
   z-index: 100;
   /*이미지가 뒤로 안가요*/
@@ -307,23 +315,23 @@
   top: 73%;
 }
 
-#section02 .title02 {
-  position: absolute;
-  left: 50%;
-  /*top: 50%;*/
-  transform: translateX(-50%);
-  text-align: center;
-  margin-top: 4800px;
-  z-index: 1000;
-}
+/*#section02 .title02 {*/
+/*  position: absolute;*/
+/*  left: 50%;*/
+/*  !*top: 50%;*!*/
+/*  transform: translateX(-50%);*/
+/*  text-align: center;*/
+/*  margin-top: 4800px;*/
+/*  z-index: 1000;*/
+/*}*/
 
-#section02 .title02 > div {
-  margin-bottom: 29px;
-}
+/*#section02 .title02 > div {*/
+/*  margin-bottom: 29px;*/
+/*}*/
 
-#section02 .title02 > div:last-child {
-  margin-bottom: 0;
-}
+/*#section02 .title02 > div:last-child {*/
+/*  margin-bottom: 0;*/
+/*}*/
 
 #section03 .horizontal {
   width: min-content;
@@ -356,23 +364,20 @@
   z-index: 100;
 }
 
+
 #section03 .horizontal .img {
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: 74%;
   transform: translate(-50%, -50%);
 }
 
 /*사진이 안떠요,,, 됐습니다.*/
 
-/*#section03 .horizontal .img{*/
-/*    transform: translate3d(0,0,0);*/
-/*}*/
-
-/*스크롤하면서 사진 회전하는거하고 싶었어요*/
 
 #section04 {
   height: 3040px;
+  /*background: url('../img/section04/04.jpg');*/
   background: url('../img/section04/back.jpg');
 }
 
@@ -387,9 +392,42 @@
   z-index: 600;
 }
 
+
+
+#section04 .title .fill {
+  display: flex;
+  animation: fill 7s infinite linear;
+}
+
+#section04 .title .fill {
+  position: absolute;
+  width: 100vw;
+  right: 0;
+}
+
+#section04 .title .fill > div:nth-child(1) {
+  margin-right: 50px;
+}
+
+
+@keyframes fill {
+   to {
+     transform: translateX(1924px);
+   }
+ }
+
+
+
+#section04 .title .stroke {
+  position: absolute;
+  left: 0;
+  top: 178px;
+}
+
+
 #section04 .title .stroke {
   display: flex;
-  animation: stroke 5s infinite linear;
+  animation: stroke 7s infinite linear;
 }
 
 #section04 .title .stroke > div:nth-child(1) {
@@ -402,11 +440,7 @@
   }
 }
 
-/*#section04 .title .title1{*/
-/*    position: absolute;*/
-/*    transform: translate3d(0,0,0);*/
-/*}*/
-/*텍스트 흐르기, 반복하고싶음*/
+
 
 #section04 .rotate_c {
   position: absolute;
@@ -436,8 +470,10 @@
 #section04 .img02 {
   position: absolute;
   left: 925px;
-  top: 785px;
+  top: 1142px;
 }
+/*스크롤하면서 사진 올라가는거 하고 싶음*/
+/*img01은 왼쪽방향으로 꺽이고 img02는 오른쪽 방향으로 꺾이는?*/
 
 #section04 .txt_container {
   position: relative;
@@ -447,9 +483,9 @@
 
 #section04 .txt_container .title02 {
   position: absolute;
-  left: 161px;
+  left: 160px;
   /*top: 0;*/
-  top: 1516px;
+  top: 2118px;
 }
 
 #section04 .arrow {
@@ -463,33 +499,38 @@
   position: absolute;
   left: 161px;
   /*top: 0;*/
-  top: 1816px;
+  top: 2417px;
 }
 
 #section04 .txt_container .txt {
   position: absolute;
   left: 961px;
-  top: 1816px;
+  top: 2417px;
 }
 
 #section04 .line {
   position: relative;
 }
-/*선 움직이는거하고싶음*/
+
 
 #section04 .line .line01 {
   position: absolute;
   left: 0;
-  top: 1656px;
+  top: 2257px;
   overflow: hidden;
   width: 0;
 }
 
 #section04 .line .line02 {
   position: absolute;
-  left: 960px;
-  top: 2037px;
+  right: 0;
+  top: 2639px;
+  overflow: hidden;
+  width: 0;
 }
+/*라인 오른쪽에서 나와서 가운데에서 멈추게하고싶음*/
+
+
 
 /*#section05{*/
 /*    height: 3040px;*/
@@ -501,6 +542,7 @@
   display: flex;
   height: 100vh;
   position: relative;
+  /*background:url("../img/section05/05.jpg");*/
 }
 
 #section05 .horizontal > section {
@@ -523,6 +565,7 @@
   top: 218px;
   z-index: 100;
 }
+/*글씨 스크롤하면서 오른쪽 나오게 하고시펑요*/
 
 #section05 .horizontal .title02 {
   position: absolute;
@@ -575,13 +618,59 @@
 }
 
 #section06 .title {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 333px;
+  position: absolute;
+  left: 0;
+  top: 21%;
   text-align: center;
   z-index: 600;
 }
+
+#section06 .title .fill {
+  display: flex;
+  animation: fill 7s infinite linear;
+}
+
+#section06 .title .fill {
+  position: absolute;
+  width: 100vw;
+  right: 0;
+}
+
+#section06 .title .fill > div:nth-child(1) {
+  margin-right: 50px;
+}
+
+@keyframes fill {
+  to {
+    transform: translateX(3838px);
+  }
+/*계산하는법 모르겠어요*/
+}
+
+
+
+#section06 .title .stroke {
+  position: absolute;
+  left: 0;
+  top: 172px;
+}
+
+
+#section06 .title .stroke {
+  display: flex;
+  animation: stroke 7s infinite linear;
+}
+
+#section06 .title .stroke > div:nth-child(1) {
+  margin-right: 50px;
+}
+
+@keyframes stroke {
+  to {
+    transform: translateX(-1917px);
+  }
+}
+
 
 #section06 .img {
   position: absolute;
@@ -590,461 +679,104 @@
   transform: translateX(-50%);
 }
 
-/*.logo{*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 6%;*/
-/*    transform: translateX(-50%);*/
-/*    z-index: 100;*/
-/*}*/
-
-/*.hamburger{*/
-/*    position: absolute;*/
-/*    left: 89%;*/
-/*    top: 6%;*/
-/*    z-index: 100;*/
-/*}*/
-
-/*#section01{*/
-/*    height: 1078px;*/
-/*}*/
-
-/*#section01 .cover{*/
-/*    width: 100vw;*/
-/*    height: 100vh;*/
-/*    position: relative;*/
-/*    display: flex;*/
-/*}*/
-
-/*#section01 .txt_container01{*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 50%;*/
-/*    transform: translate(-50%,-50%);*/
-/*    text-align: center;*/
-/*    z-index: 600;*/
-
-/*}*/
-
-/*#section01 .txt_container01 > div .float_img{*/
-/*    position: absolute;*/
-/*    right: 0;*/
-/*    top: 0;*/
-/*    opacity: 0;*/
-/*    transition: all 1s;*/
-/*    margin-top: -104px;*/
-/*    margin-right: -145px;*/
-/*}*/
-
-/*#section01 .txt_container01 .title03 .float_img{*/
-/*    margin-top: -82px;*/
-/*    margin-right: -301px;*/
-/*}*/
-
-/*#section01 .txt_container01 > div:hover .float_img{*/
-/*    opacity: 1;*/
-/*}*/
-
-/*#section01 .txt_container01 > div:hover .text01 .fill01{*/
-/*    opacity: 1;*/
-/*}*/
-
-/*#section01 .txt_container01 > div{*/
-/*    margin-bottom: 35px;*/
-/*    position: relative;*/
-/*}*/
-
-/*#section01 .txt_container01 > div .text01{*/
-/*    position: relative;*/
-/*}*/
-
-/*#section01 .txt_container01 > div .text01 .fill01{*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 0;*/
-/*    transform: translateX(-50%);*/
-/*    margin-top: 3px;*/
-/*    opacity: 0;*/
-/*    transition: all 1s;*/
-/*}*/
-
-/*#section01 .txt_container01 > div:hover .text02 .fill02{*/
-/*    opacity: 1;*/
-/*}*/
-
-/*#section01 .txt_container01 > div .text02{*/
-/*    position: relative;*/
-/*}*/
-
-/*#section01 .txt_container01 > div .text02 .fill02{*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 0;*/
-/*    transform: translateX(-50%);*/
-/*    margin-top: 3px;*/
-/*    opacity: 0;*/
-/*    transition: all 1s;*/
-/*}*/
-
-/*#section01 .txt_container01 > div:hover .text03 .fill03{*/
-/*    opacity: 1;*/
-/*}*/
-
-/*#section01 .txt_container01 > div .text03{*/
-/*    position: relative;*/
-/*}*/
-
-/*#section01 .txt_container01 > div .text03 .fill03{*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 0;*/
-/*    transform: translateX(-50%);*/
-/*    margin-top: 3px;*/
-/*    opacity: 0;*/
-/*    transition: all 1s;*/
-/*}*/
-
-/*#section01 .txt_container01 > div:hover .text04 .fill04{*/
-/*    opacity: 1;*/
-/*}*/
-
-/*#section01 .txt_container01 > div .text04{*/
-/*    position: relative;*/
-/*}*/
-
-/*#section01 .txt_container01 > div .text04 .fill04{*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 0;*/
-/*    transform: translateX(-50%);*/
-/*    margin-top: 3px;*/
-/*    opacity: 0;*/
-/*    transition: all 1s;*/
-/*}*/
-
-/*#section01 .txt_container01 .title04{*/
-/*    margin-bottom: 0;*/
-/*}*/
-
-/*#section01 .rotate_c{*/
-/*    position: absolute;*/
-/*    left: 470px;*/
-/*    top: 280px;*/
-/*    z-index: 500;*/
-
-/*    animation: rotate_c 5s linear infinite;transform-origin: 50% 50%;}*/
-/*@keyframes rotate_c{*/
-/*    100% {*/
-/*        transform: rotate(360deg);*/
-/*    }*/
-/*}*/
-
-/*#section01 .cover .video_main{*/
-/*    width: 50vw;*/
-/*    height: 110vh;*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-
-/*}*/
-
-/*#section01 .cover .video_main video{*/
-/*    !*width: 100%;*!*/
-/*    !*height: auto;*!*/
-/*    height: 100%;*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 50%;*/
-/*    transform: translate(-50%,-50%);*/
-/*    opacity: 0;*/
-/*    z-index: -1;*/
-/*    transition: all .5s;*/
-/*}*/
 
-/*#section01 .cover .video_main video.on{*/
-/*    opacity: 1;*/
-/*    z-index: 1;*/
-/*}*/
-
-/*#section01 .cover .video_dim{*/
-/*    width: 100%;*/
-/*    !*height: 100%;*!*/
-/*    height: 110%;*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    z-index: 100;*/
-/*    background-color: rgba(0,0,0,0.5);*/
-/*}*/
-
-/*#section01 .cover .right{*/
-/*    background: black;*/
-/*}*/
-
-/*!*#section01 .cover > div{*!*/
-/*!*    flex: 1;*!*/
-/*!*    position: relative;*!*/
-/*!*}*!*/
-
-/*#section02{*/
-/*    height: 5534px;*/
-/*    background:url("../img/section02/back_black.png");*/
-
-/*    !*background-color: blue;*!*/
-/*}*/
-
-/*#section02 .circle{*/
-/*    width: 100vw;*/
-/*    height: 100vh;*/
-/*    background:url("../img/section02/back.jpg");*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    clip-path: circle( 0px at 50% 50%);*/
-/*}*/
-
-/*.trigger-this-2{*/
-/*    height: 100%;*/
-/*    z-index: 100;*/
-/*    position: relative;*/
-/*}*/
 
-/*.fix-this-2{*/
-/*    width: 100vw;*/
-/*    height: 100vh;*/
-/*    position: relative;*/
+#section07 .cover {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  background: url('../img/section07/back.jpg');
+}
 
-/*}*/
-
-/*#section02 .title{*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 50%;*/
-/*    transform: translate(-50%,-50%);*/
-/*    text-align: center;*/
-/*    z-index: 10;*/
-
-/*    !*margin-top: 1400px;*!*/
-/*}*/
-
-/*#section02 .title > div{*/
-/*    margin-bottom: 29px;*/
-/*}*/
-
-/*#section02 .title > div:last-child{*/
-/*    margin-bottom: 0;*/
-/*}*/
-
-/*#section02 .img > div{*/
-/*    z-index: 10000;*/
-/*}*/
 
-/*#section02 .img01{*/
-/*    position: absolute;*/
-/*    left: 9%;*/
-/*    top: 34%;*/
-/*}*/
-
-/*#section02 .img02{*/
-/*    position: absolute;*/
-/*    left: 68%;*/
-/*    top: 42%;*/
-/*}*/
+#section07 .cover .left {
+  width: 50vw;
+  position: relative;
+}
 
-/*#section02 .img03{*/
-/*    position: absolute;*/
-/*    left: 27%;*/
-/*    top: 46%;*/
-/*}*/
 
-/*#section02 .img04{*/
-/*    position: absolute;*/
-/*    left: 49%;*/
-/*    top: 55%;*/
-/*}*/
+#section07 .left .txt01 {
+  position: absolute;
+  left: 50%;
+  top: 14%;
+  transform: translateX(-50%);
+  /*transform: translate(-50%, -50%);*/
+  text-align: center;
+  z-index: 600;
+}
 
-/*#section02 .img05{*/
-/*    position: absolute;*/
-/*    left: 9%;*/
-/*    top: 68%;*/
-/*}*/
 
-/*#section02 .img06{*/
-/*    position: absolute;*/
-/*    left: 49%;*/
-/*    top: 73%;*/
-/*}*/
+#section07 .left .txt02 {
+  position: absolute;
+  left: 50%;
+  top: 83%;
+  transform: translateX(-50%);
+  /*transform: translate(-50%, -50%);*/
+  text-align: center;
+  z-index: 600;
+}
 
-/*#section02 .title02{*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    !*top: 50%;*!*/
-/*    transform: translateX(-50%);*/
-/*    text-align: center;*/
-/*    margin-top: 4800px;*/
-/*}*/
 
-/*#section02 .title02 > div{*/
-/*    margin-bottom: 29px;*/
-/*}*/
 
-/*#section02 .title02 > div:last-child{*/
-/*    margin-bottom: 0;*/
-/*}*/
+#section07 .title > div {
+  position: relative;
+  margin-bottom: 65px;
+}
 
-/*#section03{*/
-/*    height: initial;*/
-/*    background: gray;*/
-/*}*/
 
-/*#section03 .img01{*/
+#section07 .left .title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 600;
+}
 
+/*#section07 .left .title01 {*/
+/*  overflow: hidden;*/
+/*  height: 39px;*/
+/*  position: relative;*/
 /*}*/
+/*스크롤하면서 타이틀 올라오는거해야함 안보이다가 보이는? 근데 안되네요*/
 
-/*#section03 .horizontal{*/
-/*    width: min-content;*/
-/*    display: flex;*/
-/*    height: 100vh;*/
-/*    position: relative;*/
-/*}*/
 
-/*#section03 .horizontal > section{*/
-/*    flex-shrink: 0;*/
-/*    !*width: 100vw;*!*/
-/*    width: 4749px;*/
-/*    !*이미지 사이즈는 4749인데 무조건 5000으로 해야하는지 몰겠음. 4749하니깐 끝에 회색나옴*!*/
-/*    height: 100vh;*/
-/*    !*background: orange;*!*/
-/*    background:url("../img/section03/back.jpg");*/
-/*    position: relative;*/
-/*}*/
+#section07 .left .title .title04 {
+  margin-bottom: 0;
+}
 
-/*#section03 .horizontal > section:nth-child(even){*/
-/*    background: green;*/
-/*}*/
-/*!*이 코드는 왜 들어가야하는지 이유를 몰겠어요*!*/
-
-/*#section03 .horizontal .title{*/
-/*    position: absolute;*/
-/*    left: 50%;*/
-/*    top: 50%;*/
-/*    transform: translate(-50%,-50%);*/
-/*}*/
 
-/*#section03 .horizontal .img{*/
-/*    position: absolute;*/
-/*    !*margin-right: 20px;*!*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-/*    transform: translate(-50%,-50%);*/
-/*    z-index: 100;*/
-/*}*/
+#section07 .cover .right {
+  width: 50vw;
+  position: relative;
+}
 
-/*!*사진이 안떠요,,, 됐습니다.*!*/
 
-/*#section04{*/
-/*    height: 3040px;*/
-/*    background:url("../img/section04/back.jpg");*/
-/*}*/
+#section07 .right .title_w {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /*transform: translateX(-50%);*/
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 600;
+}
 
-/*#section04 .title{*/
-/*    position: relative;*/
-/*    left: 50%;*/
-/*    !*top: 50%;*!*/
-/*    transform: translateX(-50%);*/
-/*    margin-top: 317px;*/
-/*    text-align: center;*/
-/*    z-index: 600;*/
-/*}*/
+#section07 .title_w > div {
+  position: relative;
+  margin-bottom: 70px;
+}
 
-/*#section04 .title .title1{*/
-/*    position: absolute;*/
-/*}*/
 
-/*#section04 .rotate_c{*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    margin-top: 170px;*/
-/*    margin-left: 1200px;*/
-/*    !*left: 470px;*!*/
-/*    !*top: 280px;*!*/
-/*    z-index: 500;*/
-
-/*    animation: rotate_c 5s linear infinite;transform-origin: 50% 50%;}*/
-/*@keyframes rotate_c{*/
-/*    100% {*/
-/*        transform: rotate(360deg);*/
-/*    }*/
-/*}*/
 
-/*#section04 .img01{*/
-/*    position: absolute;*/
-/*    left: 392px;*/
-/*    top: 553px;*/
-/*    !*margin-top: 170px;*!*/
-/*    !*margin-left: 200px;*!*/
-/*}*/
 
-/*#section04 .img02{*/
-/*    position: absolute;*/
-/*    left: 925px;*/
-/*    top: 785px;*/
-/*}*/
 
-/*#section04 .txt_container{*/
-/*    position: relative;*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*}*/
 
-/*#section04 .txt_container .title02{*/
-/*    position: absolute;*/
-/*    left: 161px;*/
-/*    !*top: 0;*!*/
-/*    margin-top: 1516px;*/
-/*}*/
 
-/*!*#section04 .txt_container .aroow{*!*/
-/*!*    position: absolute;*!*/
-/*!*    left: 160px;*!*/
-/*!*    top: 2110px;*!*/
-/*!*    !*margin-right: 200px;*!*!*/
-/*!*    !*z-index: 500;*!*!*/
-/*!*}*!*/
-
-/*!*화살표가 화면에 안보여요*!*/
-
-/*#section04 .txt_container .title03{*/
-/*    position: absolute;*/
-/*    left: 161px;*/
-/*    !*top: 0;*!*/
-/*    margin-top: 1816px;*/
-/*}*/
 
-/*#section04 .txt_container .txt{*/
-/*    position: absolute;*/
-/*    left: 961px;*/
-/*    margin-top: 1816px;*/
-/*}*/
 
-/*!*이미지이동할때 left로 이동하는게 맞는지..? 마진 레프트로 이동해야하는건지 모르겠음*!*/
 
-/*#section04 .line{*/
-/*    position: relative;*/
-/*}*/
 
-/*#section04 .line .line01{*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    margin-top: 1656px;*/
-/*}*/
 
-/*#section04 .line .line02{*/
-/*    position: absolute;*/
-/*    left: 960px;*/
-/*    margin-top: 2037px;*/
-/*}*/
 
-/*#section05{*/
-/*    background: aqua;*/
-/*}*/
