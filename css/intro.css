@@ -61,10 +61,11 @@
 
 
 #section01 .video_btn{
+    cursor:pointer;
     position: absolute;
-    left: 95%;
-    /*transform:translateX(-50%);*/
-    top: 91%;
+    right: 5%;
+    bottom: 5%;
+    mix-blend-mode: difference;
 }
 
 

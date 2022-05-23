@@ -50,6 +50,17 @@ export function Animation() {
     },
   });
 
+  gsap.to('#section02 .circle .line', {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '#section02',
+      start: '35% 0%',
+      //   start: () => `+=${2000}`,
+      end: 'bottom bottom',
+      scrub: true,
+    },
+  });
+
 
 
   gsap.to('#section02 .bottom_text > div', {
@@ -100,6 +111,18 @@ export function Animation() {
     },
   });
 
+  gsap.to('#section04 .img01', {
+    y: -400,
+    rotation: -10,
+    scrollTrigger: {
+      trigger: '#section04',
+      start: 'top top',
+      // horizontal:true,
+      end: () => '+=' + 1000,  //속도
+      scrub: true,
+    },
+  });
+
 
 
   ScrollTrigger.create({
@@ -116,7 +139,7 @@ export function Animation() {
     trigger: '#section04 .line .line02',
     start: 'right center',
     onEnter: () => {
-      gsap.to('.line02', { duration: 1, width: '100vw' });
+      gsap.to('.line02', { duration: 1, width: '50vw' });
     },
   });
 
@@ -134,6 +157,21 @@ export function Animation() {
           '+=' + document.querySelector('#section05 .horizontal').offsetWidth, // 어디까지
       // end: 'bottom bottom',
       pin: true,
+      // pinSpace:false,
+      // pinSpacing: false,
+      scrub: true,
+      // markers: true
+    },
+  });
+
+  gsap.to('#section05 .horizontal .img01', {
+    x: 1000,
+    scrollTrigger: {
+      trigger: '#section05', // 누구를 기준으로 ?
+      start: '-500 top', // 어디서부터 시작할건지?
+      end: () => '+=' + 500,
+      // end: 'bottom bottom',
+
       // pinSpace:false,
       // pinSpacing: false,
       scrub: true,
@@ -159,16 +197,28 @@ export function Animation() {
 
 
 
-  // gsap.to('#section07 .cover .title01', {
-  //   y: -75,
-  //   scrollTrigger: {
-  //     trigger: '#section07',
-  //     start: '35% 0%',
-  //     //   start: () => `+=${2000}`,
-  //     end: 'bottom bottom',
-  //     scrub: true,
-  //   },
-  // });
+
+  ScrollTrigger.create({
+    trigger: '#section07',
+    start: '-500 top',
+    onEnter: () => {
+      $('#section07').addClass('on');
+    },
+  });
+
+
+
+
+  gsap.to('#section07 .right .txt01', {
+    x: 500,
+    scrollTrigger: {
+      trigger: '#section07',
+      start: '-500 top',
+      //   start: () => `+=${2000}`,
+      end: () => '+=' + 1500,
+      scrub: true,
+    },
+  });
 
 
 

@@ -88,8 +88,33 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
+        const video = document.querySelector('#video');
 
 
+
+        // video_btn을 클릭하면 영상이 멈춘다. 비디오 버튼의 모양이 비디오가 멈췄을 때 PLAY / 재생 PAUSE
+
+
+        let clicked = true;
+
+
+
+        $('.video_btn').click(function () {
+
+
+            if(clicked){ // 한번 클릭했을 때
+                video.pause();
+                $('.btn_stop img').attr('src','img/section01/btn_play.png');
+            }else{ // 또 다시 클릭했을 때
+                video.play();
+                $('.btn_stop img').attr('src','img/section01/btn_stop.png');
+            }
+
+            clicked = !clicked;
+
+
+
+        });
 
 
 

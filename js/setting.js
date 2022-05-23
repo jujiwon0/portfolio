@@ -59,7 +59,8 @@ window.addEventListener('DOMContentLoaded', function () {
     container.addListener(ScrollTrigger.update);
     ScrollTrigger.defaults({ scroller: stage });
 
-    container.setPosition(0, 0);
+    container.setPosition(0, 22049);
+    // container.setPosition(0, 0);
     container.track.xAxis.element.remove();
     // Scrollbar.detachStyle();
 
@@ -107,6 +108,23 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
             $('#section01 .cover .video_main video').eq(idx).addClass('on');
+
+
+        });
+
+
+
+
+        /* scroll event section */
+        container.addListener((e) => {
+
+
+
+            let scrollTop = container.scrollTop;
+            $('.posNum').html(scrollTop)
+
+
+
 
 
         });

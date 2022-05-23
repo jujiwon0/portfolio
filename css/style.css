@@ -576,7 +576,7 @@
 
 #section05 .horizontal .img01 {
   position: absolute;
-  left: 1246px;
+  left: -380px;
   top: 148px;
 }
 
@@ -618,6 +618,7 @@
 }
 
 #section06 .title {
+  width: 100vw;
   position: absolute;
   left: 0;
   top: 21%;
@@ -627,7 +628,8 @@
 
 #section06 .title .fill {
   display: flex;
-  animation: fill 7s infinite linear;
+  justify-content: flex-end;
+  animation: sc06_fill 7s infinite linear;
 }
 
 #section06 .title .fill {
@@ -636,13 +638,13 @@
   right: 0;
 }
 
-#section06 .title .fill > div:nth-child(1) {
-  margin-right: 50px;
+#section06 .title .fill > div{
+  margin-left: 50px;
 }
 
-@keyframes fill {
+@keyframes sc06_fill {
   to {
-    transform: translateX(3838px);
+    transform: translateX(1440px);
   }
 /*계산하는법 모르겠어요*/
 }
@@ -734,12 +736,25 @@
   z-index: 600;
 }
 
-/*#section07 .left .title01 {*/
-/*  overflow: hidden;*/
-/*  height: 39px;*/
-/*  position: relative;*/
-/*}*/
-/*스크롤하면서 타이틀 올라오는거해야함 안보이다가 보이는? 근데 안되네요*/
+#section07 .left .title > div {
+  overflow: hidden;
+  position: relative;
+}
+
+#section07 .left .title > div > img{
+  transform: translateY(100%);
+  transition: all .5s;
+}
+
+#section07 .left .title > div:nth-child(1)> img{transition-delay:0.1s}
+#section07 .left .title > div:nth-child(2)> img{transition-delay:0.2s}
+#section07 .left .title > div:nth-child(3)> img{transition-delay:0.3s}
+#section07 .left .title > div:nth-child(4)> img{transition-delay:0.4s}
+
+
+#section07.on .left .title > div > img{
+  transform: translateY(0);
+}
 
 
 #section07 .left .title .title04 {
@@ -750,6 +765,7 @@
 #section07 .cover .right {
   width: 50vw;
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -758,9 +774,13 @@
   left: 50%;
   top: 50%;
   /*transform: translateX(-50%);*/
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)rotate(30deg);
   text-align: center;
   z-index: 600;
+}
+
+#section07 .right .txt01{
+  margin-left: -300px;
 }
 
 #section07 .title_w > div {
