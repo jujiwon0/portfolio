@@ -1,155 +1,95 @@
 let container;
 let stage;
 
-
-import Animation from "./Animation.js";
-
+import Animation from './Animation.js';
+import Custom from './Custom.js';
 
 window.addEventListener('DOMContentLoaded', function () {
+  gsap.registerPlugin(ScrollTrigger);
 
+  Scrollbar.use(OverscrollPlugin);
 
-    gsap.registerPlugin(ScrollTrigger);
+  const overscrollOptions = {
+    enable: true,
+    effect: navigator.userAgent.match(/Android/) ? 'glow' : 'glow',
+    damping: 0.11,
+    maxOverscroll: navigator.userAgent.match(/Android/) ? 150 : 100,
+    glowColor: 'transparent',
+  };
 
-    Scrollbar.use(OverscrollPlugin);
+  const options = {
+    damping: 0.1,
+    continuousScrolling: true,
+    alwaysShowTracks: false,
+    renderByPixels: !('ontouchstart' in document),
+    plugins: {
+      overscroll: { ...overscrollOptions },
+    },
+  };
 
-    const overscrollOptions = {
-        enable: true,
-        effect: navigator.userAgent.match(/Android/) ? 'glow' : 'glow',
-        damping: 0.11,
-        maxOverscroll: navigator.userAgent.match(/Android/) ? 150 : 100,
-        glowColor: 'transparent',
-    };
+  stage = document.querySelector('#container');
 
+  container = Scrollbar.init(stage, {
+    ...options,
+    delegateTo: stage,
+  });
 
-    const options = {
-        damping: 0.1,
-        continuousScrolling: true,
-        alwaysShowTracks: false,
-        renderByPixels: !('ontouchstart' in document),
-        plugins: {
-            overscroll: { ...overscrollOptions },
-        },
-    };
+  ScrollTrigger.scrollerProxy('#container', {
+    scrollTop(value) {
+      if (arguments.length) {
+        container.scrollTop = value;
+      }
 
+      return container.scrollTop;
+    },
+  });
 
+  container.addListener(ScrollTrigger.update);
+  ScrollTrigger.defaults({ scroller: stage });
 
-    stage = document.querySelector('#container');
+  //   container.setPosition(0, 22700);
+  container.setPosition(0, 0);
+  container.track.xAxis.element.remove();
+  // Scrollbar.detachStyle();
 
+  $('.startPoint').click(function () {
+    container.scrollTo(0, 0, 600, {
+      callback: () => console.log('done!'),
+      easing: easing.easeInOutCirc,
+    });
+  });
 
-    container = Scrollbar.init(stage, {
-        ...options,
-        delegateTo: stage,
+  (function () {
+    gsap.to('.front', 1, { width: 350, height: 200 });
+
+    Animation();
+    Custom();
+
+    //     글자 항목들에게 마우스를 올리면 비디오가 보인다.
+    // 첫 번째 글자에게 마우스를 올리면 첫 번재 비디오가 보인다.
+
+    $('#section01 .txt_container > div').mouseenter(function () {
+      let idx = $('#section01 .txt_container > div').index(this);
+
+      $('#section01 .cover .video_main video').removeClass('on');
+
+      $('#section01 .cover .video_main video').eq(idx).addClass('on');
     });
 
-
-    ScrollTrigger.scrollerProxy("#container", {
-
-        scrollTop(value) {
-
-            if (arguments.length) {
-                container.scrollTop = value;
-            }
-
-            return container.scrollTop;
-
-        }
+    /* scroll event section */
+    container.addListener((e) => {
+      let scrollTop = container.scrollTop;
+      $('.posNum').html(scrollTop);
     });
+  })();
 
+  // Only necessary to correct marker position - not needed in production
+  if (document.querySelector('.gsap-marker-scroller-start')) {
+    const markers = gsap.utils.toArray('[class *= "gsap-marker"]');
 
-    container.addListener(ScrollTrigger.update);
-    ScrollTrigger.defaults({ scroller: stage });
-
-    container.setPosition(0, 22700);
-    // container.setPosition(0, 0);
-    container.track.xAxis.element.remove();
-    // Scrollbar.detachStyle();
-
-
-
-
-
-    $('.startPoint').click(function () {
-
-        container.scrollTo(0, 0, 600, {
-            callback: () => console.log('done!'),
-            easing: easing.easeInOutCirc,
-        });
-
-
+    container.addListener(({ offset }) => {
+      gsap.set(markers, { marginTop: -offset.y });
+      $('.posNum').html(offset.y);
     });
-
-
-    (function () {
-
-        gsap.to('.front',1,{width:350,height:200});
-
-
-
-
-
-
-
-        Animation();
-
-
-
-
-
-
-
-        //     글자 항목들에게 마우스를 올리면 비디오가 보인다.
-        // 첫 번째 글자에게 마우스를 올리면 첫 번재 비디오가 보인다.
-
-
-
-
-
-
-        $('#section01 .txt_container > div').mouseenter(function () {
-
-            let idx = $('#section01 .txt_container > div').index(this);
-
-            $('#section01 .cover .video_main video').removeClass('on');
-
-
-            $('#section01 .cover .video_main video').eq(idx).addClass('on');
-
-
-        });
-
-
-
-
-        /* scroll event section */
-        container.addListener((e) => {
-
-
-
-            let scrollTop = container.scrollTop;
-            $('.posNum').html(scrollTop)
-
-
-
-
-
-        });
-
-
-
-
-    })();
-
-
-    // Only necessary to correct marker position - not needed in production
-    if (document.querySelector('.gsap-marker-scroller-start')) {
-        const markers = gsap.utils.toArray('[class *= "gsap-marker"]');
-
-        container.addListener(({ offset }) => {
-            gsap.set(markers, { marginTop: -offset.y })
-            $('.posNum').html(offset.y);
-        });
-    }
-
-
-
-})
+  }
+});

@@ -1,3 +1,13 @@
+#menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background: black;
+}
+
 .logo {
   position: absolute;
   left: 50%;
@@ -266,13 +276,11 @@
   margin-bottom: 0;
 }
 
-
 #section02 .bottom_text {
   overflow: hidden;
   height: 77px;
   position: relative;
 }
-
 
 #section02 .img > div {
   z-index: 100;
@@ -364,7 +372,6 @@
   z-index: 100;
 }
 
-
 #section03 .horizontal .img {
   position: absolute;
   top: 50%;
@@ -373,7 +380,6 @@
 }
 
 /*사진이 안떠요,,, 됐습니다.*/
-
 
 #section04 {
   height: 3040px;
@@ -392,8 +398,6 @@
   z-index: 600;
 }
 
-
-
 #section04 .title .fill04 {
   display: flex;
   animation: fill04 7s infinite linear;
@@ -409,21 +413,17 @@
   margin-right: 50px;
 }
 
-
 @keyframes fill04 {
-   to {
-     transform: translateX(1924px);
-   }
- }
-
-
+  to {
+    transform: translateX(1924px);
+  }
+}
 
 #section04 .title .stroke04 {
   position: absolute;
   left: 0;
   top: 178px;
 }
-
 
 #section04 .title .stroke04 {
   display: flex;
@@ -439,8 +439,6 @@
     transform: translateX(-1924px);
   }
 }
-
-
 
 #section04 .rotate_c {
   position: absolute;
@@ -512,7 +510,6 @@
   position: relative;
 }
 
-
 #section04 .line .line01 {
   position: absolute;
   left: 0;
@@ -529,8 +526,6 @@
   width: 0;
 }
 /*라인 오른쪽에서 나와서 가운데에서 멈추게하고싶음*/
-
-
 
 /*#section05{*/
 /*    height: 3040px;*/
@@ -638,7 +633,7 @@
   right: 0;
 }
 
-#section06 .title .fill06 > div{
+#section06 .title .fill06 > div {
   margin-left: 50px;
 }
 
@@ -646,9 +641,8 @@
   to {
     transform: translateX(1440px);
   }
-/*계산하는법 모르겠어요*/
+  /*계산하는법 모르겠어요*/
 }
-
 
 #section06 .title .stroke06 {
   position: absolute;
@@ -656,18 +650,15 @@
   top: 172px;
 }
 
-
 #section06 .title .stroke06 {
   display: flex;
   justify-content: flex-end;
   animation: stroke06 7s infinite linear;
 }
 
-
-#section06 .title .stroke06 > div{
+#section06 .title .stroke06 > div {
   margin-right: 50px;
 }
-
 
 @keyframes stroke06 {
   to {
@@ -675,15 +666,12 @@
   }
 }
 
-
 #section06 .img06 {
   position: absolute;
   left: 50%;
   top: 43%;
   transform: translateX(-50%);
 }
-
-
 
 #section07 .cover {
   width: 100vw;
@@ -693,12 +681,10 @@
   background: url('../img/section07/back.jpg');
 }
 
-
 #section07 .cover .left {
   width: 50vw;
   position: relative;
 }
-
 
 #section07 .left .txt01 {
   position: absolute;
@@ -710,7 +696,6 @@
   z-index: 600;
 }
 
-
 #section07 .left .txt02 {
   position: absolute;
   left: 50%;
@@ -721,13 +706,10 @@
   z-index: 600;
 }
 
-
-
 #section07 .title > div {
   position: relative;
   margin-bottom: 65px;
 }
-
 
 #section07 .left .title {
   position: absolute;
@@ -743,26 +725,31 @@
   position: relative;
 }
 
-#section07 .left .title > div > img{
+#section07 .left .title > div > img {
   transform: translateY(100%);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-#section07 .left .title > div:nth-child(1)> img{transition-delay:0.1s}
-#section07 .left .title > div:nth-child(2)> img{transition-delay:0.2s}
-#section07 .left .title > div:nth-child(3)> img{transition-delay:0.3s}
-#section07 .left .title > div:nth-child(4)> img{transition-delay:0.4s}
+#section07 .left .title > div:nth-child(1) > img {
+  transition-delay: 0.1s;
+}
+#section07 .left .title > div:nth-child(2) > img {
+  transition-delay: 0.2s;
+}
+#section07 .left .title > div:nth-child(3) > img {
+  transition-delay: 0.3s;
+}
+#section07 .left .title > div:nth-child(4) > img {
+  transition-delay: 0.4s;
+}
 
-
-#section07.on .left .title > div > img{
+#section07.on .left .title > div > img {
   transform: translateY(0);
 }
-
 
 #section07 .left .title .title04 {
   margin-bottom: 0;
 }
-
 
 #section07 .cover .right {
   width: 50vw;
@@ -770,54 +757,46 @@
   overflow: hidden;
 }
 
-
 #section07 .right .title_w {
   position: absolute;
   left: 50%;
   top: 50%;
   /*transform: translateX(-50%);*/
-  transform: translate(-50%, -50%)rotate(30deg);
+  transform: translate(-50%, -50%) rotate(30deg);
   text-align: center;
   z-index: 600;
 }
-
 
 #section07 .title_w > div {
   position: relative;
   margin-bottom: 100px;
 }
 
-
-#section07 .title_w .w04{
+#section07 .title_w .w04 {
   margin-bottom: 0;
 }
 
-
-#section07 .right .w01{
+#section07 .right .w01 {
   margin-left: -300px;
 }
 
-#section07 .right .w02{
+#section07 .right .w02 {
   margin-left: 350px;
 }
 
-#section07 .right .w03{
+#section07 .right .w03 {
   margin-left: -100px;
 }
 
-#section07 .right .w04{
+#section07 .right .w04 {
   margin-left: 100px;
 }
 
-
-
-#section08 .img08{
+#section08 .img08 {
   width: 100vw;
   height: 100vh;
   position: relative;
 }
-
-
 
 #section09 .horizontal {
   width: min-content;
@@ -831,14 +810,12 @@
   width: 3350px;
   height: 100vh;
   position: relative;
-  background: url("../img/section09/bg.jpg");
-
+  background: url('../img/section09/bg.jpg');
 }
 
 #section09 .horizontal > section:nth-child(even) {
   background: green;
 }
-
 
 #section09 .horizontal .dim {
   width: 100%;
@@ -850,15 +827,13 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-
 #section09 .horizontal .title {
   position: absolute;
   left: 95%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 200;
 }
-
 
 #section09 .horizontal .circle {
   position: absolute;
@@ -867,12 +842,11 @@
   z-index: 200;
 }
 
-
 #section09 .circle .arrow {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 300;
 }
 
@@ -890,12 +864,9 @@
   transition: all 1s;
 }
 
-
 #section09 .circle > div:hover .arrow09 .fill {
   opacity: 1;
 }
-
-
 
 #section10 {
   height: 733px;
@@ -930,14 +901,12 @@
   z-index: 300;
 }
 
-
 #section10 .title .t_02 {
   position: absolute;
   left: 8%;
   top: 42%;
   z-index: 300;
 }
-
 
 #section10 .title .st_03 {
   position: absolute;
@@ -946,22 +915,27 @@
   z-index: 100;
 }
 
-
 #section10 .title > div {
   overflow: hidden;
   position: relative;
 }
 
-#section10 .title > div > img{
+#section10 .title > div > img {
   transform: translateY(100%);
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-#section10 .title > div:nth-child(1)> img{transition-delay:0.1s}
-#section10 .title > div:nth-child(2)> img{transition-delay:0.2s}
-#section10 .title > div:nth-child(3)> img{transition-delay:0.3s}
+#section10 .title > div:nth-child(1) > img {
+  transition-delay: 0.1s;
+}
+#section10 .title > div:nth-child(2) > img {
+  transition-delay: 0.2s;
+}
+#section10 .title > div:nth-child(3) > img {
+  transition-delay: 0.3s;
+}
 
-#section10.on .title > div > img{
+#section10.on .title > div > img {
   transform: translateY(0);
 }
 
@@ -969,8 +943,7 @@
   position: relative;
 }
 
-#section01
-/*#section10 .get .txt {*/
+#section01/*#section10 .get .txt {*/
 /*  position: absolute;*/
 /*  right: 9%;*/
 /*  top: 1171%;*/
@@ -982,4 +955,4 @@
 /*  position: absolute;*/
 /*  left: 78%;*/
 /*  top: 1700%;*/
-/*}*/
+/*}*/;
