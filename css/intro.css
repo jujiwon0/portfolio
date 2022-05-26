@@ -60,17 +60,15 @@
 
 
 
-#section01 .video_btn{
-    cursor:pointer;
+#section01 .video_btn {
     position: absolute;
     right: 5%;
     bottom: 5%;
+    cursor: pointer;
     mix-blend-mode: difference;
 }
 
-
-
-#section01 .video_btn .video_c{
+#section01 .video_btn .video_c {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -78,8 +76,7 @@
 }
 
 
-
-/*#section01 .video_btn .btn_play{*/
+/*#section01 .video_c .btn_stop {*/
 /*    position: absolute;*/
 /*    left: 50%;*/
 /*    top: 50%;*/
@@ -88,6 +85,12 @@
 
 
 
+/*#section01 .video_c .btn_stop {*/
+/*    position: absolute;*/
+/*    left: 50%;*/
+/*    top: 50%;*/
+/*    transform: translate(-50%,-50%);*/
+/*}*/
 
 
 

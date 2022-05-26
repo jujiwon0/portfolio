@@ -103,7 +103,7 @@ export function Animation() {
     scrollTrigger: {
       containerAnimation: horizontal,
       trigger: '#section03 .horizontal .img',
-      start: () => '+=' + 1500,
+      start: () => '+=' + 1600,
       // start: 'left right',
       // horizontal:true,
       end: () => '+=' + 3000,  //속도
@@ -113,7 +113,20 @@ export function Animation() {
 
   gsap.to('#section04 .img01', {
     y: -400,
-    rotation: -10,
+    rotation: -15,
+    scrollTrigger: {
+      trigger: '#section04',
+      start: 'top top',
+      // horizontal:true,
+      end: () => '+=' + 1000,  //속도
+      scrub: true,
+    },
+  });
+
+
+  gsap.to('#section04 .img02', {
+    y: -400,
+    rotation: 15,
     scrollTrigger: {
       trigger: '#section04',
       start: 'top top',
@@ -165,17 +178,35 @@ export function Animation() {
   });
 
   gsap.to('#section05 .horizontal .img01', {
-    x: 1000,
+    x: 1620,
     scrollTrigger: {
       trigger: '#section05', // 누구를 기준으로 ?
       start: '-500 top', // 어디서부터 시작할건지?
-      end: () => '+=' + 500,
-      // end: 'bottom bottom',
-
-      // pinSpace:false,
-      // pinSpacing: false,
+      end: () => '+=' + 1500,
       scrub: true,
-      // markers: true
+    },
+  });
+
+
+
+  gsap.to('#section05 .horizontal .title01', {
+    x: -1600,
+    scrollTrigger: {
+      trigger: '#section05', // 누구를 기준으로 ?
+      start: '500 right', // 어디서부터 시작할건지?
+      end: () => '+=' + 1500,
+      scrub: true,
+    },
+  });
+
+
+  gsap.to('#section05 .horizontal .title02', {
+    x: -900,
+    scrollTrigger: {
+      trigger: '#section05', // 누구를 기준으로 ?
+      start: '900 right', // 어디서부터 시작할건지?
+      end: () => '+=' + 1500,
+      scrub: true,
     },
   });
 
@@ -197,6 +228,16 @@ export function Animation() {
 
 
 
+  gsap.to('#section06 .img06', {
+    y: -1000,
+    scrollTrigger: {
+      trigger: '#section06',
+      start: '100 top',
+      end: () => '+=' + 3000,
+      scrub: true,
+    },
+  });
+
 
   ScrollTrigger.create({
     trigger: '#section07',
@@ -207,14 +248,44 @@ export function Animation() {
   });
 
 
-
-
-  gsap.to('#section07 .right .txt01', {
+  gsap.to('#section07 .right .w01', {
     x: 500,
     scrollTrigger: {
       trigger: '#section07',
       start: '-500 top',
-      //   start: () => `+=${2000}`,
+      end: () => '+=' + 1500,
+      scrub: true,
+    },
+  });
+
+
+  gsap.to('#section07 .right .w02', {
+    x: -500,
+    scrollTrigger: {
+      trigger: '#section07',
+      start: '-500 top',
+      end: () => '+=' + 1500,
+      scrub: true,
+    },
+  });
+
+
+  gsap.to('#section07 .right .w03', {
+    x: 200,
+    scrollTrigger: {
+      trigger: '#section07',
+      start: '-500 top',
+      end: () => '+=' + 1500,
+      scrub: true,
+    },
+  });
+
+
+  gsap.to('#section07 .right .w04', {
+    x: -200,
+    scrollTrigger: {
+      trigger: '#section07',
+      start: '-500 top',
       end: () => '+=' + 1500,
       scrub: true,
     },
@@ -222,6 +293,53 @@ export function Animation() {
 
 
 
+  gsap.to('#section09 .horizontal', {
+    x: -(3350 - innerWidth),
+    ease: 'none', // 가속도 없음
+    scrollTrigger: {
+      trigger: '#section09',
+      start: 'top top',
+      end: () =>
+          '+=' + document.querySelector('#section09 .horizontal').offsetWidth,
+      pin: true,
+      scrub: true,
+    },
+  });
+
+
+  gsap.to('#section09 .horizontal .title', {
+    x: -2000,
+    scrollTrigger: {
+      trigger: '#section09',
+      start: '20 right',
+      end: () => '+=' + 3000,
+      scrub: true,
+    },
+  });
+
+
+
+  gsap.to('#section09 .horizontal .circle', {
+    x: -2000,
+    scrollTrigger: {
+      trigger: '#section09',
+      start: '500 right',
+      end: () => '+=' + 3000,
+      scrub: true,
+    },
+  });
+
+
+
+
+
+  ScrollTrigger.create({
+    trigger: '#section10',
+    start: '-500 top',
+    onEnter: () => {
+      $('#section10').addClass('on');
+    },
+  });
 
 
 

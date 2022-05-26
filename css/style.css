@@ -394,23 +394,23 @@
 
 
 
-#section04 .title .fill {
+#section04 .title .fill04 {
   display: flex;
-  animation: fill 7s infinite linear;
+  animation: fill04 7s infinite linear;
 }
 
-#section04 .title .fill {
+#section04 .title .fill04 {
   position: absolute;
   width: 100vw;
   right: 0;
 }
 
-#section04 .title .fill > div:nth-child(1) {
+#section04 .title .fill04 > div:nth-child(1) {
   margin-right: 50px;
 }
 
 
-@keyframes fill {
+@keyframes fill04 {
    to {
      transform: translateX(1924px);
    }
@@ -418,23 +418,23 @@
 
 
 
-#section04 .title .stroke {
+#section04 .title .stroke04 {
   position: absolute;
   left: 0;
   top: 178px;
 }
 
 
-#section04 .title .stroke {
+#section04 .title .stroke04 {
   display: flex;
-  animation: stroke 7s infinite linear;
+  animation: stroke04 7s infinite linear;
 }
 
-#section04 .title .stroke > div:nth-child(1) {
+#section04 .title .stroke04 > div:nth-child(1) {
   margin-right: 50px;
 }
 
-@keyframes stroke {
+@keyframes stroke04 {
   to {
     transform: translateX(-1924px);
   }
@@ -470,7 +470,7 @@
 #section04 .img02 {
   position: absolute;
   left: 925px;
-  top: 1142px;
+  top: 1342px;
 }
 /*스크롤하면서 사진 올라가는거 하고 싶음*/
 /*img01은 왼쪽방향으로 꺽이고 img02는 오른쪽 방향으로 꺾이는?*/
@@ -561,7 +561,7 @@
 
 #section05 .horizontal .title01 {
   position: absolute;
-  left: 353px;
+  left: 1750px;
   top: 218px;
   z-index: 100;
 }
@@ -569,7 +569,7 @@
 
 #section05 .horizontal .title02 {
   position: absolute;
-  left: 1895px;
+  left: 2700px;
   top: 556px;
   z-index: 100;
 }
@@ -582,7 +582,7 @@
 
 #section05 .horizontal .img02 {
   position: absolute;
-  left: 3140px;
+  left: 3540px;
   top: 132px;
 }
 
@@ -601,7 +601,7 @@
 
 #section05 .rotate_c02 {
   position: absolute;
-  left: 2600px;
+  left: 2390px;
   top: 218px;
   animation: rotate_c02 5s linear infinite;
   transform-origin: 50% 50%;
@@ -613,7 +613,7 @@
 }
 
 #section06 {
-  height: 1552px;
+  height: 1200px;
   background: url('../img/section06/back.jpg');
 }
 
@@ -626,23 +626,23 @@
   z-index: 600;
 }
 
-#section06 .title .fill {
+#section06 .title .fill06 {
   display: flex;
   justify-content: flex-end;
-  animation: sc06_fill 7s infinite linear;
+  animation: fill06 7s infinite linear;
 }
 
-#section06 .title .fill {
+#section06 .title .fill06 {
   position: absolute;
   width: 100vw;
   right: 0;
 }
 
-#section06 .title .fill > div{
+#section06 .title .fill06 > div{
   margin-left: 50px;
 }
 
-@keyframes sc06_fill {
+@keyframes fill06 {
   to {
     transform: translateX(1440px);
   }
@@ -650,34 +650,36 @@
 }
 
 
-
-#section06 .title .stroke {
+#section06 .title .stroke06 {
   position: absolute;
   left: 0;
   top: 172px;
 }
 
 
-#section06 .title .stroke {
+#section06 .title .stroke06 {
   display: flex;
-  animation: stroke 7s infinite linear;
+  justify-content: flex-end;
+  animation: stroke06 7s infinite linear;
 }
 
-#section06 .title .stroke > div:nth-child(1) {
+
+#section06 .title .stroke06 > div{
   margin-right: 50px;
 }
 
-@keyframes stroke {
+
+@keyframes stroke06 {
   to {
-    transform: translateX(-1917px);
+    transform: translateX(-1412px);
   }
 }
 
 
-#section06 .img {
+#section06 .img06 {
   position: absolute;
   left: 50%;
-  top: 37%;
+  top: 43%;
   transform: translateX(-50%);
 }
 
@@ -779,24 +781,204 @@
   z-index: 600;
 }
 
-#section07 .right .txt01{
-  margin-left: -300px;
-}
 
 #section07 .title_w > div {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
+}
+
+
+#section07 .title_w .w04{
+  margin-bottom: 0;
+}
+
+
+#section07 .right .w01{
+  margin-left: -300px;
+}
+
+#section07 .right .w02{
+  margin-left: 350px;
+}
+
+#section07 .right .w03{
+  margin-left: -100px;
+}
+
+#section07 .right .w04{
+  margin-left: 100px;
 }
 
 
 
+#section08 .img08{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
 
 
 
+#section09 .horizontal {
+  width: min-content;
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+#section09 .horizontal > section {
+  flex-shrink: 0;
+  width: 3350px;
+  height: 100vh;
+  position: relative;
+  background: url("../img/section09/bg.jpg");
+
+}
+
+#section09 .horizontal > section:nth-child(even) {
+  background: green;
+}
+
+
+#section09 .horizontal .dim {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+#section09 .horizontal .title {
+  position: absolute;
+  left: 95%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 200;
+}
+
+
+#section09 .horizontal .circle {
+  position: absolute;
+  left: 138%;
+  top: 36%;
+  z-index: 200;
+}
+
+
+#section09 .circle .arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 300;
+}
+
+#section09 .circle .arrow .arrow09 {
+  position: relative;
+}
+
+#section09 .circle .arrow .arrow09 .fill {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  margin-top: 1px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+
+#section09 .circle > div:hover .arrow09 .fill {
+  opacity: 1;
+}
 
 
 
+#section10 {
+  height: 733px;
+  /*background: url('../img/section10/10.jpg');*/
+  background: url('../img/section10/bg.jpg');
+}
+
+#section10 .left {
+  /*width: 100vw;*/
+  position: relative;
+}
+
+#section10 .img {
+  position: absolute;
+  left: 17%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 200;
+}
+
+/*#section10 .title {*/
+/*  position: absolute;*/
+/*  left: 8%;*/
+/*  top: 50%;*/
+/*  transform: translateY(-50%);*/
+/*}*/
+
+#section10 .title .st_01 {
+  position: absolute;
+  left: 8%;
+  top: 25%;
+  z-index: 300;
+}
 
 
+#section10 .title .t_02 {
+  position: absolute;
+  left: 8%;
+  top: 42%;
+  z-index: 300;
+}
 
 
+#section10 .title .st_03 {
+  position: absolute;
+  left: 8%;
+  top: 58%;
+  z-index: 100;
+}
+
+
+#section10 .title > div {
+  overflow: hidden;
+  position: relative;
+}
+
+#section10 .title > div > img{
+  transform: translateY(100%);
+  transition: all .5s;
+}
+
+#section10 .title > div:nth-child(1)> img{transition-delay:0.1s}
+#section10 .title > div:nth-child(2)> img{transition-delay:0.2s}
+#section10 .title > div:nth-child(3)> img{transition-delay:0.3s}
+
+#section10.on .title > div > img{
+  transform: translateY(0);
+}
+
+#section10 .get {
+  position: relative;
+}
+
+/*#section10 .get .txt {*/
+/*  position: absolute;*/
+/*  right: 9%;*/
+/*  top: 1171%;*/
+/*  !*left: 78%;*!*/
+/*  !*top: 998%;*!*/
+/*}*/
+
+/*#section10 .get .get10 {*/
+/*  position: absolute;*/
+/*  left: 78%;*/
+/*  top: 1700%;*/
+/*}*/
