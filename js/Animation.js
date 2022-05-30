@@ -293,6 +293,73 @@ export function Animation() {
 
 
 
+  let tween = ScrollTrigger.create({
+    trigger: '#section08',
+    start: 'top top',
+    // end: () => "+=" + 10000,
+    end: () => `+=10000`,
+    pin: true,
+    scrub: true,
+    markers: true,
+  });
+
+
+  gsap.to('#mask', {  // 글자 
+
+    y:-4000,
+    x: 2000,
+    scale: 100,
+    // force3D: true,
+    ease: 'none',
+    // transformOrigin: 'center center',
+    scrollTrigger: {
+      trigger: '.img08',
+      start: 'top top',
+      end: () => '+=' + 7000,
+      scrub: true,
+    },
+  });
+
+  gsap.to('#mask', {
+    opacity: 0,
+    ease: 'none',
+    // transformOrigin: 'center center',
+    scrollTrigger: {
+      trigger: '.img08',
+      start: '5000 top',
+      //   end: 'bottom bottom',
+      end: () => '+=' + 7000,
+      scrub: true,
+    },
+  });
+
+
+  gsap.to('.img08', {
+    // opacity: 0,
+    // ease: 'none',
+    scale:0.8,
+  
+    scrollTrigger: {
+      trigger: '.img08',
+      start: '7000 top',
+      //   end: 'bottom bottom',
+      end: () => '+=' + 10000,
+      scrub: true,
+    },
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
   gsap.to('#section09 .horizontal', {
     x: -(3350 - innerWidth),
     ease: 'none', // 가속도 없음

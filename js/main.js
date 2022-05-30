@@ -1,56 +1,11 @@
 window.addEventListener('DOMContentLoaded', function () {
 
 
-
-    /* scroll event section */
-    container.addListener((e) => {
-
-
-
-        let scrollTop = container.scrollTop;
-        $('.posNum').html(scrollTop)
+  $('.hamburger').click(function () {
+    $('#menu').fadeIn();
+  });
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-
-
-
-
-
-
-
-
-
-
-    });
-
-
-
-    /*  slide,click event section */
-
-
-
-})
-
-
+  
+  /*  slide,click event section */
+});

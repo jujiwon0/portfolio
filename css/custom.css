@@ -51,6 +51,38 @@
   /*background: url('../img/section13/13.jpg');*/
 }
 
+#slide_container{
+  width: 987px;
+  height: 621px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.dot{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+
+}
+.dot > div{
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background:red;
+}
+
+
+
+.dot > div:last-child{
+  margin-right: 0;
+}
+
+
+
 #section13 .visual_container{
   position: relative;
 }

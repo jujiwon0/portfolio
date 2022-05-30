@@ -9,7 +9,7 @@
   display: none;
 }
 
-#menu .header{
+#menu .header {
   width: 100vw;
   height: 1004px;
   position: fixed;
@@ -19,7 +19,7 @@
   display: flex;
 }
 
-#menu .header .logo{
+#menu .header .logo {
   position: absolute;
   left: 50%;
   top: 6%;
@@ -28,8 +28,7 @@
   cursor: pointer;
 }
 
-
-#menu .header .close{
+#menu .header .close {
   position: absolute;
   left: 89%;
   top: 6%;
@@ -37,8 +36,7 @@
   cursor: pointer;
 }
 
-
-#menu .container{
+#menu .container {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -47,18 +45,15 @@
   z-index: 600;
 }
 
-
 #menu .container .menu {
   position: relative;
   margin-bottom: 30px;
 }
 
-
 /*#menu .container .menu > div:last-child {*/
 /*  margin-bottom: 0;*/
 /*}*/
 /*안먹혀서 4번째 클래스이름을 바꿔버렸는데 그렇게 해도 되는지 모르겠어요*/
-
 
 #menu .container > div .text01 {
   position: relative;
@@ -66,18 +61,32 @@
 
 #menu .container > div .text01 .fill01 {
   position: absolute;
-  left: 50%;
+  left: -600px;
   top: -11%;
-  transform: translateX(-50%);
+  transition: all 0.5s;
+  display: flex;
+  pointer-events: none;
   opacity: 0;
-  transition: all 1s;
+  animation: menu01 4s infinite linear paused;
+}
+
+
+#menu .container > div:hover .text01 .fill01 {
+ 
+  opacity: 1;
+  animation-play-state: running;
+}
+
+
+@keyframes menu01 {
+  to{
+    transform: translateX(-1950px);
+  }
 }
 
 #menu .container > div:hover .text01 .fill01 {
   opacity: 1;
 }
-
-
 
 #menu .container > div .text02 {
   position: relative;
@@ -96,8 +105,6 @@
   opacity: 1;
 }
 
-
-
 #menu .container > div .text03 {
   position: relative;
 }
@@ -114,7 +121,6 @@
 #menu .container > div:hover .text03 .fill03 {
   opacity: 1;
 }
-
 
 #menu .container > div .text04 {
   position: relative;
@@ -141,36 +147,33 @@
 
 /*li로 하니깐 간격 조절 안됨*/
 
-
 /*#menu .line {
   position: relative;
   margin-bottom: 90px;
   z-index: 700;
 }*/
 
-#menu .line{
+#menu .line {
   position: relative;
 }
 
-#menu .line{
+#menu .line {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-#menu .icon{
+#menu .icon {
   position: relative;
 }
 
-#menu .icon{
+#menu .icon {
   position: absolute;
   right: 4%;
   bottom: 5%;
   cursor: pointer;
 }
-
-
 
 .logo {
   position: absolute;
@@ -958,6 +961,21 @@
   margin-left: 100px;
 }
 
+svg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  transform:scale(1.3)
+
+}
+
+#section08{
+  height: initial;
+}
+
 #section08 .img08 {
   width: 100vw;
   height: 100vh;
@@ -1105,8 +1123,6 @@
   transform: translateY(0);
 }
 
-
-
 #section10 .text {
   position: relative;
   cursor: pointer;
@@ -1132,7 +1148,6 @@
   margin-left: 1475px;
 }
 
-
 #section10 .arrow {
   position: relative;
   cursor: pointer;
@@ -1156,39 +1171,36 @@
   margin-left: 1475px;
 }
 
-#section10 .btn {
+.startPointsection10 .btn {
   position: absolute;
   right: 177px;
   bottom: 102px;
   cursor: pointer;
 }
 
-#section10 .btn .circle {
+.startPointsection10 .btn .circle {
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-#section10 .btn .circle .arrow10 {
+.startPointsection10 .btn .circle .arrow10 {
   position: absolute;
   left: 50%;
   top: 46%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 300;
 }
 
-
-
-
-#section10 .btn .arrow10 {
+.startPointsection10 .btn .arrow10 {
   position: relative;
 }
 
-#section10 .btn > div .arrow10 {
+.startPointsection10 .btn > div .arrow10 {
   position: relative;
 }
 
-#section10 .btn > div .arrow10 .fill {
+.startPointsection10 .btn > div .arrow10 .fill {
   position: absolute;
   left: 50%;
   top: 0;
@@ -1198,6 +1210,6 @@
   transition: all 1s;
 }
 
-#section10 .btn > div:hover .arrow10 .fill {
+.startPointsection10 .btn > div:hover .arrow10 .fill {
   opacity: 1;
 }

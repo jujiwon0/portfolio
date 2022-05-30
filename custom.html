@@ -6,26 +6,28 @@
         <title>Title</title>
         <link rel="stylesheet" href="css/plugin/reset.css">
         <link rel="stylesheet" href="css/plugin/common.css">
+        <link rel="stylesheet" href="css/plugin/slick.css">
         <link rel="stylesheet" href="css/custom.css">
 
         <script src="js/plugin/jquery-1.8.1.min.js"></script>
+        <script src="js/plugin/slick.min.js"></script>
         <script src="js/plugin/easing.js"></script>
 
     </head>
 
     <body>
 
-    <h1 class="logo"><img src="img/section01/logo.png" alt=""></h1>
-    <div class="hamburger"><img src="img/section01/hamburger.png" alt=""></div>
+        <h1 class="logo"><img src="img/section01/logo.png" alt=""></h1>
+        <div class="hamburger"><img src="img/section01/hamburger.png" alt=""></div>
 
         <section id="container">
 
             <section id="section12">
 
                 <div class="cover">
-                <div class="video">
-                    <video src="video/sub/sub.mp4" autoplay muted loop id="video"></video>
-                </div>
+                    <div class="video">
+                        <video src="video/sub/sub.mp4" autoplay muted loop id="video"></video>
+                    </div>
 
                     <div class="video_btn">
                         <div class="video_c"><img src="img/section01/video_c.png" alt=""></div>
@@ -35,7 +37,6 @@
                 </div>
 
             </section>
-
 
             <section id="section13">
                 <div class="visual_container">
@@ -73,25 +74,32 @@
                         </div>
                     </div>
 
-                    
                     <div class="img01"><img src="img/section13/img01.png" alt=""></div>
-
-
-
-
 
                 </div>
 
+                <div id="slide_container">
+
+                     <!-- 크기 위치 개수 스크립트  -->
+                    <div id="game_slider">
+                        <div><img src="./img/section13/03.png" alt="" /></div>
+                        <div><img src="./img/section13/03.png" alt="" /></div>
+                        <div><img src="./img/section13/03.png" alt="" /></div>
+                        <div><img src="./img/section13/03.png" alt="" /></div>
+                        <div><img src="./img/section13/03.png" alt="" /></div>
+                    </div>
+
+                    <div class="dot">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
+                </div>
             </section>
 
-
-
         </section>
-
-
-
-
-
 
         <script src="js/plugin/gsap.js"></script>
         <script src="js/plugin/scrollTrigger.js"></script>
