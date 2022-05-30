@@ -6,7 +6,171 @@
   top: 0;
   z-index: 9999;
   background: black;
+  display: none;
 }
+
+#menu .header{
+  width: 100vw;
+  height: 1004px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 300;
+  display: flex;
+}
+
+#menu .header .logo{
+  position: absolute;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+#menu .header .close{
+  position: absolute;
+  left: 89%;
+  top: 6%;
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+#menu .container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 600;
+}
+
+
+#menu .container .menu {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+
+/*#menu .container .menu > div:last-child {*/
+/*  margin-bottom: 0;*/
+/*}*/
+/*안먹혀서 4번째 클래스이름을 바꿔버렸는데 그렇게 해도 되는지 모르겠어요*/
+
+
+#menu .container > div .text01 {
+  position: relative;
+}
+
+#menu .container > div .text01 .fill01 {
+  position: absolute;
+  left: 50%;
+  top: -11%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+#menu .container > div:hover .text01 .fill01 {
+  opacity: 1;
+}
+
+
+
+#menu .container > div .text02 {
+  position: relative;
+}
+
+#menu .container > div .text02 .fill02 {
+  position: absolute;
+  left: 50%;
+  top: -15%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+#menu .container > div:hover .text02 .fill02 {
+  opacity: 1;
+}
+
+
+
+#menu .container > div .text03 {
+  position: relative;
+}
+
+#menu .container > div .text03 .fill03 {
+  position: absolute;
+  left: 50%;
+  top: -11%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+#menu .container > div:hover .text03 .fill03 {
+  opacity: 1;
+}
+
+
+#menu .container > div .text04 {
+  position: relative;
+}
+
+#menu .container > div .text04 .fill04 {
+  position: absolute;
+  left: 50%;
+  top: -14%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+#menu .container > div:hover .text04 .fill04 {
+  opacity: 1;
+}
+
+/*#menu .title > li {*/
+/*  position: relative;*/
+/*  padding-bottom: 100px;*/
+/*  margin-bottom: 35px;*/
+/*}*/
+
+/*li로 하니깐 간격 조절 안됨*/
+
+
+/*#menu .line {
+  position: relative;
+  margin-bottom: 90px;
+  z-index: 700;
+}*/
+
+#menu .line{
+  position: relative;
+}
+
+#menu .line{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#menu .icon{
+  position: relative;
+}
+
+#menu .icon{
+  position: absolute;
+  right: 4%;
+  bottom: 5%;
+  cursor: pointer;
+}
+
+
 
 .logo {
   position: absolute;
@@ -14,6 +178,7 @@
   top: 6%;
   transform: translateX(-50%);
   z-index: 100;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -21,6 +186,7 @@
   left: 89%;
   top: 6%;
   z-index: 100;
+  cursor: pointer;
 }
 
 #section01 {
@@ -475,8 +641,8 @@
 
 #section04 .txt_container {
   position: relative;
-  left: 0;
-  top: 0;
+  /*left: 0;*/
+  /*top: 0;*/
 }
 
 #section04 .txt_container .title02 {
@@ -939,20 +1105,99 @@
   transform: translateY(0);
 }
 
-#section10 .get {
+
+
+#section10 .text {
+  position: relative;
+  cursor: pointer;
+}
+
+#section10 .text .txt {
+  position: absolute;
+  /*left: 77%;*/
+  /*top: 1178%;*/
+  left: 0;
+  top: 0;
+  margin-top: 188px;
+  margin-left: 1475px;
+}
+
+#section10 .text .get10 {
+  position: absolute;
+  /*left: 77%;*/
+  /*top: 1947%;*/
+  left: 0;
+  top: 0;
+  margin-top: 314px;
+  margin-left: 1475px;
+}
+
+
+#section10 .arrow {
+  position: relative;
+  cursor: pointer;
+}
+
+#section10 .arrow .arrow_s {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 314px;
+  margin-left: 1724px;
+  /*left: 90%;*/
+  /*top: 43%;*/
+}
+
+#section10 .arrow .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 342px;
+  margin-left: 1475px;
+}
+
+#section10 .btn {
+  position: absolute;
+  right: 177px;
+  bottom: 102px;
+  cursor: pointer;
+}
+
+#section10 .btn .circle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#section10 .btn .circle .arrow10 {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%,-50%);
+  z-index: 300;
+}
+
+
+
+
+#section10 .btn .arrow10 {
   position: relative;
 }
 
-#section01/*#section10 .get .txt {*/
-/*  position: absolute;*/
-/*  right: 9%;*/
-/*  top: 1171%;*/
-/*  !*left: 78%;*!*/
-/*  !*top: 998%;*!*/
-/*}*/
+#section10 .btn > div .arrow10 {
+  position: relative;
+}
 
-/*#section10 .get .get10 {*/
-/*  position: absolute;*/
-/*  left: 78%;*/
-/*  top: 1700%;*/
-/*}*/;
+#section10 .btn > div .arrow10 .fill {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  margin-top: 2px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+#section10 .btn > div:hover .arrow10 .fill {
+  opacity: 1;
+}

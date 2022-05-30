@@ -344,22 +344,21 @@ export function Animation() {
 
 
 
+  ScrollTrigger.create({
+    trigger: '#section13 .line .line01',
+    start: '-500 top',
+    onEnter: () => {
+      gsap.to('.line01', { duration: 1, width: '100vw' });
+    },
+  });
 
 
 
-  // gsap.to('#section04 .img .img01', {
-  //   x: 400,
-  //   rotation: -360,
-  //   scrollTrigger: {
-  //     containerAnimation: img,
-  //     trigger: '#section04 .img .img01',
-  //     start: () => '+=' + 1500,
-  //     // start: 'left right',
-  //     // horizontal:true,
-  //     end: () => '+=' + 3000,  //속도
-  //     scrub: true,
-  //   },
-  // });
+
+
+
+
+
 
 
 
