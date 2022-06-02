@@ -24,10 +24,10 @@ $('.video_btn').click(function () {
 
     if(clicked){
         video.pause();
-        $('.btn_stop img').attr('src','img/section01/btn_play.png');
+        $('.btn_stop img').attr('src','img02/section01/btn_play.png');
     }else{
         video.play();
-        $('.btn_stop img').attr('src','img/section01/btn_stop.png');
+        $('.btn_stop img').attr('src','img02/section01/btn_stop.png');
     }
 
     clicked = !clicked;

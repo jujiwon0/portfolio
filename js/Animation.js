@@ -304,18 +304,19 @@ export function Animation() {
   });
 
 
-  gsap.to('#mask', {  // 글자 
+  gsap.to('#mask', {  // 글자
 
-    y:-4000,
+    y:-1000,
     x: 2000,
-    scale: 100,
+    // scale: 100,
+    scale: 50,
     // force3D: true,
     ease: 'none',
     // transformOrigin: 'center center',
     scrollTrigger: {
-      trigger: '.img08',
+      trigger: '.video',
       start: 'top top',
-      end: () => '+=' + 7000,
+      end: () => '+=' + 2000,
       scrub: true,
     },
   });
@@ -325,36 +326,28 @@ export function Animation() {
     ease: 'none',
     // transformOrigin: 'center center',
     scrollTrigger: {
-      trigger: '.img08',
-      start: '5000 top',
+      trigger: '.video',
+      start: '800 top',
       //   end: 'bottom bottom',
-      end: () => '+=' + 7000,
+      end: () => '+=' + 1000,
       scrub: true,
     },
   });
 
 
-  gsap.to('.img08', {
+  gsap.to('.video', {
     // opacity: 0,
     // ease: 'none',
-    scale:0.8,
-  
+    scale:0.5,
+
     scrollTrigger: {
-      trigger: '.img08',
-      start: '7000 top',
+      trigger: '.video',
+      start: '2000 top',
       //   end: 'bottom bottom',
-      end: () => '+=' + 10000,
+      end: () => '+=' + 2000,
       scrub: true,
     },
   });
-
-
-
-
-
-
-
-
 
 
 
@@ -411,13 +404,13 @@ export function Animation() {
 
 
 
-  ScrollTrigger.create({
-    trigger: '#section13 .line .line01',
-    start: '-500 top',
-    onEnter: () => {
-      gsap.to('.line01', { duration: 1, width: '100vw' });
-    },
-  });
+  // ScrollTrigger.create({
+  //   trigger: '#section13 .line .line01',
+  //   start: '-500 top',
+  //   onEnter: () => {
+  //     gsap.to('.line01', { duration: 1, width: '100vw' });
+  //   },
+  // });
 
 
 

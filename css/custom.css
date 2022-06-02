@@ -1,3 +1,4 @@
+
 .logo {
   position: absolute;
   left: 50%;
@@ -17,17 +18,17 @@
 }
 
 
-#section12 .cover{
+#section01 .video_container{
   position: relative;
   width: 100vw;
   height: 100vh;
 }
 
-#section12 .cover .video{
+#section01 .video_container .video{
   position:relative;
 }
 
-#section12 .video_btn {
+#section01 .video_btn {
   position: absolute;
   right: 3%;
   bottom: 5%;
@@ -35,7 +36,7 @@
   mix-blend-mode: difference;
 }
 
-#section12 .video_btn .video_c {
+#section01 .video_btn .video_c {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -44,20 +45,130 @@
 
 
 
-#section13{
+#section02{
   position: relative;
-  height: 4771px;
-  background: url('../img/section13/bg.jpg');
-  /*background: url('../img/section13/13.jpg');*/
+  height: 1696px;
+  background: url('../img02/section02/bg.jpg');
+  /*background: url('../img02/section02/02.jpg');*/
 }
+
+
+
+
+
+#section02 .visual_container{
+  position: relative;
+}
+
+#section02 .title_container01{
+  position: relative;
+}
+
+#section02 .title_container01 .title01{
+  position: absolute;
+  left: 8%;
+  top: 265px;
+  /*margin-bottom: 30px;*/
+}
+
+#section02 .title_container01 .txt01{
+  position: absolute;
+  left: 8%;
+  top: 392px;
+}
+
+
+#section02 .line{
+  position: relative;
+}
+
+
+#section02 .line .line01{
+  position: absolute;
+  left: 0;
+  top: 392px;
+  overflow: hidden;
+  width: 0;
+}
+/*라인이 안나와요*/
+
+
+#section02 .arrow{
+  position: relative;
+}
+
+#section02 .arrow .arrow01{
+  position: absolute;
+  left: 66%;
+  top: 265px;
+}
+
+
+#section02 .video{
+  position: relative;
+}
+
+
+#section02 .video .video_img{
+  position: absolute;
+  left: 50%;
+  top: 545px;
+  transform: translateX(-50%);
+}
+
+
+
+
+#section03{
+  position: relative;
+  height: 1726px;
+  background: url('../img02/section03/bg.jpg');
+  /*background: url('../img02/section03/03.jpg');*/
+}
+
+
+#section03 .title_container02{
+  position: relative;
+}
+
+
+#section03 .title_container02 .title02{
+  position: absolute;
+  left: 8%;
+  top: -1px;
+}
+
+
+#section03 .title_container02 .txt02{
+  position: absolute;
+  left: 8%;
+  top: 114px;
+}
+
+
+#section03 .line .line02{
+  position: absolute;
+  left: 0;
+  top: 152px;
+  /*overflow: hidden;*/
+  /*width: 0;*/
+}
+
+
+#section03 .arrow .arrow02{
+  position: absolute;
+  left: 46%;
+  top: 5px;
+}
+
 
 #slide_container{
   width: 987px;
   height: 621px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  top: 20%;
+  transform: translateX(-50%);
 }
 
 .dot{
@@ -76,141 +187,47 @@
 }
 
 
-
 .dot > div:last-child{
   margin-right: 0;
 }
 
 
 
-#section13 .visual_container{
+
+#section04{
   position: relative;
+  height: 1351px;
+  background: url('../img02/section04/bg.jpg');
+  /*background: url('../img02/section04/04.jpg');*/
 }
 
-#section13 .title_container01{
-  position: relative;
-}
-
-#section13 .title_container01 .title01{
-  position: absolute;
-  left: 8%;
-  top: 294px;
-  /*margin-bottom: 30px;*/
-}
-
-#section13 .title_container01 .txt01{
-  position: absolute;
-  left: 8%;
-  top: 420px;
-}
-
-
-#section13 .line{
-  position: relative;
-}
-
-
-#section13 .line .line01{
+#section04 .line_w{
   position: absolute;
   left: 0;
-  top: 392px;
-  overflow: hidden;
-  width: 0;
-}
-/*라인이 안나와요*/
-
-
-#section13 .arrow{
-  position: relative;
+  top: 1px;
 }
 
-#section13 .arrow .arrow01{
-  position: absolute;
-  left: 66%;
-  top: 293px;
-}
-
-
-#section13 .video{
-  position: relative;
-}
-
-
-#section13 .video .video_img{
-  position: absolute;
-  left: 50%;
-  top: 545px;
-  transform: translateX(-50%);
-}
-
-
-#section13 .title_container02{
-  position: relative;
-}
-
-
-#section13 .title_container02 .title02{
-  position: absolute;
-  left: 8%;
-  top: 1695px;
-}
-
-
-#section13 .title_container02 .txt02{
-  position: absolute;
-  left: 8%;
-  top: 1809px;
-}
-
-
-#section13 .line .line02{
+#section04 .title_w {
   position: absolute;
   left: 0;
-  top: 1848px;
-  /*overflow: hidden;*/
-  /*width: 0;*/
-}
-
-
-#section13 .arrow .arrow02{
-  position: absolute;
-  left: 46%;
-  top: 1701px;
-}
-
-
-
-/*#section13  .title_w{*/
-/*  position: relative;*/
-/*}*/
-
-#section13 .line_w{
-  position: absolute;
-  left: 0;
-  top: 3300px;
-}
-
-#section13 .title_w {
-  position: absolute;
-  left: 0;
-  top: 3363px;
+  top: 63px;
   /*margin-bottom: 30px;*/
   text-align: center;
   z-index: 600;
 }
 
-#section13 .title_w .w {
+#section04 .title_w .w {
   display: flex;
   animation: w 7s infinite linear;
 }
 
-#section13 .title_w .w {
+#section04 .title_w .w {
   position: absolute;
   width: 100vw;
   right: 0;
 }
 
-#section13 .title_w .w > div{
+#section04 .title_w .w > div{
   margin-right: 50px;
 }
 
@@ -222,10 +239,65 @@
 
 
 
-#section13 .img01{
+#section04 .img01{
   position: absolute;
   left: 0;
-  top: 3747px;
+  top: 326px;
 }
+
+
+#section04 .title{
+  position: absolute;
+  left: 160px;
+  bottom: 8%;
+}
+
+
+
+#section04 .btn {
+  position: absolute;
+  right: 160px;
+  bottom: 60px;
+  cursor: pointer;
+}
+
+#section04 .btn .circle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#section04 .btn .circle .arrow04 {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  z-index: 300;
+}
+
+#section04 .btn .arrow04 {
+  position: relative;
+}
+
+#section04 .btn > div .arrow04 {
+  position: relative;
+}
+
+#section04 .btn > div .arrow04 .fill {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  margin-top: -1px;
+  opacity: 0;
+  transition: all 1s;
+}
+
+#section04 .btn > div:hover .arrow04 .fill {
+  opacity: 1;
+}
+
+
+
 
 

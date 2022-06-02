@@ -1,3 +1,4 @@
+
 let container;
 let stage;
 
@@ -47,8 +48,8 @@ window.addEventListener('DOMContentLoaded', function () {
   container.addListener(ScrollTrigger.update);
   ScrollTrigger.defaults({ scroller: stage });
 
-    // container.setPosition(0, 23269);
-  container.setPosition(0, 0);
+    container.setPosition(0, 22269);
+  // container.setPosition(0, 0);
   container.track.xAxis.element.remove();
   // Scrollbar.detachStyle();
 
@@ -59,6 +60,9 @@ window.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+
+
+
   (function () {
     gsap.to('.front', 1, { width: 350, height: 200 });
 
@@ -66,7 +70,8 @@ window.addEventListener('DOMContentLoaded', function () {
     Custom();
 
 
-    
+
+
   $("#game_slider").slick({
     dots: false, //navigation
     arrows: true, //arrow
@@ -93,9 +98,9 @@ window.addEventListener('DOMContentLoaded', function () {
     variableWidth: false,
 
 }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    
+
 }).on('afterChange', function(event, slick, currentSlide, nextSlide){
-    
+
 });
 
 

@@ -61,18 +61,18 @@
 
 #menu .container > div .text01 .fill01 {
   position: absolute;
-  left: -600px;
+  left: -547px;
   top: -11%;
   transition: all 0.5s;
   display: flex;
   pointer-events: none;
   opacity: 0;
-  animation: menu01 4s infinite linear paused;
+  animation: menu01 6s infinite linear paused;
 }
 
 
 #menu .container > div:hover .text01 .fill01 {
- 
+
   opacity: 1;
   animation-play-state: running;
 }
@@ -80,13 +80,11 @@
 
 @keyframes menu01 {
   to{
-    transform: translateX(-1950px);
+    transform: translateX(-3971px);
   }
 }
 
-#menu .container > div:hover .text01 .fill01 {
-  opacity: 1;
-}
+
 
 #menu .container > div .text02 {
   position: relative;
@@ -94,16 +92,30 @@
 
 #menu .container > div .text02 .fill02 {
   position: absolute;
-  left: 50%;
+  left: -547px;
   top: -15%;
-  transform: translateX(-50%);
+  transition: all 0.5s;
+  display: flex;
+  pointer-events: none;
   opacity: 0;
-  transition: all 1s;
+  animation: menu02 11s infinite linear paused;
 }
 
+
 #menu .container > div:hover .text02 .fill02 {
+
   opacity: 1;
+  animation-play-state: running;
 }
+
+
+@keyframes menu02 {
+  to{
+    transform: translateX(-6780px);
+  }
+}
+
+
 
 #menu .container > div .text03 {
   position: relative;
@@ -111,33 +123,56 @@
 
 #menu .container > div .text03 .fill03 {
   position: absolute;
-  left: 50%;
+  left: -547px;
   top: -11%;
-  transform: translateX(-50%);
+  transition: all 0.5s;
+  display: flex;
+  pointer-events: none;
   opacity: 0;
-  transition: all 1s;
+  animation: menu03 6s infinite linear paused;
 }
+
 
 #menu .container > div:hover .text03 .fill03 {
+
   opacity: 1;
+  animation-play-state: running;
 }
 
-#menu .container > div .text04 {
-  position: relative;
+
+@keyframes menu03 {
+  to{
+    transform: translateX(-3352px);
+  }
 }
+
+
 
 #menu .container > div .text04 .fill04 {
   position: absolute;
-  left: 50%;
-  top: -14%;
-  transform: translateX(-50%);
+  left: -547px;
+  top: 76%;
+  transition: all 0.5s;
+  display: flex;
+  pointer-events: none;
   opacity: 0;
-  transition: all 1s;
+  animation: menu04 5s infinite linear paused;
 }
 
+
 #menu .container > div:hover .text04 .fill04 {
+
   opacity: 1;
+  animation-play-state: running;
 }
+
+
+@keyframes menu04 {
+  to{
+    transform: translateX(-2850px);
+  }
+}
+
 
 /*#menu .title > li {*/
 /*  position: relative;*/
@@ -969,14 +1004,15 @@ svg {
   top: 0;
   z-index: 100;
   transform:scale(1.3)
-
+  /*transform:scale(0.5)*/
 }
 
 #section08{
   height: initial;
+  overflow: hidden;
 }
 
-#section08 .img08 {
+#section08 .video {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -1171,20 +1207,21 @@ svg {
   margin-left: 1475px;
 }
 
-.startPointsection10 .btn {
+
+#section10 .startpoint .btn {
   position: absolute;
   right: 177px;
   bottom: 102px;
   cursor: pointer;
 }
 
-.startPointsection10 .btn .circle {
+#section10 .startpoint .btn .circle {
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-.startPointsection10 .btn .circle .arrow10 {
+#section10 .startpoint .btn .circle .arrow10 {
   position: absolute;
   left: 50%;
   top: 46%;
@@ -1192,15 +1229,15 @@ svg {
   z-index: 300;
 }
 
-.startPointsection10 .btn .arrow10 {
+#section10 .startpoint .btn .arrow10 {
   position: relative;
 }
 
-.startPointsection10 .btn > div .arrow10 {
+#section10 .startpoint .btn > div .arrow10 {
   position: relative;
 }
 
-.startPointsection10 .btn > div .arrow10 .fill {
+#section10 .startpoint .btn > div .arrow10 .fill {
   position: absolute;
   left: 50%;
   top: 0;
@@ -1210,6 +1247,6 @@ svg {
   transition: all 1s;
 }
 
-.startPointsection10 .btn > div:hover .arrow10 .fill {
+#section10 .startpoint .btn > div:hover .arrow10 .fill {
   opacity: 1;
 }
