@@ -21,14 +21,15 @@
 .startPoint {
   /* width: 50px; */
   /* height: 50px; */
-  position: fixed;
-  right: 100px;
-  bottom: 100px;
+  position: absolute;
+  right: 177px;
+  bottom: 102px;
+  cursor: pointer;
   z-index: 899998989;
   background: transparent;
   border: none;
   outline: none;
-  cursor: pointer;
+
 }
 
 .posNum {

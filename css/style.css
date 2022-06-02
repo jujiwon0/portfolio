@@ -55,6 +55,9 @@
 /*}*/
 /*안먹혀서 4번째 클래스이름을 바꿔버렸는데 그렇게 해도 되는지 모르겠어요*/
 
+#menu .container > div{
+  position: relative;
+}
 #menu .container > div .text01 {
   position: relative;
 }
@@ -121,6 +124,14 @@
   position: relative;
 }
 
+#menu a{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
 #menu .container > div .text03 .fill03 {
   position: absolute;
   left: -547px;
@@ -1016,6 +1027,7 @@ svg {
   width: 100vw;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 #section09 .horizontal {
@@ -1121,6 +1133,7 @@ svg {
   z-index: 300;
 }
 
+
 #section10 .title .t_02 {
   position: absolute;
   left: 8%;
@@ -1208,20 +1221,22 @@ svg {
 }
 
 
-#section10 .startpoint .btn {
-  position: absolute;
-  right: 177px;
-  bottom: 102px;
-  cursor: pointer;
+.startPoint .btn {
+  /*position: absolute;*/
+  /*right: 177px;*/
+  /*bottom: 102px;*/
+  /*cursor: pointer;*/
 }
 
-#section10 .startpoint .btn .circle {
+.startPoint .btn .circle {
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
-#section10 .startpoint .btn .circle .arrow10 {
+
+
+.startPoint .btn .circle .arrow10 {
   position: absolute;
   left: 50%;
   top: 46%;
@@ -1229,15 +1244,15 @@ svg {
   z-index: 300;
 }
 
-#section10 .startpoint .btn .arrow10 {
+.startPoint .btn .arrow10 {
   position: relative;
 }
 
-#section10 .startpoint .btn > div .arrow10 {
+.startPoint .btn > div .arrow10 {
   position: relative;
 }
 
-#section10 .startpoint .btn > div .arrow10 .fill {
+.startPoint .btn > div .arrow10 .fill {
   position: absolute;
   left: 50%;
   top: 0;
@@ -1247,6 +1262,6 @@ svg {
   transition: all 1s;
 }
 
-#section10 .startpoint .btn > div:hover .arrow10 .fill {
+.startpoint .btn > div:hover .arrow10 .fill {
   opacity: 1;
 }

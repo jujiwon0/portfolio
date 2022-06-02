@@ -48,8 +48,8 @@ window.addEventListener('DOMContentLoaded', function () {
   container.addListener(ScrollTrigger.update);
   ScrollTrigger.defaults({ scroller: stage });
 
-    container.setPosition(0, 22269);
-  // container.setPosition(0, 0);
+    // container.setPosition(0, 22269);
+  container.setPosition(0, 0);
   container.track.xAxis.element.remove();
   // Scrollbar.detachStyle();
 
@@ -64,44 +64,76 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
   (function () {
-    gsap.to('.front', 1, { width: 350, height: 200 });
 
+
+    $('#menu .container > div').click(function (){
+
+      let idx = $('#menu .container > div').index(this);
+
+      $('#menu').fadeOut();
+
+
+      if(idx === 0) {
+        container.scrollTo(0, 0, 600, {easing: easing.easeInOutCirc,});
+
+      }else if(idx === 1) {
+        container.scrollTo(0, 5000, 600, {easing: easing.easeInOutCirc,});
+
+      }else if(idx === 2) {
+        // location.href = 'custom.html'
+      }
+
+
+
+    });
+
+    //
+    //
+    // if(document.referrer.includes('index')){}
+    // if(document.referrer.includes('main')){}
+    // if(document.referrer.includes('custom')){}
+    //
+    //
+
+
+    // gsap.to('.front', 1, { width: 350, height: 200 });
     // Animation();
     Custom();
 
+    $("#game_slider").slick({
+      dots: true, //navigation
+      arrows: true, //arrow
+      prevArrow: $('.prev'), //prev
+      nextArrow: $('.next'), //next
+      autoplay:false, // autoplay mode
+      autoplaySpeed: 2000, // auto speed
+      pauseOnHover:false, // pause on mouse hover
+      fade: true, //fade mode only one slider
+      speed: 900, // speed
+      infinite: true, // infinite mode
+      // asNavFor: '', // another slider
+      centerMode: false, // center move
+      centerPadding: '0%', // center move padding
+      slidesToShow: 1, // show slider number
+      slidesToScroll: 1, // next slider number
+      swipe: true, // swiper
+      focusOnSelect: true, // click to slider
+      draggable:true,
+      vertical: false, // vertical slider
+      verticalSwiping: false, // vertical swiper
+      initialSlide:0,// slider number
+      cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)', //sub01_css transition��
+      variableWidth: false,
+
+    }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+    }).on('afterChange', function(event, slick, currentSlide, nextSlide){
+
+    });
 
 
 
-  $("#game_slider").slick({
-    dots: false, //navigation
-    arrows: true, //arrow
-    prevArrow: $('.prev'), //prev
-    nextArrow: $('.next'), //next
-    autoplay:false, // autoplay mode
-    autoplaySpeed: 2000, // auto speed
-    pauseOnHover:false, // pause on mouse hover
-    fade: false, //fade mode only one slider
-    speed: 900, // speed
-    infinite: true, // infinite mode
-    // asNavFor: '', // another slider
-    centerMode: false, // center move
-    centerPadding: '0%', // center move padding
-    slidesToShow: 1, // show slider number
-    slidesToScroll: 1, // next slider number
-    swipe: true, // swiper
-    focusOnSelect: true, // click to slider
-    draggable:true,
-    vertical: false, // vertical slider
-    verticalSwiping: false, // vertical swiper
-    initialSlide:0,// slider number
-    cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)', //sub01_css transition��
-    variableWidth: false,
 
-}).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-
-}).on('afterChange', function(event, slick, currentSlide, nextSlide){
-
-});
 
 
 

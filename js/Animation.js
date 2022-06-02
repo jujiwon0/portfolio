@@ -2,6 +2,7 @@ export function Animation() {
   // console.log('hello');
 
 
+
   gsap.to('#section02 .fix-this-2', {
     // 누구를 ?
 
@@ -297,16 +298,16 @@ export function Animation() {
     trigger: '#section08',
     start: 'top top',
     // end: () => "+=" + 10000,
-    end: () => `+=10000`,
+    end: () => `+=3000`, /* 여기 조절 해주세요*/
     pin: true,
     scrub: true,
-    markers: true,
+    // markers: true,
   });
 
 
   gsap.to('#mask', {  // 글자
 
-    y:-1000,
+    y:300,
     x: 2000,
     // scale: 100,
     scale: 50,
@@ -344,7 +345,7 @@ export function Animation() {
       trigger: '.video',
       start: '2000 top',
       //   end: 'bottom bottom',
-      end: () => '+=' + 2000,
+      end: () => '+=' + 1000,
       scrub: true,
     },
   });
@@ -445,6 +446,8 @@ export function Animation() {
 
 
     */
+
+
 }
 
 export default Animation;

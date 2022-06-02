@@ -78,6 +78,8 @@
 }
 
 
+
+
 #section02 .line{
   position: relative;
 }
@@ -163,13 +165,101 @@
 
 
 #slide_container{
-  width: 987px;
-  height: 621px;
+  width: 1800px;
+  height: 800px;
   position: absolute;
   left: 50%;
   top: 20%;
   transform: translateX(-50%);
 }
+
+#game_slider{
+  width: 1800px;
+  height: 800px;
+  position: relative;
+}
+
+#game_slider .slick-slide{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game_slider .slick-slide .description-1{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 400px;
+  height: 100px;
+  background: red;
+}
+
+#game_slider .slick-slide .description-1 .txt {
+  position: absolute;
+  left: 200px;
+  top:0;
+  opacity: 0;
+  transition: all .5s;
+  transform: translateX(-30px);
+}
+
+#game_slider .slick-slide .description-1:hover .txt{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#game_slider .slick-dots{
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 300px;
+}
+#game_slider .slick-dots > li{
+  margin-right:40px;
+}
+
+#game_slider .slick-dots > li:last-child{
+  margin-right: 0;
+}
+
+#game_slider .slick-dots > li{
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  position: relative;
+}
+
+#game_slider .slick-dots > li.slick-active::after{
+  opacity: 1;
+}
+
+#game_slider .slick-dots > li::after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform:translate(-50%,-50%);
+  width: 50px;
+  height: 50px;
+  border: 1px solid #7a7aff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all .5s;
+}
+
+#game_slider .slick-dots > li:nth-child(1){background: url("../img02/section03/dot01.png");}
+#game_slider .slick-dots > li:nth-child(2){background: url("../img02/section03/dot02.png");}
+#game_slider .slick-dots > li:nth-child(3){background: url("../img02/section03/dot03.png");}
+#game_slider .slick-dots > li:nth-child(4){background: url("../img02/section03/dot04.png");}
+#game_slider .slick-dots > li:nth-child(5){background: url("../img02/section03/dot05.png");}
+#game_slider .slick-dots > li:nth-child(6){background: url("../img02/section03/dot06.png");}
+
+#game_slider .slick-dots > li > button{
+  display: none;
+}
+
 
 .dot{
   position: absolute;
