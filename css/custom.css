@@ -16,7 +16,22 @@
   mix-blend-mode: difference;
   cursor: pointer;
 }
+#section01{
+  height: 400vh;
+  background: url('../img02/section02/bg.jpg');
 
+}
+
+.trigger-this-1{
+  height: 100%;
+
+}
+
+.fix-this-1{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
 
 #section01 .video_container{
   position: relative;
@@ -45,33 +60,35 @@
 
 
 
-#section02{
-  position: relative;
+
+
+
+#section01-2 {
+  width: 100vw;
   height: 1696px;
-  background: url('../img02/section02/bg.jpg');
-  /*background: url('../img02/section02/02.jpg');*/
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
 }
 
 
-
-
-
-#section02 .visual_container{
+#section01-2 .visual_container{
   position: relative;
 }
 
-#section02 .title_container01{
+#section01-2 .title_container01{
   position: relative;
 }
 
-#section02 .title_container01 .title01{
+#section01-2 .title_container01 .title01{
   position: absolute;
   left: 8%;
   top: 265px;
   /*margin-bottom: 30px;*/
 }
 
-#section02 .title_container01 .txt01{
+#section01-2 .title_container01 .txt01{
   position: absolute;
   left: 8%;
   top: 392px;
@@ -80,12 +97,12 @@
 
 
 
-#section02 .line{
+#section01-2 .line{
   position: relative;
 }
 
 
-#section02 .line .line01{
+#section01-2 .line .line01{
   position: absolute;
   left: 0;
   top: 392px;
@@ -95,11 +112,11 @@
 /*라인이 안나와요*/
 
 
-#section02 .arrow{
+#section01-2 .arrow{
   position: relative;
 }
 
-#section02 .arrow .arrow01{
+#section01-2 .arrow .arrow01{
   position: absolute;
   left: 66%;
   top: 265px;
@@ -180,6 +197,10 @@
 }
 
 
+#game_slider .slick-track{
+  padding: 400px 0;
+}
+
 #game_slider .slick-slide{
   position: relative;
   display: flex;
@@ -229,6 +250,22 @@
   top: 22px;
 }
 
+#game_slider .slick-slide .description-2 .line{
+  position: absolute;
+  right: 200px;
+  top: 0;
+  overflow: hidden;
+  width: 0;
+  transition: all 1s;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+#game_slider .slick-slide .description-2.on .line{
+  width: 347px;
+}
+
 #game_slider .slick-slide .description-2 .pointer02{
   position: absolute;
   left: 50%;
@@ -244,7 +281,7 @@
   transform: translateX(-30px);
 }
 
-#game_slider .slick-slide .description-2:hover .txt02{
+#game_slider .slick-slide .description-2.on .txt02{
   opacity: 1;
   transform: translateX(0);
 }
