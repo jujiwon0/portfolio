@@ -43,10 +43,34 @@ $('.video_btn').click(function () {
 });
 
 
+gsap.to('#section01 .video', {
+    // opacity: 0,
+    // ease: 'none',
+    scale:0.5,
+
+    scrollTrigger: {
+        trigger: '.video',
+        start: '2000 top',
+        //   end: 'bottom bottom',
+        end: () => '+=' + 1000,
+        scrub: true,
+    },
+});
+
+
 // ScrollTrigger.create({
 //     trigger: '#section13 .line .line01',
 //     start: 'top center',
 //     onEnter: () => {
 //         gsap.to('.line01', { duration: 1, width: '100vw' });
 //     },
+// });
+
+
+// ScrollTrigger.create({
+//   trigger: '#section03 .line .line02',
+//   start: 'top center',
+//   onEnter: () => {
+//     gsap.to('.line02', { duration: 1, width: '50vw' });
+//   },
 // });

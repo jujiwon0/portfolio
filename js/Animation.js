@@ -355,7 +355,7 @@ export function Animation() {
 
 
   gsap.to('#section09 .horizontal', {
-    x: -(3350 - innerWidth),
+    x: -(4410 - innerWidth),
     ease: 'none', // 가속도 없음
     scrollTrigger: {
       trigger: '#section09',
@@ -369,11 +369,11 @@ export function Animation() {
 
 
   gsap.to('#section09 .horizontal .title', {
-    x: -2000,
+    x: -4000,
     scrollTrigger: {
       trigger: '#section09',
       start: '20 right',
-      end: () => '+=' + 3000,
+      end: () => '+=' + 4000,
       scrub: true,
     },
   });
@@ -381,16 +381,14 @@ export function Animation() {
 
 
   gsap.to('#section09 .horizontal .circle', {
-    x: -2000,
+    x: -3000,
     scrollTrigger: {
       trigger: '#section09',
       start: '500 right',
-      end: () => '+=' + 3000,
+      end: () => '+=' + 4000,
       scrub: true,
     },
   });
-
-
 
 
 
@@ -401,6 +399,37 @@ export function Animation() {
       $('#section10').addClass('on');
     },
   });
+
+
+
+
+
+
+  // gsap.to('#section01 .video', {
+  //   // opacity: 0,
+  //   // ease: 'none',
+  //   scale:0.5,
+  //
+  //   scrollTrigger: {
+  //     trigger: '.video',
+  //     start: '2000 top',
+  //     //   end: 'bottom bottom',
+  //     end: () => '+=' + 1000,
+  //     scrub: true,
+  //   },
+  // });
+
+  // 안작아짐
+
+
+  // ScrollTrigger.create({
+  //   trigger: '#section03 .line .line02',
+  //   start: 'top center',
+  //   onEnter: () => {
+  //     gsap.to('.line02', { duration: 1, width: '50vw' });
+  //   },
+  // });
+  // 왼쪽에서 오른쪽으로 나오게 하고 싶어요
 
 
 

@@ -48,8 +48,8 @@ window.addEventListener('DOMContentLoaded', function () {
   container.addListener(ScrollTrigger.update);
   ScrollTrigger.defaults({ scroller: stage });
 
-    // container.setPosition(0, 22269);
-  container.setPosition(0, 0);
+    container.setPosition(0, 22269);
+  // container.setPosition(0, 0);
   container.track.xAxis.element.remove();
   // Scrollbar.detachStyle();
 
@@ -97,8 +97,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     // gsap.to('.front', 1, { width: 350, height: 200 });
-    // Animation();
-    Custom();
+    Animation();
+    // Custom();
 
     $("#game_slider").slick({
       dots: true, //navigation

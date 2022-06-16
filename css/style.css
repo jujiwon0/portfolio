@@ -1039,7 +1039,7 @@ svg {
 
 #section09 .horizontal > section {
   flex-shrink: 0;
-  width: 3350px;
+  width: 4410px;
   height: 100vh;
   position: relative;
   background: url('../img/section09/bg.jpg');
@@ -1232,8 +1232,8 @@ svg {
   position: absolute;
   right: 0;
   bottom: 0;
+  cursor: pointer;
 }
-
 
 
 .startPoint .btn .circle .arrow10 {
@@ -1262,6 +1262,6 @@ svg {
   transition: all 1s;
 }
 
-.startpoint .btn > div:hover .arrow10 .fill {
+.startPoint .btn > div:hover .arrow10 .fill {
   opacity: 1;
 }
