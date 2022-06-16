@@ -371,10 +371,10 @@ window.addEventListener('DOMContentLoaded',function(){
 
 
   gsap.to('#section09 .horizontal .title', {
-    x: -4000,
+    x: -3500,
     scrollTrigger: {
       trigger: '#section09',
-      start: '20 right',
+      start: '30 right',
       end: () => '+=' + 4000,
       scrub: true,
     },
@@ -383,7 +383,7 @@ window.addEventListener('DOMContentLoaded',function(){
 
 
   gsap.to('#section09 .horizontal .circle', {
-    x: -3000,
+    x: -2500,
     scrollTrigger: {
       trigger: '#section09',
       start: '500 right',

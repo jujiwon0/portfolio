@@ -46,7 +46,7 @@ window.addEventListener('DOMContentLoaded', function () {
   container.addListener(ScrollTrigger.update);
   ScrollTrigger.defaults({ scroller: stage });
 
-    // container.setPosition(0, 22269);
+    // container.setPosition(0, 25869);
   container.setPosition(0, 0);
   container.track.xAxis.element.remove();
   // Scrollbar.detachStyle();
@@ -58,32 +58,50 @@ window.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  $('.logo').click(function () {
+
+    container.scrollTo(0, 0, 600, {
+      callback: () => console.log('done!'),
+      easing: easing.easeInOutCirc,
+    });
+
+
+  });
+
+
+
+
 
 
 
   (function () {
 
 
-    $('#menu .container > div').click(function (){
+    $('#menu .container > div').click(function () {
 
       let idx = $('#menu .container > div').index(this);
 
       $('#menu').fadeOut();
 
 
-      if(idx === 0) {
+      if (idx === 0) {
         container.scrollTo(0, 0, 600, {easing: easing.easeInOutCirc,});
 
-      }else if(idx === 1) {
-        container.scrollTo(0, 5000, 600, {easing: easing.easeInOutCirc,});
+      } else if (idx === 1) {
+        container.scrollTo(0, 6500, 600, {easing: easing.easeInOutCirc,});
 
-      }else if(idx === 2) {
-        // location.href = 'custom.html'
+      } else if (idx === 2) {
+        location.href = 'custom.html'
       }
 
+      // } else if (idx === 3) {
+      // container.scrollTo(0, 32386, 600, {easing: easing.easeInOutCirc,});
 
 
     });
+
+
+
 
 
 

@@ -2,21 +2,382 @@
 
 
 #section01{
-    background: orange;
+    /*background: url("../img/section01/01.jpg");*/
+    background: url("../img/section01/bg.jpg");
+    height: 2392px;
 }
+
+#section01 .top{
+    position: absolute;
+    left: 160px;
+    top: 59px;
+}
+
+#section01 .logo{
+    position: absolute;
+    left: 160px;
+    top: 276px;
+}
+
+
+#section01 .sub_title01{
+    position: absolute;
+    left: 160px;
+    top: 811px;
+}
+
+
+#section01 .coin01{
+    position: absolute;
+    left: 0;
+    top: 697px;
+}
+
+
+#section01 .coin02{
+    position: absolute;
+    right: 0;
+    top: 672px;
+}
+
+
+#section01 .coin03{
+    position: absolute;
+    right: 62px;
+    top: 1070px;
+}
+
+
+#section01 .phone{
+     position: absolute;
+     right: 161px;
+     top: 275px;
+ }
+
+
+#section01 .main_title{
+    position: absolute;
+    left: 204px;
+    bottom: 333px;
+}
+
+
+#section01 .user01{
+    position: absolute;
+    right: 193px;
+    bottom: 572px;
+}
+
+
+#section01 .user02{
+    position: absolute;
+    right: 399px;
+    bottom: 319px;
+}
+
+
+#section01 .user03{
+    position: absolute;
+    right: 103px;
+    bottom: 73px;
+}
+
+
+
+
+
 
 
 #section02{
-    background: dodgerblue;
+    height: 1308px;
+    /*background: url("../img/section02/02.jpg");*/
+    background: url("../img/section02/bg.jpg");
 }
+
+#section02 .title{
+    position: absolute;
+    left: 203px;
+    top: 238px;
+}
+
+
+#section02 .title01{
+    position: absolute;
+    left: 312px;
+    top: 441px;
+}
+
+#section02 .title02{
+    position: absolute;
+    left: 845px;
+    top: 441px;
+}
+
+#section02 .title03{
+    position: absolute;
+    right: 236px;
+    top: 441px;
+}
+
+
+#section02 .graph{
+    position: relative;
+}
+
+
+#section02 .graph .graph01{
+    position: absolute;
+    left: 271px;
+    top: 662px;
+}
+
+
+#section02 .graph .line{
+    position: absolute;
+    left: 363px;
+    top: 666px;
+}
+
+
+#section02 .dot01{
+    position: absolute;
+    left: 361px;
+    top: 829px;
+}
+
+
+#section02 .dot02{
+    position: absolute;
+    left: 420px;
+    top: 868px;
+}
+
+
+#section02 .dot03{
+    position: absolute;
+    left: 480px;
+    top: 818px;
+}
+
+
+#section02 .dot04{
+    position: absolute;
+    left: 543px;
+    top: 803px;
+}
+
+
+#section02 .dot05{
+    position: absolute;
+    left: 600px;
+    top: 711px;
+}
+
+
+#section02 .dot06{
+    position: absolute;
+    left: 646px;
+    top: 665px;
+}
+
+
+#section02 .dot07{
+     position: absolute;
+     left: 677px;
+     top: 695px;
+ }
+
+
+
+#section02 .gray{
+    position: absolute;
+    left: 879px;
+    top: 694px;
+}
+
+
+#section02 .green{
+    position: absolute;
+    left: 880px;
+    top: 700px;
+}
+
+
+
+#section02 .number{
+    position: absolute;
+    left: 943px;
+    top: 835px;
+}
+
+
+#section02 .txt01{
+    position: absolute;
+    right: 701px;
+    top: 752px;
+}
+
+
+#section02 .txt02{
+    position: absolute;
+    right: 706px;
+    top: 828px;
+}
+
+
+/*#section02 .chart{*/
+/*    width: 254px;*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    align-self: flex-end;*/
+/*    margin-right: 80px;*/
+
+/*    !*margin-right: 20px;*!*/
+/*}*/
+
+
+
+
+#section02 .chart{
+    width: 254px;
+    position: relative;
+    display: flex;
+}
+
+#section02 .chart .chart_01{
+    position: absolute;
+    left: 1421px;
+    top: 703px;
+}
+
+
+#section02 .chart .chart_02{
+    position: absolute;
+    left: 1486px;
+    top: 799px;
+}
+
+
+#section02 .chart .chart_03{
+    position: absolute;
+    left: 1552px;
+    top: 813px;
+}
+
+
+#section02 .chart .chart_04{
+    position: absolute;
+    left: 1618px;
+    top: 822px;
+    /*margin-right: 0;*/
+}
+
+
+#section02 .txt3_01{
+    position: absolute;
+    left: 1420px;
+    top: 682px;
+}
+
+
+#section02 .txt3_02{
+    position: absolute;
+    left: 1491px;
+    top: 778px;
+}
+
+
+#section02 .txt3_03{
+    position: absolute;
+    left: 1558px;
+    top: 792px;
+}
+
+
+#section02 .txt3_04{
+    position: absolute;
+    left: 1619px;
+    top: 801px;
+}
+
+
+#section02 .sub_text{
+    position: absolute;
+    left: 245px;
+    top: 1009px;
+}
+
+
+
+
 
 #section03{
     background: gray;
 }
 
+
+
+
 #section04{
-    background: hotpink;
+    height: 2323px;
+    /*background: url("../img/section04/04.jpg");*/
+    background: url("../img/section04/bg.jpg");
 }
+
+
+#section04 .title{
+    position: absolute;
+    left: 203px;
+    top: 236px;
+}
+
+
+#section04 .text{
+    position: absolute;
+    left: 245px;
+    top: 835px;
+}
+
+#section04 .dot{
+    position: absolute;
+    left: 905px;
+    top: 702px;
+    /*margin-bottom: 90px;*/
+    /*마진으로 간격조절?*/
+}
+
+#section04 .txt01{
+    position: absolute;
+    left: 1263px;
+    top: 700px;
+}
+
+
+#section04 .txt02{
+    position: absolute;
+    left: 691px;
+    top: 980px;
+}
+
+
+#section04 .txt03{
+    position: absolute;
+    left: 1263px;
+    top: 980px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #section05{

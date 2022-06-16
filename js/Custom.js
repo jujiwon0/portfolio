@@ -4,28 +4,6 @@ window.addEventListener('DOMContentLoaded',function(){
 
 
 
-    const video = document.querySelector('#video');
-
-
-    let clicked = true;
-
-
-
-    $('.video_btn').click(function () {
-
-
-        if(clicked){
-            video.pause();
-            $('.btn_stop img').attr('src','img02/section01/btn_play.png');
-        }else{
-            video.play();
-            $('.btn_stop img').attr('src','img02/section01/btn_stop.png');
-        }
-
-        clicked = !clicked;
-
-    });
-
 
     $('.point').click(function(){
 
@@ -54,8 +32,8 @@ window.addEventListener('DOMContentLoaded',function(){
         scrollTrigger: {
             trigger: '.trigger-this-1',
             start: 'top top',
-            end: 'bottom bottom',
-            // end: () => '+=' + 1000,
+            // end: 'bottom bottom',
+            end: () => '+=' + 2550,
             scrub: true,
             pin: true,
             pinSpacing:false,

@@ -16,6 +16,8 @@
   mix-blend-mode: difference;
   cursor: pointer;
 }
+
+
 #section01{
   height: 400vh;
   background: url('../img02/section02/bg.jpg');
@@ -43,25 +45,6 @@
   position:relative;
 }
 
-#section01 .video_btn {
-  position: absolute;
-  right: 3%;
-  bottom: 5%;
-  cursor: pointer;
-  mix-blend-mode: difference;
-}
-
-#section01 .video_btn .video_c {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
-
-
-
-
-
 
 #section01-2 {
   width: 100vw;
@@ -71,7 +54,6 @@
   bottom: 0;
 
 }
-
 
 #section01-2 .visual_container{
   position: relative;
@@ -93,8 +75,6 @@
   left: 8%;
   top: 392px;
 }
-
-
 
 
 #section01-2 .line{
@@ -183,16 +163,16 @@
 
 #slide_container{
   width: 1722px;
-  height: 1442px;
+  height: 1200px;
   position: absolute;
   left: 50%;
-  top: 26%;
+  top: 3%;
   transform: translateX(-50%);
 }
 
 #game_slider{
   width: 1722px;
-  height: 1442px;
+  height: 1200px;
   position: relative;
 }
 
@@ -212,32 +192,39 @@
   position: absolute;
   left: 29%;
   top: 0;
-  /*width: 400px;*/
-  /*height: 100px;*/
-  /*background: red;*/
 }
 
 #game_slider .slick-slide .description-1 .pointer01{
   position: absolute;
   left: 50%;
   top: -58px;
-  /*overflow: hidden;*/
-  /*z-index: 100;*/
-  /*width: 400px;*/
-  /*height: 100px;*/
-  /*background: red;*/
 }
 
 #game_slider .slick-slide .description-1 .txt01 {
   position: absolute;
   left: -415px;
-  top: 0;
+  top: -190px;
   opacity: 0;
   transition: all .5s;
   transform: translateX(-30px);
 }
 
-#game_slider .slick-slide .description-1:hover .txt01{
+#game_slider .slick-slide .description-1 .line{
+  position: absolute;
+  left: 53px;
+  top: -122px;
+  overflow: hidden;
+  width: 0;
+  transition: all 1s;
+}
+
+
+#game_slider .slick-slide .description-1.on .line{
+  width: 56px;
+}
+
+
+#game_slider .slick-slide .description-1.on .txt01{
   opacity: 1;
   transform: translateX(0);
 }
@@ -252,13 +239,11 @@
 
 #game_slider .slick-slide .description-2 .line{
   position: absolute;
-  right: 200px;
-  top: 0;
+  left: 53px;
+  top: -228px;
   overflow: hidden;
   width: 0;
   transition: all 1s;
-  display: flex;
-  justify-content: flex-end;
 
 }
 
@@ -274,8 +259,8 @@
 
 #game_slider .slick-slide .description-2 .txt02 {
   position: absolute;
-  left: 422px;
-  top: 0;
+  left: 404px;
+  top: -227px;
   opacity: 0;
   transition: all .5s;
   transform: translateX(-30px);
@@ -302,16 +287,29 @@
 
 #game_slider .slick-slide .description-3 .txt03 {
   position: absolute;
-  left: 600px;
-  top: -200px;
+  left: 603px;
+  top: -177px;
   opacity: 0;
   transition: all .5s;
   transform: translateX(-30px);
 }
 
-#game_slider .slick-slide .description-3:hover .txt03{
+#game_slider .slick-slide .description-3.on .txt03{
   opacity: 1;
   transform: translateX(0);
+}
+
+#game_slider .slick-slide .description-3 .line{
+  position: absolute;
+  left: 53px;
+  top: -179px;
+  overflow: hidden;
+  width: 0;
+  transition: all 1s;
+}
+
+#game_slider .slick-slide .description-3.on .line{
+  width: 544px;
 }
 
 
@@ -330,18 +328,32 @@
 
 #game_slider .slick-slide .description-4 .txt04 {
   position: absolute;
-  left: -780px;
-  top: -180px;
+  left: -788px;
+  top: -242px;
   opacity: 0;
   transition: all .5s;
   transform: translateX(-30px);
 }
 
-#game_slider .slick-slide .description-4:hover .txt04{
+#game_slider .slick-slide .description-4.on .txt04{
   opacity: 1;
   transform: translateX(0);
 }
 
+#game_slider .slick-slide .description-4 .line{
+  position: absolute;
+  right: -85px;
+  top: -208px;
+  width: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  transition: all 1s;
+}
+
+#game_slider .slick-slide .description-4.on .line{
+  width: 470px;
+}
 
 
 #game_slider .slick-dots{
@@ -349,7 +361,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 830px;
+  bottom: 169px;
 }
 #game_slider .slick-dots > li{
   margin-right:16px;

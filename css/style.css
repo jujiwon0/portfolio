@@ -162,7 +162,7 @@
 #menu .container > div .text04 .fill04 {
   position: absolute;
   left: -547px;
-  top: 76%;
+  top: -14%;
   transition: all 0.5s;
   display: flex;
   pointer-events: none;
@@ -1094,6 +1094,7 @@ svg {
   margin-top: 1px;
   opacity: 0;
   transition: all 1s;
+  cursor: pointer;
 }
 
 #section09 .circle > div:hover .arrow09 .fill {

@@ -10,12 +10,6 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
 
-
-
-
-
-
-
   
   /*  slide,click event section */
 });
