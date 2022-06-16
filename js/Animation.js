@@ -1,7 +1,9 @@
-export function Animation() {
-  // console.log('hello');
 
 
+window.addEventListener('DOMContentLoaded',function(){
+
+
+  console.log('eee');
 
   gsap.to('#section02 .fix-this-2', {
     // 누구를 ?
@@ -87,7 +89,7 @@ export function Animation() {
       trigger: '#section03', // 누구를 기준으로 ?
       start: 'top top', // 어디서부터 시작할건지?
       end: () =>
-        '+=' + document.querySelector('#section03 .horizontal').offsetWidth, // 어디까지
+          '+=' + document.querySelector('#section03 .horizontal').offsetWidth, // 어디까지
       // end: 'bottom bottom',
       pin: true,
       // pinSpace:false,
@@ -476,7 +478,4 @@ export function Animation() {
 
     */
 
-
-}
-
-export default Animation;
+})
