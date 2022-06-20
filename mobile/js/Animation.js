@@ -41,6 +41,16 @@ export function Animation (){
 */
 
 
+    ScrollTrigger.create({
+        trigger: "#section02",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            console.log('들어왔다!!')
+            $('#section02').addClass('on')
+        }
+    });
 
 
 

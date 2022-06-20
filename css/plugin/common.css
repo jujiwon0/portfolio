@@ -1,3 +1,226 @@
+#menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background: black;
+  display: none;
+}
+
+#menu .header {
+  width: 100vw;
+  height: 1004px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 300;
+  display: flex;
+}
+
+#menu .header .logo {
+  position: absolute;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  z-index: 100;
+  cursor: pointer;
+}
+
+#menu .header .close {
+  position: absolute;
+  left: 89%;
+  top: 6%;
+  z-index: 100;
+  cursor: pointer;
+}
+
+#menu .container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 600;
+}
+
+#menu .container .menu {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/*#menu .container .menu > div:last-child {*/
+/*  margin-bottom: 0;*/
+/*}*/
+/*안먹혀서 4번째 클래스이름을 바꿔버렸는데 그렇게 해도 되는지 모르겠어요*/
+
+#menu .container > div{
+  position: relative;
+}
+#menu .container > div .text01 {
+  position: relative;
+}
+
+#menu .container > div .text01 .fill01 {
+  position: absolute;
+  left: -547px;
+  top: -11%;
+  transition: all 0.5s;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+  animation: menu01 6s infinite linear paused;
+}
+
+
+#menu .container > div:hover .text01 .fill01 {
+
+  opacity: 1;
+  animation-play-state: running;
+}
+
+
+@keyframes menu01 {
+  to{
+    transform: translateX(-3971px);
+  }
+}
+
+
+
+#menu .container > div .text02 {
+  position: relative;
+}
+
+#menu .container > div .text02 .fill02 {
+  position: absolute;
+  left: -547px;
+  top: -15%;
+  transition: all 0.5s;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+  animation: menu02 11s infinite linear paused;
+}
+
+
+#menu .container > div:hover .text02 .fill02 {
+
+  opacity: 1;
+  animation-play-state: running;
+}
+
+
+@keyframes menu02 {
+  to{
+    transform: translateX(-6780px);
+  }
+}
+
+
+
+#menu .container > div .text03 {
+  position: relative;
+}
+
+#menu a{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+#menu .container > div .text03 .fill03 {
+  position: absolute;
+  left: -547px;
+  top: -11%;
+  transition: all 0.5s;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+  animation: menu03 6s infinite linear paused;
+}
+
+
+#menu .container > div:hover .text03 .fill03 {
+
+  opacity: 1;
+  animation-play-state: running;
+}
+
+
+@keyframes menu03 {
+  to{
+    transform: translateX(-3352px);
+  }
+}
+
+
+
+#menu .container > div .text04 .fill04 {
+  position: absolute;
+  left: -547px;
+  top: -14%;
+  transition: all 0.5s;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+  animation: menu04 5s infinite linear paused;
+}
+
+
+#menu .container > div:hover .text04 .fill04 {
+
+  opacity: 1;
+  animation-play-state: running;
+}
+
+
+@keyframes menu04 {
+  to{
+    transform: translateX(-2850px);
+  }
+}
+
+
+/*#menu .title > li {*/
+/*  position: relative;*/
+/*  padding-bottom: 100px;*/
+/*  margin-bottom: 35px;*/
+/*}*/
+
+/*li로 하니깐 간격 조절 안됨*/
+
+/*#menu .line {
+  position: relative;
+  margin-bottom: 90px;
+  z-index: 700;
+}*/
+
+#menu .line {
+  position: relative;
+}
+
+#menu .line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#menu .icon {
+  position: relative;
+}
+
+#menu .icon {
+  position: absolute;
+  right: 4%;
+  bottom: 5%;
+  cursor: pointer;
+}
+
 #container {
   width: 100vw;
   height: 100vh;

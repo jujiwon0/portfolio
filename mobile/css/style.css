@@ -136,8 +136,16 @@
     position: absolute;
     left: 363px;
     top: 666px;
+    overflow: hidden;
+    width: 0;
+    transition: all 1s 1s;
 }
 
+#section02.on .graph .line{
+    width: 318px;
+
+
+}
 
 #section02 .dot01{
     position: absolute;
@@ -236,40 +244,16 @@
 /*}*/
 
 
-
-
 #section02 .chart{
     width: 254px;
     position: relative;
     display: flex;
+    text-align: center;
+    align-items: flex-end;
 }
 
-#section02 .chart .chart_01{
-    position: absolute;
-    left: 1421px;
-    top: 703px;
-}
-
-
-#section02 .chart .chart_02{
-    position: absolute;
-    left: 1486px;
-    top: 799px;
-}
-
-
-#section02 .chart .chart_03{
-    position: absolute;
-    left: 1552px;
-    top: 813px;
-}
-
-
-#section02 .chart .chart_04{
-    position: absolute;
-    left: 1618px;
-    top: 822px;
-    /*margin-right: 0;*/
+#section02 .chart >li{
+    margin-right: 20px;
 }
 
 
