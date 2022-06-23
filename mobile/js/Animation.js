@@ -52,6 +52,17 @@ export function Animation (){
         }
     });
 
+    ScrollTrigger.create({
+        trigger: "#section04",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('#section04').addClass('on')
+        }
+
+    });
+
 
 
 }
