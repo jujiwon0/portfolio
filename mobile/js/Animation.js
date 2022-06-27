@@ -93,8 +93,16 @@ export function Animation (){
         scrub: 1,
         onEnter: ()=>{
             $('#section04').addClass('on')
+            gsap.to('#section04 .imo > div',{
+                duration: 1,
+                delay: 2,
+                y: 30,
+                stagger: 0.5,
+            })
         }
     });
+
+
 
     ScrollTrigger.create({
         trigger: "#section05",

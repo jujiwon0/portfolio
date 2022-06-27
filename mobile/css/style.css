@@ -571,7 +571,8 @@
     right: 450px;
     bottom: 167px;
     transform: scale(0);
-    transition: all .8s .5s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+    transition: all .8s .5s;
+
 }
 
 #section03.on .content01 .c01_1{
@@ -732,32 +733,30 @@
 }
 
 
-#section04 .dot > div:nth-child(1){
+#section04 .dot > div{
     position: absolute;
-    left: 919px;
+    left: 912px;
+}
+
+#section04 .dot > div:nth-child(1){
     top: 702px;
-    overflow: hidden;
-    width: 0;
     transition: all 3s 1s;
 }
 
 #section04.on .dot > div:nth-child(1){
-    width: 168px;
+    transform: translateX(100px);
+
 }
 
 
 
 #section04 .dot > div:nth-child(2){
-    position: absolute;
-    left: 955px;
     top: 735px;
-    overflow: hidden;
-    width: 0;
     transition: all 4s 1s;
 }
 
 #section04.on .dot > div:nth-child(2){
-    width: 168px;
+    transform: translateX(150px);
 }
 
 
@@ -1035,10 +1034,12 @@
 #section05 .moc03 .line01{
     position: absolute;
     right: 267px;
-    top: -364px;
+    bottom: 967px;
     overflow: hidden;
     height: 0;
     transition: all 1s 1s;
+    display: flex;
+    align-items: flex-end;
 }
 
 #section05.on .moc03 .line01{
