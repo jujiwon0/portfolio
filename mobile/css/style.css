@@ -10,7 +10,8 @@
 #section01 .front{
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 1175px;
+    /*height: 1429px;*/
 }
 
 #section01 .front .top{
@@ -19,10 +20,28 @@
     top: 59px;
 }
 
-#section01 .front .logo{
+#section01 .front .logo_container{
     position: absolute;
+    top: 238px;
     left: 160px;
-    top: 276px;
+}
+
+#section01 .front .logo{
+    transform: translateX(30px);
+    transition: all .2s;
+    opacity: 0;
+}
+
+#section01 .front .title{
+    transform: translateX(30px);
+    transition: all .9s;
+    opacity: 0;
+}
+
+#section01.on .front .logo,
+#section01.on .front .title{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 
@@ -30,6 +49,14 @@
     position: absolute;
     left: 160px;
     top: 811px;
+    transform: translateX(30px);
+    transition: all .9s .2s;
+    opacity: 0;
+}
+
+#section01.on .front .sub_title01{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 
@@ -37,13 +64,29 @@
     position: absolute;
     left: 0;
     top: 697px;
+    transform: translateX(-30px);
+    transition: all .6s .3s;
+    opacity: 0;
 }
 
+#section01.on .front .coin01{
+    transform: translateX(0);
+    opacity: 1;
+
+}
 
 #section01 .front .coin02{
     position: absolute;
     right: 0;
     top: 672px;
+    transform: translateY(-80px);
+    transition: all .7s .4s;
+    opacity: 0;
+}
+
+#section01.on .front .coin02{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 
@@ -51,19 +94,54 @@
     position: absolute;
     right: 62px;
     top: 1070px;
+    transform: translateY(-80px);
+    transition: all .8s .6s;
+    opacity: 0;
+}
+
+#section01.on .front .coin03{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 
 #section01 .front .phone{
-     position: absolute;
-     right: 161px;
-     top: 275px;
- }
+    position: absolute;
+    right: 190px;
+    top: 265px;
+    animation: up-down 1.3s infinite ease-in-out alternate;
+}
+
+@keyframes up-down{
+    from{
+        transform: translatey(30px);
+    }
+    to{
+        transform: translatey(-30px);
+    }
+}
+
+
+/*#section01 .front .phone{*/
+/*    position: absolute;*/
+/*    right: 219px;*/
+/*    top: 265px;*/
+
+/*    transform: scaleY(1.1);*/
+/*    transition: all .1s 1s;*/
+/*    opacity: 0;*/
+
+/* }*/
+
+/*#section01.on .front .phone{*/
+/*    transform: none;*/
+/*    opacity: 1;*/
+/*}*/
 
 
 #section01 .back{
     width: 100vw;
-    height: 100vh;
+    height: 1217px;
     position: relative;
 }
 
@@ -71,32 +149,58 @@
 #section01 .back .main_title{
     position: absolute;
     left: 204px;
-    bottom: -171px;
+    bottom: 334px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+
+#section01 .back.on .main_title{
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+
+#section01 .back .user{
+    position: relative;
+}
+
+
+#section01 .back .user > div{
+    transform: scale(0);
+    transition: all 1s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+
+#section01 .back.on .user > div{
+    transform: scale(1);
 }
 
 
 #section01 .back .user01{
     position: absolute;
-    right: 193px;
-    bottom: 67px;
+    right: 197px;
+    top: 311px;
+    transition: all .2s .1s;
 }
 
 
 #section01 .back .user02{
     position: absolute;
-    right: 399px;
-    bottom: -185px;
+    right: 369px;
+    top: 590px;
+    transition: all .4s .2s;
 }
 
 
 #section01 .back .user03{
     position: absolute;
     right: 103px;
-    bottom: -430px;
+    top: 846px;
+    transition: all .6s .3s;
 }
-
-
-
 
 
 
@@ -116,19 +220,19 @@
 
 #section02 .title01{
     position: absolute;
-    left: 312px;
+    left: 299px;
     top: 441px;
 }
 
 #section02 .title02{
     position: absolute;
-    left: 845px;
+    left: 855px;
     top: 441px;
 }
 
 #section02 .title03{
     position: absolute;
-    right: 236px;
+    right: 235px;
     top: 441px;
 }
 
@@ -140,18 +244,18 @@
 
 #section02 .graph .graph01{
     position: absolute;
-    left: 271px;
-    top: 662px;
+    left: 240px;
+    top: 663px;
 }
 
 
 #section02 .graph .line{
     position: absolute;
-    left: 363px;
+    left: 334px;
     top: 666px;
     overflow: hidden;
     width: 0;
-    transition: all 1s .7s;
+    transition: all 1s .1s;
 }
 
 #section02.on .graph .line{
@@ -161,49 +265,49 @@
 
 #section02 .dot01{
     position: absolute;
-    left: 361px;
+    left: 332px;
     top: 829px;
 }
 
 
 #section02 .dot02{
     position: absolute;
-    left: 420px;
+    left: 391px;
     top: 868px;
 }
 
 
 #section02 .dot03{
     position: absolute;
-    left: 480px;
+    left: 451px;
     top: 818px;
 }
 
 
 #section02 .dot04{
     position: absolute;
-    left: 543px;
+    left: 514px;
     top: 803px;
 }
 
 
 #section02 .dot05{
     position: absolute;
-    left: 600px;
+    left: 571px;
     top: 711px;
 }
 
 
 #section02 .dot06{
     position: absolute;
-    left: 646px;
+    left: 617px;
     top: 665px;
 }
 
 
 #section02 .dot07{
      position: absolute;
-     left: 677px;
+     left: 648px;
      top: 695px;
  }
 
@@ -211,9 +315,9 @@
 
 #section02 .gray{
     position: absolute;
-    left: 879px;
+    left: 857px;
     top: 694px;
-    transition: all 1s 1s;
+    transition: all 1s .2s;
     transform: translate(-30px,-30px);
     opacity: 0;
 }
@@ -221,9 +325,9 @@
 
 #section02 .green{
     position: absolute;
-    left: 880px;
+    left: 859px;
     top: 700px;
-    transition: all 1s 1s;
+    transition: all 1s .2s;
     transform: translate(30px,30px);
     opacity: 0;
 }
@@ -237,14 +341,14 @@
 
 #section02 .number{
     position: absolute;
-    left: 943px;
+    left: 923px;
     top: 835px;
     overflow: hidden;
 }
 
 #section02 .number>img{
     transform: translateY(100%);
-    transition: all 1s 1.3s;
+    transition: all 1s .4s;
 }
 
 #section02.on .number >img{
@@ -254,14 +358,14 @@
 
 #section02 .txt01{
     position: absolute;
-    right: 701px;
+    right: 723px;
     top: 752px;
 }
 
 
 #section02 .txt02{
     position: absolute;
-    right: 706px;
+    right: 728px;
     top: 828px;
 }
 
@@ -286,8 +390,8 @@
 
 #section02 .chart{
     position: absolute;
-    right: 245px;
-    top: 682px;
+    right: 282px;
+    top: 664px;
     height: 260px;
 }
 
@@ -297,11 +401,13 @@
     width: 56px;
 }
 
-#section02.on .chart .chart01 .graph>div{
-    height: 209px;
 
+#section02.on .chart .chart01 .graph >div{
+    height: 209px;
 }
-#section02 .chart .chart01 .graph>div{
+
+
+#section02 .chart .chart01 .graph >div{
     overflow: hidden;
     height: 0;
     transition: all 1s .8s;
@@ -317,40 +423,72 @@
 #section02 .chart .chart02{
     overflow: hidden;
     width: 56px;
+}
+
+
+#section02.on .chart .chart02 .graph >div{
+    height: 113px;
+}
+
+
+#section02 .chart .chart02 .graph >div{
+    overflow: hidden;
     height: 0;
     transition: all 1s .9s;
 }
 
-#section02.on .chart .chart02{
-    height: 113px;
 
+#section02 .chart .chart02 .graph{
+    display: flex;
+    align-items: flex-end;
 }
 
 
-/*#section02 .chart .chart03{*/
-/*    overflow: hidden;*/
-/*    width: 56px;*/
-/*    height: 0;*/
-/*    transition: all 1s 1s;*/
-/*}*/
 
-/*#section02.on .chart .chart03{*/
-/*    height: 99px;*/
-
-/*}*/
+#section02 .chart .chart03{
+    overflow: hidden;
+    width: 56px;
+}
 
 
-/*#section02 .chart .chart04{*/
-/*    overflow: hidden;*/
-/*    width: 56px;*/
-/*    height: 0;*/
-/*    transition: all 1s 1.1s;*/
-/*}*/
+#section02.on .chart .chart03 .graph >div{
+    height: 99px;
+}
 
-/*#section02.on .chart .chart04{*/
-/*    height: 90px;*/
 
-/*}*/
+#section02 .chart .chart03 .graph >div{
+    overflow: hidden;
+    height: 0;
+    transition: all 1s 1s;
+}
+
+
+#section02 .chart .chart03 .graph{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+#section02 .chart .chart04{
+    overflow: hidden;
+    width: 56px;
+}
+
+#section02.on .chart .chart04 .graph >div{
+    height: 90px;
+}
+
+#section02 .chart .chart04 .graph >div{
+    overflow: hidden;
+    height: 0;
+    transition: all 1s 1.1s;
+}
+
+#section02 .chart .chart04 .graph{
+    display: flex;
+    align-items: flex-end;
+}
 
 
 
@@ -359,9 +497,10 @@
 }
 
 
+
 #section02 .sub_text{
     position: absolute;
-    left: 245px;
+    left: 203px;
     top: 1009px;
 }
 
@@ -369,34 +508,55 @@
 
 #section03{
     height: 1221px;
-    background: url("../img/section03/03.jpg");
-    /*background: url("../img/section03/bg.jpg");*/
+    /*background: url("../img/section03/03.jpg");*/
+    background: url("../img/section03/bg.jpg");
 }
 
 #section03 .title{
     position: absolute;
     left: 205px;
     top: 236px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .6s .3s;
+}
+
+#section03.on .title{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 
-#section03 .sub_title01{
+#section03 .title .sub01{
     position: absolute;
-    left: 205px;
-    top: 485px;
+    left: 0;
+    top: 249px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .6s .4s;
+}
+
+#section03.on .title .sub01{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
-#section03 .sub_title02{
+#section03 .title .sub02{
     position: absolute;
-    left: 205px;
-    top: 646px;
+    left: 0;
+    top: 410px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .6s .5s;
 }
 
 
-/*#section03 .content{*/
-/*    position: relative;*/
-/*}*/
+#section03.on .title .sub02{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 
 #section03 .content01{
@@ -406,10 +566,77 @@
 }
 
 
+#section03 .content01 .c01_1{
+    position: absolute;
+    right: 450px;
+    bottom: 167px;
+    transform: scale(0);
+    transition: all .8s .5s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section03.on .content01 .c01_1{
+    transform: scale(1);
+}
+
+
+#section03 .content01 .c01_2{
+    position: absolute;
+    right: 130px;
+    bottom: 86px;
+    transform: scale(0);
+    transition: all .8s .6s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section03.on .content01 .c01_2{
+    transform: scale(1);
+}
+
+
 #section03 .content02{
     position: absolute;
     right: 136px;
     bottom: 429px;
+}
+
+#section03 .content02 .c02_1{
+    position: absolute;
+    right: 176px;
+    bottom: 211px;
+    transform: scale(0);
+    transition: all .8s .7s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+
+#section03.on .content02 .c02_1{
+    transform: scale(1);
+}
+
+
+#section03 .content02 .c02_2{
+    position: absolute;
+    right: 337px;
+    bottom: 130px;
+    transform: scale(0);
+    transition: all .8s .8s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+
+#section03.on .content02 .c02_2{
+    transform: scale(1);
+}
+
+
+#section03 .content02 .c02_3{
+    position: absolute;
+    right: 150px;
+    bottom: 50px;
+    transform: scale(0);
+    transition: all .8s .9s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+
+#section03.on .content02 .c02_3{
+    transform: scale(1);
 }
 
 
@@ -418,6 +645,34 @@
     right: 136px;
     bottom: 159px;
 }
+
+#section03 .content03 .c03_1{
+    position: absolute;
+    right: 358px;
+    bottom: 144px;
+    transform: scale(0);
+    transition: all .8s 1s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+
+#section03.on .content03 .c03_1{
+    transform: scale(1);
+}
+
+
+#section03 .content03 .c03_2{
+    position: absolute;
+    right: 333px;
+    bottom: 84px;
+    transform: scale(0);
+    transition: all .8s 1.1s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+
+#section03.on .content03 .c03_2{
+    transform: scale(1);
+}
+
 
 
 
@@ -432,6 +687,14 @@
     position: absolute;
     left: 203px;
     top: 236px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+#section04.on .title{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 
@@ -439,7 +702,17 @@
     position: absolute;
     left: 245px;
     top: 835px;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s;
 }
+
+#section04.on .text{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
 
 #section04 .line_g{
     position: absolute;
@@ -448,15 +721,89 @@
 }
 
 #section04 .dot{
-    position: absolute;
-    left: 905px;
-    top: 702px;
-    /*마진으로 간격조절?*/
+    position: relative;
+    /*left: 905px;*/
+    /*top: 702px;*/
 }
 
 
-#section04 .dot >div{
+#section04 .dot > div{
     margin-bottom: 16px;
+}
+
+
+#section04 .dot > div:nth-child(1){
+    position: absolute;
+    left: 919px;
+    top: 702px;
+    overflow: hidden;
+    width: 0;
+    transition: all 3s 1s;
+}
+
+#section04.on .dot > div:nth-child(1){
+    width: 168px;
+}
+
+
+
+#section04 .dot > div:nth-child(2){
+    position: absolute;
+    left: 955px;
+    top: 735px;
+    overflow: hidden;
+    width: 0;
+    transition: all 4s 1s;
+}
+
+#section04.on .dot > div:nth-child(2){
+    width: 168px;
+}
+
+
+
+#section04 .dot > div:nth-child(3){
+    position: absolute;
+    left: 982px;
+    top: 767px;
+    overflow: hidden;
+    width: 0;
+    transition: all 5s 1s;
+}
+
+#section04.on .dot > div:nth-child(3){
+    width: 168px;
+}
+
+
+
+#section04 .dot > div:nth-child(4){
+    position: absolute;
+    left: 1031px;
+    top: 799px;
+    overflow: hidden;
+    width: 0;
+    transition: all 6s 1s;
+}
+
+#section04.on .dot > div:nth-child(4){
+    width: 168px;
+}
+
+
+
+#section04 .dot > div:nth-child(5){
+    position: absolute;
+    left: 1019px;
+    top: 830px;
+    overflow: hidden;
+    width: 0;
+    transition: all 7s 1s;
+}
+
+
+#section04.on .dot > div:nth-child(5){
+    width: 168px;
 }
 
 
@@ -504,7 +851,7 @@
     top: 1401px;
     overflow: hidden;
     width: 0;
-    transition: all 1.5s .8s;
+    transition: all 1.5s 2s;
 }
 
 #section04.on .graph .line{
@@ -546,30 +893,76 @@
     position: absolute;
     left: 256px;
     top: 1680px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s 2s;
 }
+
+#section04.on .sub01{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 #section04 .sub02{
     position: absolute;
     left: 533px;
     top: 1680px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s 2s;
 }
+
+#section04.on .sub02{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 #section04 .sub03{
     position: absolute;
     left: 803px;
     top: 1680px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s 2s;
 }
+
+#section04.on .sub03{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 
 #section04 .sub04{
     position: absolute;
     left: 1075px;
     top: 1680px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s 2s;
 }
+
+#section04.on .sub04{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 
 #section04 .sub05{
     position: absolute;
     left: 1350px;
     top: 1680px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 1s 2s;
+}
+
+#section04.on .sub05{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 
@@ -584,6 +977,38 @@
     position: absolute;
     left: 203px;
     top: 237px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .5s;
+}
+
+#section05.on .title{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+#section05 .top{
+    position: relative;
+}
+
+#section05 .top .coin01{
+    position: absolute;
+    left: 29px;
+    top: 285px;
+    transform: scale(0.5) rotateY(360deg);
+    transition: all 1s;
+}
+
+#section05.on .top .coin01{
+    transform: scale(1) rotateY(0deg);
+}
+
+
+#section05 .top  .coin02{
+    position: absolute;
+    left: 0;
+    top: 444px;
 }
 
 
@@ -599,11 +1024,80 @@
     top: 850px;
 }
 
+
 #section05 .moc03{
     position: absolute;
     left: 1241px;
     top: 1146px;
 }
+
+
+#section05 .moc03 .line01{
+    position: absolute;
+    right: 267px;
+    top: -364px;
+    overflow: hidden;
+    height: 0;
+    transition: all 1s 1s;
+}
+
+#section05.on .moc03 .line01{
+    height: 418px;
+}
+
+/*반대로 올라오게 하고 싶어요*/
+
+
+/*#section05 .moc03 .line01{*/
+/*    position: absolute;*/
+/*    right: 267px;*/
+/*    top: -364px;*/
+/*}*/
+
+/*#section05 .moc03 .line01{*/
+/*    overflow: hidden;*/
+/*    width: 10px;*/
+/*}*/
+
+/*#section05 .moc03 .line01{*/
+/*    overflow: hidden;*/
+/*    height: 0;*/
+/*    transition: all 1s 1s;*/
+/*}*/
+
+/*#section05.on .moc03 .line01{*/
+/*    height: 418px;*/
+/*}*/
+
+#section05 .moc03 .txt01{
+    position: absolute;
+    right: 81px;
+    top: -524px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .8s;
+}
+
+#section05.on .moc03 .txt01{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+#section05 .moc03 .imo01{
+    position: absolute;
+    right: 431px;
+    top: -568px;
+    transform: scale(0);
+    transition: all .8s .9s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section05.on .moc03 .imo01{
+    transform: scale(1);
+}
+
+
 
 #section05 .moc04{
     position: absolute;
@@ -617,11 +1111,31 @@
     top: 2156px;
 }
 
+
 #section05 .moc06{
     position: absolute;
     left: 158px;
     top: 2632px;
 }
+
+#section05 .moc06 .line02{
+    position: absolute;
+    left: 254px;
+    bottom: 929px;
+}
+
+#section05 .moc06 .txt02{
+    position: absolute;
+    left: 77px;
+    bottom: 1456px;
+}
+
+#section05 .moc06 .imo02{
+    position: absolute;
+    left: 77px;
+    bottom: 1582px;
+}
+
 
 #section05 .moc07{
     position: absolute;
@@ -630,61 +1144,26 @@
 }
 
 
-#section05 .coin01{
-    position: absolute;
-    left: 29px;
-    top: 285px;
+#section05 .bottom{
+    position: relative;
 }
 
-#section05 .coin02{
+#section05 .bottom .coin03{
     position: absolute;
-    left: 0;
-    top: 444px;
+    right: 63px;
+    top: 2962px;
 }
 
-#section05 .coin03{
-    position: absolute;
-    right: 61px;
-    bottom: 1095px;
-}
-
-#section05 .coin04{
+#section05 .bottom .coin04{
     position: absolute;
     right: 335px;
-    bottom: 1093px;
+    top: 3061px;
 }
 
-#section05 .coin05{
+#section05 .bottom .coin05{
     position: absolute;
     right: 0;
-    bottom: 711px;
-}
-
-
-#section05 .txt01{
-    position: absolute;
-    left: 1317px;
-    top: 578px;
-}
-
-
-#section05 .txt02{
-    position: absolute;
-    left: 235px;
-    top: 2018px;
-}
-
-
-#section05 .line01{
-    position: absolute;
-    left: 1498px;
-    top: 782px;
-}
-
-#section05 .line02{
-    position: absolute;
-    left: 412px;
-    top: 2224px;
+    top: 3319px;
 }
 
 
@@ -743,18 +1222,27 @@
 }
 
 
-#section07 .line01{
+#section07 .moc02 .line01{
     position: absolute;
-    left: 1261Px;
-    top: 420px;
+    left: 781px;
+    top: -231px;
 }
 
 
-#section07 .line02{
+#section07 .moc02 .txt01{
     position: absolute;
-    right: 459px;
-    top: 1967px;
+    left: 653px;
+    top: -398px;
 }
+
+
+#section07 .moc02 .imo01{
+    position: absolute;
+    left: 653px;
+    top: -445px;
+}
+
+
 
 #section07 .sub{
     position: absolute;
@@ -762,19 +1250,24 @@
     top: 1744px;
 }
 
-
-
-#section07 .txt01{
+#section07 .sub .line02{
     position: absolute;
-    left: 1132px;
-    top: 206px;
+    right: -131px;
+    bottom: 215px;
 }
 
 
-#section07 .txt02{
+#section07 .sub .txt02{
     position: absolute;
-    right: 137px;
-    top: 1876px;
+    right: -453px;
+    bottom: 137px;
+}
+
+
+#section07 .sub .imo02{
+    position: absolute;
+    right: -189px;
+    bottom: 290px;
 }
 
 

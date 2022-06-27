@@ -40,6 +40,27 @@ export function Animation (){
 
 */
 
+    ScrollTrigger.create({
+        trigger: "#section01",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('#section01').addClass('on')
+        }
+    });
+
+
+    ScrollTrigger.create({
+        trigger: "#section01 .back",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('.back').addClass('on')
+        }
+    });
+
 
     ScrollTrigger.create({
         trigger: "#section02",
@@ -52,6 +73,19 @@ export function Animation (){
         }
     });
 
+
+    ScrollTrigger.create({
+        trigger: "#section03",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter:()=>{
+            $('#section03').addClass('on')
+        }
+    });
+
+
+
     ScrollTrigger.create({
         trigger: "#section04",
         start: "top top",
@@ -60,8 +94,19 @@ export function Animation (){
         onEnter: ()=>{
             $('#section04').addClass('on')
         }
-
     });
+
+    ScrollTrigger.create({
+        trigger: "#section05",
+        start: 'top top',
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('#section05').addClass('on')
+        }
+    });
+
+
 
 
 
