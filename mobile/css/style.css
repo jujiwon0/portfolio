@@ -139,11 +139,7 @@
     margin-right: 245px;
     transform: translateY(40px);
     opacity: 0;
-<<<<<<< HEAD
-    transition: all 1s 1s;
-=======
     transition: all 1s;
->>>>>>> 06865874d57fba76dd82c8129e0c35fca475b4fb
 }
 
 
@@ -420,11 +416,8 @@
     align-self: flex-end;
     margin-bottom: 18px;
     margin-right: 7px;
-<<<<<<< HEAD
-=======
     height: 244px;
     display: flex;
->>>>>>> 06865874d57fba76dd82c8129e0c35fca475b4fb
 }
 
 
@@ -1483,11 +1476,8 @@
 /*배경 라인 가로로 나오게 하는법?*/
 /*오버플로우가 아니라 트랜스폼으로 하는건가?*/
 #section07 .phone .bg{
-<<<<<<< HEAD
-=======
     transform: translate(-1810px, 910px);
     transition: all 1s;
->>>>>>> 06865874d57fba76dd82c8129e0c35fca475b4fb
     position: relative;
     left: -1410px;
     top: 80px;
@@ -1497,15 +1487,9 @@
     /*transition: all .8s 1s;*/
 }
 
-<<<<<<< HEAD
-/*#section07.on .phone .bg{*/
-/*    width: 1800px;*/
-/*}*/
-=======
 #section07.on .phone .bg{
     transform: translate(0, 0);
 }
->>>>>>> 06865874d57fba76dd82c8129e0c35fca475b4fb
 
 
 #section07 .phone .moc01{
