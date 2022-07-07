@@ -39,16 +39,8 @@ export function Animation (){
 
 
 */
+    $('#section01').addClass('on')
 
-    ScrollTrigger.create({
-        trigger: "#section01",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 1,
-        onEnter: ()=>{
-            $('#section01').addClass('on')
-        }
-    });
 
 
     ScrollTrigger.create({
@@ -57,7 +49,7 @@ export function Animation (){
         end: "bottom bottom",
         scrub: 1,
         onEnter: ()=>{
-            $('.back').addClass('on')
+            $('#section01 .back').addClass('on')
         }
     });
 
@@ -76,7 +68,7 @@ export function Animation (){
 
     ScrollTrigger.create({
         trigger: "#section03",
-        start: "top top",
+        start: "-300 top",
         end: "bottom bottom",
         scrub: 1,
         onEnter:()=>{
@@ -94,10 +86,11 @@ export function Animation (){
         onEnter: ()=>{
             $('#section04').addClass('on')
             gsap.to('#section04 .imo > div',{
-                duration: 1,
-                delay: 2,
+                duration: 0.8,
+                delay: 1,
                 y: 30,
                 stagger: 0.5,
+                opacity: 1,
             })
         }
     });
@@ -113,6 +106,52 @@ export function Animation (){
             $('#section05').addClass('on')
         }
     });
+
+
+    ScrollTrigger.create({
+        trigger: "#section06",
+        start: 'top top',
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('#section06').addClass('on')
+        }
+    });
+
+    ScrollTrigger.create({
+        trigger: "#section07",
+        start: 'top top',
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('#section07').addClass('on')
+        }
+    });
+
+
+    ScrollTrigger.create({
+        trigger: "#section08",
+        start: 'top top',
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('#section08').addClass('on')
+        }
+    });
+
+
+    ScrollTrigger.create({
+        trigger: "#section09",
+        start: 'top top',
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('#section09').addClass('on')
+        }
+    });
+
+
+
 
 
 
