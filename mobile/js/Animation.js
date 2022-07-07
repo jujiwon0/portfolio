@@ -39,16 +39,8 @@ export function Animation (){
 
 
 */
+    $('#section01').addClass('on')
 
-    ScrollTrigger.create({
-        trigger: "#section01",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: 1,
-        onEnter: ()=>{
-            $('#section01').addClass('on')
-        }
-    });
 
 
     ScrollTrigger.create({
@@ -76,7 +68,7 @@ export function Animation (){
 
     ScrollTrigger.create({
         trigger: "#section03",
-        start: "top top",
+        start: "-300 top",
         end: "bottom bottom",
         scrub: 1,
         onEnter:()=>{
