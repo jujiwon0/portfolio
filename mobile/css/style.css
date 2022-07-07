@@ -1746,3 +1746,56 @@
     transform: translateX(0);
     opacity: 1;
 }
+
+
+#section10{
+    height: initial;
+}
+
+
+#section10 .title{
+    margin-left: 200px;
+    padding-top: 100px;
+    margin-bottom: 300px;
+    background: blue;
+}
+
+
+
+
+
+
+#section10 .phone{
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    background: hotpink;
+}
+
+#section10 .phone > div{
+    position: relative;
+
+}
+
+
+#section10 .phone02 .float_text{
+    position: absolute;
+    right: -200px;
+    top: -100px;
+}
+
+#section10 .phone02 .float_text .text02{
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+#section10 .green_bg{
+    width: 100vw;
+    height: 500px;
+    background: greenyellow;
+    position: absolute !important;
+    left: 0;
+    bottom: 0;
+}
+

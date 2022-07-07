@@ -97,6 +97,7 @@ export function Animation (){
 
 
 
+
     ScrollTrigger.create({
         trigger: "#section05",
         start: 'top top',
