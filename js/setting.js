@@ -45,8 +45,8 @@ window.addEventListener('DOMContentLoaded', function () {
     container.addListener(ScrollTrigger.update);
     ScrollTrigger.defaults({scroller: stage});
 
-    // container.setPosition(0, 25869);
-    container.setPosition(0, 0);
+    container.setPosition(0, 4000);
+    // container.setPosition(0, 0);
     container.track.xAxis.element.remove();
     // Scrollbar.detachStyle();
 
