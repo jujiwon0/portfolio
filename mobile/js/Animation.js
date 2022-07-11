@@ -42,10 +42,9 @@ export function Animation (){
     $('#section01').addClass('on')
 
 
-
     ScrollTrigger.create({
         trigger: "#section01 .back",
-        start: "top top",
+        start: "-500 top",
         end: "bottom bottom",
         scrub: 1,
         onEnter: ()=>{
@@ -56,7 +55,7 @@ export function Animation (){
 
     ScrollTrigger.create({
         trigger: "#section02",
-        start: "top top",
+        start: "-300 top",
         end: "bottom bottom",
         scrub: 1,
         onEnter: ()=>{
@@ -80,7 +79,7 @@ export function Animation (){
 
     ScrollTrigger.create({
         trigger: "#section04",
-        start: "top top",
+        start: "-300 top",
         end: "bottom bottom",
         scrub: 1,
         onEnter: ()=>{
@@ -97,10 +96,9 @@ export function Animation (){
 
 
 
-
     ScrollTrigger.create({
         trigger: "#section05",
-        start: 'top top',
+        start: '-300 top',
         end: "bottom bottom",
         scrub: 1,
         onEnter: ()=>{
@@ -111,7 +109,7 @@ export function Animation (){
 
     ScrollTrigger.create({
         trigger: "#section06",
-        start: 'top top',
+        start: '-300 top',
         end: "bottom bottom",
         scrub: 1,
         onEnter: ()=>{
@@ -121,7 +119,7 @@ export function Animation (){
 
     ScrollTrigger.create({
         trigger: "#section07",
-        start: 'top top',
+        start: '-300 top',
         end: "bottom bottom",
         scrub: 1,
         onEnter: ()=>{
@@ -132,7 +130,7 @@ export function Animation (){
 
     ScrollTrigger.create({
         trigger: "#section08",
-        start: 'top top',
+        start: '-300 top',
         end: "bottom bottom",
         scrub: 1,
         onEnter: ()=>{
@@ -150,6 +148,41 @@ export function Animation (){
             $('#section09').addClass('on')
         }
     });
+
+
+    ScrollTrigger.create({
+        trigger: "#section10",
+        start: 'top top',
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('#section10').addClass('on')
+        }
+    });
+
+
+    ScrollTrigger.create({
+        trigger: "#section11",
+        start: 'top top',
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('#section11').addClass('on')
+        }
+    });
+
+
+    ScrollTrigger.create({
+        trigger: "#section12",
+        start: 'top top',
+        end: "bottom bottom",
+        scrub: 1,
+        onEnter: ()=>{
+            $('#section12').addClass('on')
+        }
+    });
+
+
 
 
 

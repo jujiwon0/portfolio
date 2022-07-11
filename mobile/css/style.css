@@ -143,7 +143,7 @@
 }
 
 
-#section01.on .back .main_title{
+#section01 .back.on .main_title{
     transform: translateY(0);
     opacity: 1;
 }
@@ -184,7 +184,7 @@
 }
 
 
-#section01.on .back .user > div{
+#section01 .back.on .user > div{
     transform: scale(1);
 }
 
@@ -533,7 +533,7 @@
 }
 
 
-
+/*html에서 코드 바꾸고 나서 오류 ul로 넣어도 이상함*/
 #section02 .chart_bottom > li{
     width: 255px;
     /*text-align: center;*/
@@ -556,129 +556,6 @@
 #section02 .sub_text{
     margin: 81px 0 0 204px;
 }
-
-
-/*/원래 코드*/
-/*#section02 .chart{*/
-/*    width: 254px;*/
-/*    position: relative;*/
-/*    display: flex;*/
-/*    text-align: center;*/
-/*    align-items: flex-end;*/
-/*}*/
-
-/*#section02 .chart >li{*/
-/*    margin-right: 10px;*/
-/*}*/
-
-
-/*#section02 .chart >li:last-child{*/
-/*    margin-right: 0;*/
-/*}*/
-
-
-/*#section02 .chart{*/
-/*    position: absolute;*/
-/*    right: 282px;*/
-/*    top: 664px;*/
-/*    height: 260px;*/
-/*}*/
-
-
-/*#section02 .chart .chart01{*/
-/*    overflow: hidden;*/
-/*    width: 56px;*/
-/*}*/
-
-
-/*#section02.on .chart .chart01 .graph >div{*/
-/*    height: 209px;*/
-/*}*/
-
-
-/*#section02 .chart .chart01 .graph >div{*/
-/*    overflow: hidden;*/
-/*    height: 0;*/
-/*    transition: all 1s .8s;*/
-/*}*/
-
-
-/*#section02 .chart .chart01 .graph{*/
-/*    display: flex;*/
-/*    align-items: flex-end;*/
-/*}*/
-
-
-/*#section02 .chart .chart02{*/
-/*    overflow: hidden;*/
-/*    width: 56px;*/
-/*}*/
-
-
-/*#section02.on .chart .chart02 .graph >div{*/
-/*    height: 113px;*/
-/*}*/
-
-
-/*#section02 .chart .chart02 .graph >div{*/
-/*    overflow: hidden;*/
-/*    height: 0;*/
-/*    transition: all 1s .9s;*/
-/*}*/
-
-
-/*#section02 .chart .chart02 .graph{*/
-/*    display: flex;*/
-/*    align-items: flex-end;*/
-/*}*/
-
-
-
-/*#section02 .chart .chart03{*/
-/*    overflow: hidden;*/
-/*    width: 56px;*/
-/*}*/
-
-
-/*#section02.on .chart .chart03 .graph >div{*/
-/*    height: 99px;*/
-/*}*/
-
-
-/*#section02 .chart .chart03 .graph >div{*/
-/*    overflow: hidden;*/
-/*    height: 0;*/
-/*    transition: all 1s 1s;*/
-/*}*/
-
-
-/*#section02 .chart .chart03 .graph{*/
-/*    display: flex;*/
-/*    align-items: flex-end;*/
-/*}*/
-
-
-
-/*#section02 .chart .chart04{*/
-/*    overflow: hidden;*/
-/*    width: 56px;*/
-/*}*/
-
-/*#section02.on .chart .chart04 .graph >div{*/
-/*    height: 90px;*/
-/*}*/
-
-/*#section02 .chart .chart04 .graph >div{*/
-/*    overflow: hidden;*/
-/*    height: 0;*/
-/*    transition: all 1s 1.1s;*/
-/*}*/
-
-/*#section02 .chart .chart04 .graph{*/
-/*    display: flex;*/
-/*    align-items: flex-end;*/
-/*}*/
-
 
 
 #section03{
@@ -1479,7 +1356,7 @@
     transform: translate(-1810px, 910px);
     transition: all 1s;
     position: relative;
-    left: -1410px;
+    left: -1466px;
     top: 80px;
     /*z-index: 50;*/
     /*width: 0;*/
@@ -1497,15 +1374,47 @@
     z-index: 100;
 }
 
+
 #section07 .phone .moc02{
-    margin: 0 0 0 -333px;
+    position: relative;
+    margin: 6px 0 0 -354px;
     z-index: 100;
 }
 
+#section07 .phone .moc02 .pop01{
+    position: absolute;
+    left: 540px;
+    top: 137px;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: all 1s 1s;
+}
+
+#section07.on .phone .moc02 .pop01{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+#section07 .phone .moc02 .pop02{
+    position: absolute;
+    left: 670px;
+    top: 76px;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: all 1s 1s;
+}
+
+#section07.on .phone .moc02 .pop02{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
 #section07 .moc02 .text01{
     position: absolute;
-    left: 1133px;
-    top: 206px;
+    left: 674px;
+    top: -449px;
 }
 
 #section07 .moc02 .text01 .imo01{
@@ -1513,7 +1422,7 @@
     left: 0;
     top: 0;
     transform: scale(0);
-    transition: all .8s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+    transition: all .8s 1.5s; cubic-bezier(0.07, 0.55, 0.21, 1.02);
 }
 
 #section07.on .moc02 .text01 .imo01{
@@ -1527,7 +1436,7 @@
     top: 47px;
     transform: translateY(40px);
     opacity: 0;
-    transition: all .8s;
+    transition: all .8s 1.3s;
 }
 
 #section07.on .moc02 .text01 .txt01{
@@ -1538,13 +1447,13 @@
 
 #section07 .moc02 .line01{
     position: absolute;
-    right: 648px;
-    bottom: 1669px;
+    right: 197px;
+    bottom: 1299px;
     overflow: hidden;
     height: 0;
     display: flex;
     align-items: flex-end;
-    transition: all .5s 1s;
+    transition: all .5s 1.3s;
 }
 
 #section07.on .moc02 .line01{
@@ -1566,7 +1475,7 @@
     bottom: 450px;
     overflow: hidden;
     width: 0;
-    transition: all .5s 2s;
+    transition: all .8s 2s;
 }
 
 #section07.on .line02{
@@ -1596,7 +1505,7 @@
     margin: 0 0 -15px 0;
     transform: translateY(40px);
     opacity: 0;
-    transition: all .8s;
+    transition: all .8s 2.5s;
 }
 
 #section07.on .text02 .txt02{
@@ -1750,52 +1659,582 @@
 
 #section10{
     height: initial;
+    /*background: url("../img/section10/10.jpg");*/
+    background-color: white;
 }
 
 
 #section10 .title{
-    margin-left: 200px;
-    padding-top: 100px;
-    margin-bottom: 300px;
-    background: blue;
+    margin-left: 203px;
+    /*padding-top: 0;*/
+    margin-bottom: 240px;
 }
 
 
-
-
-
-
 #section10 .phone{
-    padding-bottom: 300px;
+    padding-bottom: 350px;
     display: flex;
     justify-content: center;
-    background: hotpink;
+    margin-left: 82px;
+    /*margin-right: 82px;*/
 }
 
 #section10 .phone > div{
     position: relative;
+}
 
+#section10 .phone > div{
+    margin-left: -28px;
+    /*margin-right: -28px;*/
+}
+
+#section10 .phone01{
+    padding-top: 201px;
+    /*padding-bottom: 0;*/
+    /*margin-top: 0;*/
+    /*margin-bottom: 0;*/
+}
+
+#section10 .phone01 .line01{
+    position: absolute;
+    left: 163px;
+    top: -343px;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s 1s;
+}
+
+#section10.on .phone01 .line01{
+    height: 269px;
 }
 
 
-#section10 .phone02 .float_text{
+#section10 .phone01 .float_text01 .imo01{
     position: absolute;
-    right: -200px;
-    top: -100px;
+    left: 0;
+    bottom: 127px;
+    transform: scale(0);
+    transition: all .8s 3s cubic-bezier(0.07, 0.55, 0.21, 1.02);
 }
 
-#section10 .phone02 .float_text .text02{
+#section10.on .phone01 .float_text01 .imo01{
+    transform: scale(1);
+}
+
+
+#section10 .phone01 .float_text01{
     position: absolute;
-    right: 0;
-    top: 0px;
+    left: 85px;
+    bottom: 38px;
+}
+
+
+#section10 .phone02 .float_text02{
+    position: absolute;
+    right: -33px;
+    top: -152px;
+}
+
+
+#section10 .phone02 .float_text .line02{
+    width: 0;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+#section10.on .phone02 .float_text .line02{
+    width: 228px;
+}
+
+
+#section10 .phone02 .float_text02 .text02{
+    position: absolute;
+    right: -341px;
+    top: -45px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+#section10 .phone02 .float_text02 .imo02{
+    position: absolute;
+    right: 273px;
+    top: -33px;
+    transform: scale(0);
+    transition: all .5s .3s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section10.on .phone02 .float_text02 .imo02{
+    transform: scale(1);
+}
+
+
+#section10 .phone02 .float_text03{
+    position: absolute;
+    right: -502px;
+    bottom: 1144px;
+}
+
+#section10 .phone02 .float_text03 .line03{
+    position: absolute;
+    left: -260px;
+    bottom: 51px;
+    width: 0;
+    overflow: hidden;
+    transition: all .5s .5s;
+}
+
+#section10.on .phone02 .float_text03 .line03{
+    width: 229px;
+}
+
+
+#section10 .phone02 .float_text03 .imo03{
+    position: absolute;
+    right: 240px;
+    bottom: 127px;
+    transform: scale(0);
+    transition: all .5s .8s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section10.on .phone02 .float_text03 .imo03{
+    transform: scale(1);
+}
+
+
+#section10 .phone03{
+    padding-top: 630px;
+}
+
+#section10 .phone03 .float_text04{
+    position: absolute;
+    right: 306px;
+    bottom: -151px;
+}
+
+
+#section10 .phone03 .line04{
+    position: absolute;
+    right: 161px;
+    top: -308px;
+    width: 0;
+    overflow: hidden;
+    transition: all .8s 1s;
+}
+
+#section10.on .phone03 .line04{
+    width: 172px;
+}
+
+
+#section10 .phone03 .float_text04 .imo04{
+    position: absolute;
+    left: 0;
+    bottom: 128px;
+    transform: scale(0);
+    transition: all .8s 3s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section10.on .text04 .imo04{
+    transform: scale(1);
+}
+
+#section10 .phone03 .card{
+    position: absolute;
+    right: -166px;
+    bottom: 66px;
+    transform: scale(0);
+    transition: all .8s .5s;
+
+}
+
+#section10.on .phone03 .card{
+    transform: scale(1);
+}
+
+#section10 .phone03 .card .card02{
+    position: absolute;
+    left: -119px;
+    top: 61px;
+    transform: scale(0);
+    transition: all .8s .8s;
+
+}
+
+#section10.on .phone03 .card .card02{
+    transform: scale(1);
 }
 
 #section10 .green_bg{
-    width: 100vw;
-    height: 500px;
-    background: greenyellow;
     position: absolute !important;
     left: 0;
-    bottom: 0;
+    bottom: 800px;
+    transform: translateX(-300px);
+    transition: all 1s;
 }
+
+#section10.on .green_bg{
+    transform: translateX(0);
+}
+
+
+
+#section11{
+    /*height: initial;*/
+    /*background: url("../img/section11/11.jpg");*/
+    background: url("../img/section11/bg.jpg");
+    height: 3913px;
+}
+
+
+#section11 .title{
+    margin-left: 203px;
+    margin-bottom: 756px;
+}
+
+
+#section11 .coin01{
+    position: absolute;
+    left: 0;
+    top: 650px;
+}
+
+
+#section11 .coin02{
+    padding: 0 0 0 0;
+    margin: 0 0 0 433px;
+}
+
+
+#section11 .phone{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-left: 131px;
+}
+
+
+#section11 .phone .phone01{
+    position: absolute;
+    left: 349px;
+    top: -165px;
+    z-index: 100;
+}
+
+
+#section11 .phone .phone01{
+    position: absolute;
+    left: 349px;
+    top: -165px;
+    z-index: 1000;
+}
+
+/*영상이 뒤로 안가요*/
+#section11 .phone .phone01 .chart11{
+    position: absolute;
+    left: 26px;
+    top: 23px;
+    z-index: 50;
+}
+
+
+#section11 .phone .phone01 .chart{
+    position: absolute;
+    left: -415px;
+    top: 298px;
+}
+
+
+#section11 .phone .phone02{
+    margin: -90px 0 0 319px;
+    z-index: 500;
+}
+
+
+#section11 .phone02 .float_text01{
+    position: absolute;
+    left: 1290px;
+    top: -248px;
+}
+
+#section11 .phone02 .line01{
+    position: absolute;
+    left: -185px;
+    bottom: -76px;
+    width: 0;
+    overflow: hidden;
+    transition: all .5s 1s;
+}
+
+#section11.on .phone02 .line01{
+    width: 159px;
+}
+
+#section11 .phone02 .float_text01 .imo01{
+    position: absolute;
+    left: 0;
+    top: -48px;
+    transform: scale(0);
+    transition: all .8s 3s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section11.on .phone02 .float_text01 .imo01{
+    transform: scale(1);
+}
+
+
+#section11 .phone02 .float_text02{
+    position: absolute;
+    right: 139px;
+    top: 692px;
+}
+
+#section11 .phone02 .line02{
+    position: absolute;
+    left: -257px;
+    top: 28px;
+    width: 0;
+    overflow: hidden;
+    transition: all .5s 1s;
+    z-index: 100;
+}
+
+#section11.on .phone02 .line02{
+    width: 229px;
+}
+
+#section11 .phone02 .float_text02 .pop01{
+    position: absolute;
+    left: -695px;
+    top: -175px;
+    z-index: 500;
+}
+
+#section11 .phone02 .float_text02 .imo02{
+    position: absolute;
+    left: 0;
+    top: -47px;
+    transform: scale(0);
+    transition: all .8s 3s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section11.on .phone02 .float_text02 .imo02{
+    transform: scale(1);
+}
+
+
+
+#section11 .phone02 .float_text03{
+    position: absolute;
+    right: 130px;
+    top: 1239px;
+}
+
+#section11 .phone02 .line03{
+    position: absolute;
+    left: -254px;
+    top: 28px;
+    width: 0;
+    overflow: hidden;
+    transition: all .5s 1s;
+    z-index: 100;
+}
+
+#section11.on .phone02 .line03{
+    width: 229px;
+}
+
+
+#section11 .phone02 .float_text03 .imo03{
+    position: absolute;
+    left: 0;
+    top: -46px;
+    transform: scale(0);
+    transition: all .8s 3s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section11.on .phone02 .float_text03 .imo03{
+    transform: scale(1);
+}
+
+
+
+#section11 .phone02 .float_text04{
+    position: absolute;
+    left: 136px;
+    bottom: 691px;
+}
+
+#section11 .phone02 .line04{
+    position: absolute;
+    right: -264px;
+    bottom: 68px;
+    width: 0;
+    overflow: hidden;
+    transition: all .5s 1s;
+}
+
+#section11.on .phone02 .line04{
+    width: 215px;
+}
+
+#section11 .phone02 .float_text04 .pop02{
+    position: absolute;
+    left: 521px;
+    bottom: -109px;
+}
+
+#section11 .phone02 .float_text04 .imo04{
+    position: absolute;
+    left: 0;
+    bottom: 128px;
+    transform: scale(0);
+    transition: all .8s 3s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section11.on .phone02 .float_text04 .imo04{
+    transform: scale(1);
+}
+
+
+#section11 .phone02 .float_text05{
+    position: absolute;
+    left: 135px;
+    bottom: 82px;
+}
+
+#section11 .phone02 .line05{
+    position: absolute;
+    right: -267px;
+    bottom: 69px;
+    width: 0;
+    overflow: hidden;
+    transition: all .5s 1s;
+    z-index: 100;
+}
+
+#section11.on .phone02 .line05{
+    width: 215px;
+}
+
+#section11 .phone02 .float_text05 .pop03{
+    position: absolute;
+    left: 582px;
+    bottom: -45px;
+    z-index: 500;
+}
+
+#section11 .phone02 .float_text05 .imo05{
+    position: absolute;
+    left: 0;
+    bottom: 154px;
+    transform: scale(0);
+    transition: all .8s 3s cubic-bezier(0.07, 0.55, 0.21, 1.02);
+}
+
+#section11.on .phone02 .float_text05 .imo05{
+    transform: scale(1);
+}
+
+
+#section11 .phone02 .float_text05 .coin03{
+    position: absolute;
+    right: -820px;
+    bottom: 96px;
+    z-index: 500;
+}
+
+#section11 .phone02 .float_text05 .coin04{
+    position: absolute;
+    right: -940px;
+    bottom: -151px;
+}
+
+
+
+
+#section12{
+    /*height: initial;*/
+    background: url("../img/section12/12.jpg");
+    /*background: url("../img/section12/bg.jpg");*/
+    height: 1935px;
+}
+
+
+#section12 .title{
+    padding-top: 197px;
+    margin: 0 0 0 204px;
+    /*margin-left: 204px;*/
+    /*margin: 0 0 0 0;*/
+    position: relative;
+    transform: translateY(40px);
+    opacity: 1;
+    transition: all .5s;
+}
+
+/*#section12.on .title{*/
+/*    transform: translateY(0);*/
+/*    opacity: 1;*/
+/*}*/
+#section12 .shadow{
+    position: absolute;
+    left: 678px;
+    top: 542px;
+    /*z-index: 100;*/
+}
+
+#section12 .phone{
+    position: absolute;
+    left: 738px;
+    top: 602px;
+    /*z-index: 500;*/
+}
+
+#section12 .pop01{
+    position: absolute;
+    left: 81px;
+    top: 951px;
+}
+
+#section12 .pop02{
+    position: absolute;
+    right: 121px;
+    top: 895px;
+}
+
+#section12 .pop03{
+    position: absolute;
+    right: 197px;
+    top: 880px;
+}
+
+
+#section12 .imo01{
+    position: absolute;
+    right: 509px;
+    top: 323px;
+}
+
+#section12 .imo02{
+    position: absolute;
+    left: 330px;
+    bottom: 329px;
+}
+
+#section12 .imo03{
+    position: absolute;
+    right: 411px;
+    bottom: 156px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
