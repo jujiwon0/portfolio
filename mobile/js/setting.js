@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
     container.setPosition(0, 0);
     // container.setPosition(0, 21600);
-    가container.track.xAxis.element.remove();
+    container.track.xAxis.element.remove();
     // Scrollbar.detachStyle();
 
 
