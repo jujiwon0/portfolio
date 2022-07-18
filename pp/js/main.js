@@ -94,6 +94,57 @@ $(function () {
 
 
 
+    gsap.to('#section02 .top .line', {
+        width: 1491,
+        scrollTrigger: {
+            trigger: "#section02",
+            start: "left left",
+            end: () => "+=" + 1500,
+            horizontal: true,
+            scrub: true,
+            onEnter: ()=>{
+                gsap.to('#header .nav_btn',{autoAlpha:1})
+            },
+            onLeaveBack: ()=>{
+                gsap.to('#header .nav_btn',{autoAlpha:0})
+            }
+        }
+    });
+
+
+
+    gsap.to('#section03 .center_sc03 .project_container', {
+        x:-500,
+        scrollTrigger: {
+            trigger: "#section03",
+            start: "left left",
+            end: () => "+=" + 1500,
+            horizontal: true,
+            scrub: true,
+        }
+    });
+
+
+
+
+    let clicked = true;
+
+    $('.menu').click(function(){
+
+        if(clicked){
+            gsap.to('.bar:nth-child(1)',{rotation: 45,y:5})
+            gsap.to('#menu',{y:0,ease:'power3.inOut',duration:1})
+        }else{
+            gsap.to('.bar:nth-child(1)',{rotation: 0,y:0})
+            gsap.to('#menu',{y:"-100%",ease:'power3.inOut',duration:1})
+        }
+
+        clicked = !clicked;
+        
+        
+    });
+
+
 
 
 
