@@ -445,7 +445,16 @@
     position: absolute;
     right: 93px;
     bottom: 75px;
+    animation: blink 1s infinite alternate;
 }
+
+@keyframes blink {
+    to {
+        opacity: 0;
+    }
+}
+
+
 
 #section02 .profile .txt_box .cursor_icon{
     position: absolute;
