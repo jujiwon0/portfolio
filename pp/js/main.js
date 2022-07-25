@@ -25,6 +25,29 @@ $(function () {
     });
 
 
+    let cursor = $('#cursor');
+    // let cursorFollow = $('#cursor-follower');
+
+    $(document).mousemove(function(e){
+        let cursorWidth = cursor.width() / 2;
+        // let cursorFWidth = cursorFollow.width() / 2;
+
+        gsap.to(cursor, {duration: 0.9, left: e.pageX - cursor.width() * 0.5, top: e.pageY - cursor.height() * 0.5, ease: "back.out"});
+        // gsap.to(cursorFollow, {duration: 1.4, left: e.pageX - cursorFollow.width() * 0.5, top: e.pageY - 20, ease: "back.out(2)"});
+    });
+
+
+    $('.cursor_effect').mouseenter(function () {
+
+        gsap.to('.dot',.5,{scale:1,background:'transparent'})
+
+
+    }).mouseleave(function () {
+        gsap.to('.dot',.5,{scale:0.15,background:'#4274ff'})
+    })
+
+
+
     const sc01tl = gsap.timeline();
 
     sc01tl.from('#section01 .top .title',{opacity:0,y:100})
@@ -35,6 +58,7 @@ $(function () {
     const swiper = new Swiper('.swiper', {
         // Optional parameters
         // direction: 'vertical',
+        speed:1000,
         loop: true,
         // autoplay:true,
         navigation: {
@@ -45,9 +69,12 @@ $(function () {
             el: '.prev_num',
             type: 'custom',
             renderCustom: function (swiper, current, total) {
-                return '0' + current + '/' + '0' + (total - 1);
+                // return '0' + current + '/' + '0' + (total - 1);
+                return '<span class="first">' + '0' + current + '</span> / <span class="second">'+ '0'+ (total - 1) + '</span>'
             }
         },
+
+        //
 
         // // If we need pagination
 
