@@ -61,7 +61,7 @@ const myHorizontalScrollbar = Scrollbar.init(scrollbar,{
   },
 });
 
-myHorizontalScrollbar.setPosition(0, 0);
+myHorizontalScrollbar.setPosition(8800, 0);
 
 
 
@@ -143,6 +143,78 @@ gsap.to('.fix_section', {
 
 */
 
+
+const mailButton = document.querySelector('#section04 .mail_btn');
+
+
+
+function mailAnimation(offsetX,div){
+  let y = gsap.utils.random(-200,400);
+  let x = gsap.utils.random(300,500);
+  let rotation = gsap.utils.random(-360,360);
+  let duration = gsap.utils.random(3,4);
+  let ease = gsap.utils.random(
+    ["none", "power2.out", "expo.out"]);
+
+    gsap.set(div,{left:offsetX})
+    gsap.to(div,{
+      keyframes:{
+        "0%":{opacity:0},
+        "20%":{opacity:1},
+        "50%":{y:y/2},
+        "80%":{opacity:0},
+        "100%":{y:y,x:x,rotation:rotation,opacity:0}
+      },
+      ease:ease,
+      duration: duration,
+      onComplete:()=>{
+        div.remove();
+      }
+    
+    })
+
+}
+
+function makeMail(offsetX){
+  
+  let div = document.createElement('div');
+  div.classList.add('mail');
+  div.innerHTML = `😊`;
+  mailButton.appendChild(div);
+
+  mailAnimation(offsetX,div)
+
+}
+
+function debounce(callback, limit = 100) {
+  let timeout
+  return function(...args) {
+      clearTimeout(timeout)
+      timeout = setTimeout(() => {
+          callback.apply(this, args)
+      }, limit)
+  }
+}
+
+function throttle(callback, limit = 100) {
+  let waiting = false
+  return function() {
+      if(!waiting) {
+          callback.apply(this, arguments)
+          waiting = true
+          setTimeout(() => {
+              waiting = false
+          }, limit)
+      }
+  }
+}
+
+function flyMail(e){
+  let offsetX = e.offsetX;
+  makeMail(offsetX)
+}
+
+mailButton.addEventListener("mousemove",throttle((e) => {flyMail(e)}, 100));
 
 
 

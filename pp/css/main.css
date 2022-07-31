@@ -1018,12 +1018,6 @@
 
 
 
-#section04 .mail_btn{
-    padding-top: 576px;
-    margin-left: -331px;
-    margin-right: 0;
-}
-
 #section04 .bottom{
     width: 1920px;
     height: 65px;
@@ -1082,6 +1076,29 @@
 
 
 
+
+#section04 .mail_btn {
+    position: absolute;
+    right: 110px;
+    bottom: -70px;
+    
+}
+
+#section04 .mail_btn img{
+    position: relative;
+    /* z-index:10; */
+}
+
+#section04 .mail_btn > div{
+    
+    position: absolute;
+    font-size:50px;
+    left: 0;
+    bottom: 30px;
+    opacity:0;
+    pointer-events:none;
+    
+}
 
 
 
