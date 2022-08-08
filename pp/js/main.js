@@ -163,7 +163,7 @@ $(function () {
             gsap.to('#menu',{y:0,ease:'power3.inOut',duration:1})
         }else{
             gsap.to('.bar:nth-child(1)',{rotation: 0,x:0,y:0})
-            gsap.to('#menu',{y:"-100%",ease:'power3.inOut',duration:1})
+            gsap.to('#menu',{y:"-120%",ease:'power3.inOut',duration:1})
         }
 
         if(clicked){
@@ -171,16 +171,56 @@ $(function () {
             gsap.to('#menu',{y:0,ease:'power3.inOut',duration:1})
         }else{
             gsap.to('.bar:nth-child(2)',{rotation: 0,x:-0,y:0})
-            gsap.to('#menu',{y:"-100%",ease:'power3.inOut',duration:1})
+            gsap.to('#menu',{y:"-120%",ease:'power3.inOut',duration:1})
         }
 
         clicked = !clicked;
     });
 
 
+    
 
 
 
+    $('.menuList > li').mouseenter(function(){
+
+        let idx = $(this).index();
+        console.log()
+        let imageTarget = $(this).find('.cover')[0];
+        let bgTarget = $(this).find('.dark');
+
+        gsap.to(imageTarget,{duration:0.15,scaleY:1,transformOrigin:'center top'})
+        gsap.to(bgTarget,{duration:0.15,transformOrigin:'center top',y:0})
+        
+    }).mouseleave(function(){
+        let imageTarget = $(this).find('.cover')[0];
+        let bgTarget = $(this).find('.dark');
+
+        gsap.to(imageTarget,{duration:0.15,scaleY:0,transformOrigin:'center bottom'})
+        gsap.to(bgTarget,{duration:0.15,transformOrigin:'center bottom',y:"100%",onComplete:()=>{
+            gsap.set(bgTarget,{y:"-100%"})
+        }})
+    })
+
+
+
+    // let tl = gsap.timeline({defaults:{
+    //     duration:1,
+    // }});
+
+    // let list = gsap.utils.toArray('#menu .right_box .menuList .last .img img')
+
+    // tl.to(list[0],{opacity:1})
+    // tl.to(list[1],{opacity:1,onComplete:()=>{
+    //     gsap.to(list[0],{opacity:0})
+    // }})
+    // tl.to(list[2],{opacity:1})
+
+    $('.menuList .last').mouseenter(function(){
+            
+        
+
+    });
 
 
 
