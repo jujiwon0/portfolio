@@ -159,17 +159,25 @@ $(function () {
     $('.menu').click(function(){
 
         if(clicked){
-            gsap.to('.bar:nth-child(1)',{rotation: 45,y:5})
+            gsap.to('.bar:nth-child(1)',{rotation: 45,x:2,y:-2})
             gsap.to('#menu',{y:0,ease:'power3.inOut',duration:1})
         }else{
-            gsap.to('.bar:nth-child(1)',{rotation: 0,y:0})
+            gsap.to('.bar:nth-child(1)',{rotation: 0,x:0,y:0})
+            gsap.to('#menu',{y:"-100%",ease:'power3.inOut',duration:1})
+        }
+
+        if(clicked){
+            gsap.to('.bar:nth-child(2)',{rotation: -45,x:-3,y:-10})
+            gsap.to('#menu',{y:0,ease:'power3.inOut',duration:1})
+        }else{
+            gsap.to('.bar:nth-child(2)',{rotation: 0,x:-0,y:0})
             gsap.to('#menu',{y:"-100%",ease:'power3.inOut',duration:1})
         }
 
         clicked = !clicked;
-        
-        
     });
+
+
 
 
 
