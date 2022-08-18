@@ -1,0 +1,466 @@
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+    z-index: 999;
+    cursor: pointer;
+}
+
+#header{
+    display: flex;
+    position: fixed;
+    width: 1920px;
+    height: 75px;
+    left: 0;
+    top: 0;
+    z-index: 190;
+    background: url("../img/contact/section01/gnb_bg.png");
+    /*background: url("../img/contact/section01/contact.jpg");*/
+}
+
+#header .gnb{
+    display: flex;
+    margin-left: 130px;
+    padding-top: 1px;
+    cursor: pointer;
+}
+
+#header .gnb > li{
+    position: relative;
+    opacity: .8;
+    margin: 31px;
+}
+
+#header .gnb > li::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background: #6c6965;
+    transition:all .5s;
+}
+
+#header .gnb > li:hover::after{
+    width: 100%;
+}
+
+#header .gnb > li:hover{
+    opacity: 1;
+}
+
+
+#header .menuBtn{
+    display: flex;
+    position: absolute;
+    right: 160px;
+    top: 31px;
+}
+
+#header .menuBtn .login{
+    margin-right: 37px;
+}
+
+
+#header .menuBtn .bagIcon{
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+    margin-right: -6px;
+}
+
+
+#header .menuBtn .bagIcon > div{
+    margin-right: 7px;
+}
+
+
+#header .menuBtn .bagIcon .bagCount{
+    padding-top: 5px;
+}
+
+
+#header .menuBtn .search{
+    margin-left: 39px;
+}
+
+#section01{
+    background: url("../img/product/section01/bg.jpg");
+    /*background: url("../img/product/section01/1.jpg");*/
+    width: 100vw;
+    height: 1175px;
+    position: relative;
+    display: flex;
+}
+
+
+#section01 .titleContainer{
+    /*width: 100vw;*/
+    width: 502px;
+    /*height: 1206px;*/
+    position: relative;
+    padding-top: 601px;
+    margin-left: 160px;
+    /*display: flex;*/
+}
+
+
+#section01 .titleContainer .title > div:nth-child(1){
+    position: relative;
+    z-index: 1000;
+}
+
+#section01 .titleContainer .title > div:nth-child(2){
+    position: relative;
+    padding-top: 22px;
+    margin-left: 0;
+    margin-bottom: 49px;
+    z-index: 1000;
+}
+
+#section01 .titleContainer .title .text{
+    position: relative;
+    padding-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    z-index: 1000;
+}
+
+#section01 .titleContainer .line{
+    position: relative;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 406px;*/
+    margin-top: -443px;
+    margin-bottom: 0;
+    z-index: 50;
+}
+
+
+
+#section02{
+    /*background: url("../img/product/section02/bg.jpg");*/
+    /*background: url("../img/product/section01/1.jpg");*/
+    background: #fff;
+    width: 100vw;
+    height: 1107px;
+    position: relative;
+    display: flex;
+}
+
+#section02 .listContainer{
+    width: 1641px;
+    height: 32px;
+    padding-top: 0;
+    margin-left: 0;
+    /*!*height: 1107px;*!*/
+    position: relative;
+    display: flex;
+}
+
+#section02 .listContainer{
+    width: 1641px;
+    /*height: 32px;*/
+    position: relative;
+    display: flex;
+    padding-top: 0;
+    margin-left: 160px;
+    /*!*height: 1107px;*!*/
+
+}
+
+#section02 .listContainer .filter{
+    width: 325px;
+    /*height: 32px;*/
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #878476;
+}
+
+
+#section02 .listContainer .sort{
+    width: 325px;
+    height: 32px;
+    position: absolute;
+    left: 1315px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    border-bottom: 1px solid #878476;
+}
+
+
+#section02 .txt{
+    position: absolute;
+    left: 159px;
+    top: 133px;
+    padding-top: 0;
+    margin-left: 0;
+}
+
+
+/*#slide-container{*/
+/*    width: 1252px;*/
+/*    height: 849px;*/
+/*}*/
+
+#main-slider{
+    width: 100vw;
+    height: 849px;
+    /*position: relative;*/
+}
+
+#main-slider .slick-slide{
+    width: 100vw;
+    height: 849px;
+    position: relative;
+}
+
+
+#main-slider .mainProduct{
+    width: 100vw;
+    padding-top: 133px;
+    margin-left: 180px;
+    /*!*height: 1107px;*!*/
+    position: relative;
+    display: flex;
+}
+
+
+#main-slider .mainProduct > li {
+    margin-right: 80px;
+}
+
+
+#main-slider .mainProduct .text{
+    padding-top: 25px;
+    /*margin-left: 190px;*/
+}
+
+
+#main-slider .mainProduct .price{
+    padding-top: 11px;
+    margin-bottom: 36px;
+}
+
+
+#main-slider .mainProduct .btn{
+    display: flex;
+}
+
+
+#main-slider .mainProduct .btn .heart{
+    display: flex;
+    margin-right: 24px;
+}
+
+
+#main-slider .mainProduct .btn .heart > div {
+    margin-right: 7px;
+}
+
+
+#main-slider .mainProduct .btn .review{
+    display: flex;
+    margin-right: 0;
+}
+
+#main-slider .mainProduct .btn .review > div {
+    margin-right: 7px;
+}
+
+
+
+#section03{
+    /*background: url("../img/product/section03/bg.jpg");*/
+    background: url("../img/product/section03/3.jpg");
+    /*background: #fff;*/
+    width: 100vw;
+    height: 1094px;
+    position: relative;
+    display: flex;
+}
+
+#section03 .category{
+    width: 451px;
+    height: 561px;
+    position: relative;
+    /*display: flex;*/
+}
+
+#section03 .category .title{
+    padding-top: 232px;
+    margin-left: 228px;
+}
+
+
+#section03 .category .list{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    padding-top: 130px;
+    margin-left: 220px;
+}
+
+
+#section03 .category .listContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#section03 .category .list .listContainer .itemList{
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+}
+
+
+.itemList:before,
+.itemList:after {
+    content: "";
+    /*flex: 1;*/
+    border-bottom: 1px solid #9c9171;
+    width: 400px;
+    margin: 10px 10px;
+}
+
+
+#section03 .category .listContainer > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 47px;
+}
+
+
+#category_slider{
+    width: 100vw;
+    height: 616px;
+    display: flex;
+    position: relative;
+}
+
+
+#category_slider .slick-slide{
+    position: relative;
+    display: flex;
+}
+
+
+#category_slider .itemContainer{
+    width: 100vw;
+    height: 616px;
+    padding-top: 301px;
+    margin-left: 268px;
+    position: relative;
+    display: flex;
+}
+
+#category_slider .itemContainer .img{
+    width: 361px;
+    height: 491px;
+    /*padding-top: 301px;*/
+    /*margin-left: 268px;*/
+    position: relative;
+    /*z-index: 100;*/
+    /*display: flex;*/
+}
+
+#category_slider .itemContainer .img .dim{
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    /*마스킹효과 아녔나..*/
+
+    /*z-index: 500;*/
+    width: 361px;
+    height: 491px;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: all .5s;
+    /*display: flex;*/
+}
+
+#category_slider .itemContainer .img  > div:hover .dim{
+    opacity: 1;
+}
+
+
+#category_slider .itemContainer .img .btn-hover{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    /*opacity: 0;*/
+}
+
+
+#category_slider .itemContainer .img .btn-hover .heart{
+    position: relative;
+    display: flex;
+    /*align-items: center;*/
+}
+
+#category_slider .itemContainer .img .btn-hover .heart .line{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*#category_slider .itemContainer .img  > div:hover .btn-hover{*/
+/*    opacity: 1;*/
+/*}*/
+
+
+
+
+
+#category_slider .itemContainer > li{
+    margin-right: 60px;
+}
+
+
+#category_slider .itemContainer .text{
+    padding-top: 26px;
+}
+
+
+#category_slider .itemContainer .text .price{
+    padding-top: 14px;
+}
+
+
+#category_slider .itemContainer .btn{
+    display: flex;
+    padding-top: 31px;
+    /*justify-content: space-between;*/
+}
+
+
+#category_slider .itemContainer .btn .itemHeart{
+    display: flex;
+    margin-right: 23px;
+}
+
+
+#category_slider .itemContainer .btn .itemHeart > div {
+    padding-top: 2px;
+    margin-right: 7px;
+}
+
+
+#category_slider .itemContainer .btn .review{
+    display: flex;
+    /*margin-right: 0;*/
+}
+
+#category_slider .itemContainer .btn .review > div {
+    padding-top: 2px;
+    margin-right: 5px;
+}

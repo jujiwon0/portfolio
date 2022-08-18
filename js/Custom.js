@@ -4,7 +4,6 @@ window.addEventListener('DOMContentLoaded',function(){
 
 
 
-
     $('.point').click(function(){
 
         $('.point').removeClass('on');

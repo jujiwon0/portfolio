@@ -7,6 +7,7 @@
     pointer-events: none;
 }
 
+
 .dot {
     width: 100px;
     height: 100px;
@@ -16,10 +17,12 @@
     transform: scale(0.15);
 }
 
+
 .first {
     font-weight: bold;
     color: black;
 }
+
 
 #menu {
     width: 100vw;
@@ -30,14 +33,15 @@
     bottom: 0;
     z-index: 99;
     background: white;
-    /* transform: translateY(-130%); */
+    transform: translateY(-130%);
     overflow: hidden;
-    /*background: url("../img02/section01/bg2.jpg");*/
 }
+
 
 #menu .left_box {
     width: 436px;
 }
+
 
 #menu .left_box {
     /*height: 864px;*/
@@ -45,13 +49,16 @@
     border-right: 1px solid black;
 }
 
+
 #menu .right_box {
     flex: 1;
 }
 
+
 #menu .right_box .top {
     position: relative;
 }
+
 
 #menu .right_box .top .deco {
     position: absolute;
@@ -59,17 +66,20 @@
     top: 12px;
 }
 
+
 #menu .right_box .top .title_s {
     position: absolute;
     right: 193px;
     top: 110px;
 }
 
+
 #menu .right_box .menuList{
     display: flex;
     flex-direction: column;
     padding-top: 140px;
 }
+
 
 #menu .right_box .menuList > li{
     padding: 16px 60px;
@@ -78,12 +88,14 @@
     position: relative;
 }
 
+
 #menu .right_box .menuList > li .title{
     position: relative;
     z-index: 10;
     mix-blend-mode: difference;
     filter: invert(1);
 }
+
 
 #menu .right_box .menuList > li .bg{
     position: absolute;
@@ -94,6 +106,7 @@
     overflow: hidden;
 }
 
+
 #menu .right_box .menuList > li .dark{
     position: absolute;
     left: 0;
@@ -102,13 +115,14 @@
     height: 100%;
     background: black;
     transform: translateY(-100%);
-    /*-100%가 밑으로 100내리는 거였나? 일단 어둠 안 보여야 되니깐 밑으로 숨기기?*/
 }
+
 
 #menu .right_box .menuList > li:nth-child(1){
     border-top: 1px solid black;
     box-sizing: border-box;
 }
+
 
 #menu .right_box .menuList > li .img{
     position: absolute;
@@ -117,49 +131,50 @@
     transform: translateX(-100%);
 }
 
+
 #menu .right_box .menuList > li .img img{
     transform: scaleY(0);
-    /*세로로 펼쳐져야해서 y사용 0은 안보이게 보이게는 자바스크립트에서 했었나?*/
 }
+
 
 #menu .right_box .menuList .last .img{
     width: 437px;
-    height: 138px;
+    height: 140px;
 }
 
+
 #menu .right_box .menuList .last .img .cover{
-    height: 138px;
+    height: 140px;
     transform: scaleY(0);
-    /*이거도 보이게끔은 자바스크립트에서 줬나??*/
 }
+
+
+#menuSlider{
+    width: 437px;
+    height: 140px;
+}
+
+
+#menuSlider .slick-slide{
+    width: 437px;
+    height: 140px;
+    position: relative;
+}
+
 
 #menu .right_box .menuList .last .img img{
     transform: scaleY(1);
     position: absolute;
     left: 0;
     top: 0;
-
 }
-
-
-
-/*#menu .right_box .menuList .last .img .cover{*/
-/*    height: 138px;*/
-/*    transform: scaleY(0);*/
-/*}*/
-/*#menu .right_box .menuList .last .img img{*/
-/*    transform:scaleY(1);*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    !* opacity:0; *!*/
-/*}*/
 
 
 #menu .bottom {
     position: relative;
     display: flex;
 }
+
 
 #menu .bottom .icon{
     position: absolute;
@@ -219,13 +234,10 @@
 
 
 #header .logo {
-    /*padding-top: 34px;*/
-    /*margin-left: 178px;*/
     position: absolute;
     left: 178px;
     top: 34px;
     cursor: pointer;
-    /*z-index: 1000;*/
 }
 
 
@@ -371,6 +383,7 @@
 #section01 .center_sc01 > div:last-child {
     margin-right: 0;
 }
+
 
 #section01 .content01 {
     width: 768px;
@@ -884,6 +897,7 @@
 }
 
 #section03 .project_container > div:hover .img img {
+    /*border-radius: 50px;*/
     transform: scale(1.2)
 }
 
@@ -915,11 +929,13 @@
     bottom: 142px;
 }
 
+
 #section03 .project_container .project5 .num_icon {
     position: absolute;
     left: 97px;
     bottom: 142px;
 }
+
 
 #section03 .project_container .project6 .num_icon {
     position: absolute;
@@ -932,6 +948,7 @@
     margin-bottom: -27px;
 }
 
+
 #section03 .project_container > div .sub {
     margin-bottom: 64px;
 }
@@ -940,12 +957,13 @@
 #section03 .center_sc03 .right {
     padding-top: 211px;
     margin-left: -375px;
-    /*margin: 0 0 0 -764px;*/
 }
+
 
 #section03 .center_sc03 .right .arrow_line {
     margin-bottom: 26px;
 }
+
 
 #section03 .center_sc03 .right .contact {
     margin-left: 10px;
@@ -1025,7 +1043,6 @@
     /*width: 960px;*/
     /*height: 50px;*/
     padding-top: 12px;
-    margin-right: 0;
     margin-left: 1534px;
     /*border-bottom: 1px solid black;*/
     /*box-sizing: border-box;*/
@@ -1059,8 +1076,6 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    /*justify-content: space-between;*/
-    /*align-items: center;*/
     justify-content: center;
 }
 
@@ -1139,12 +1154,6 @@
 }
 
 
-#section04 .mail_btn {
-    padding-top: 576px;
-    margin-left: -331px;
-    margin-right: 0;
-}
-
 #section04 .bottom {
     width: 1920px;
     height: 65px;
@@ -1202,11 +1211,32 @@
 /*레프트w가 아니라 레프트 더블유안에 타이틀을 묶어주고 애니메이션을 주기 html 그룹핑 li 넣어주기*/
 /*감싸기 메모하기!감싼 대상에게 플렉스를 걸고 애니메이션을 넣어주기.*/
 
-
-
 #section04 .bottom .right_btn {
     display: flex;
     padding-top: 64px;
     margin-left: 1338px;
 }
+
+
+#section04 .mail_btn {
+    position: absolute;
+    right: 110px;
+    bottom: -70px;
+}
+
+#section04 .mail_btn img{
+    position: relative;
+    /* z-index:10; */
+}
+
+#section04 .mail_btn > div{
+    position: absolute;
+    font-size:50px;
+    left: 0;
+    bottom: 30px;
+    opacity:0;
+    pointer-events:none;
+    
+}
+
 
