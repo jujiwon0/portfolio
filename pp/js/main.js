@@ -178,29 +178,57 @@ $(function () {
     });
 
 
-    
-
-
-
     $('.menuList > li').mouseenter(function(){
 
         let idx = $(this).index();
         console.log()
         let imageTarget = $(this).find('.cover')[0];
+        // 대괄호 의미 모르겠음 배열의 인덱스는 0에서 부터 시작이라고 하는데 순서를 뜻하나?
         let bgTarget = $(this).find('.dark');
 
         gsap.to(imageTarget,{duration:0.15,scaleY:1,transformOrigin:'center top'})
-        gsap.to(bgTarget,{duration:0.15,transformOrigin:'center top',y:0})
-        
-    }).mouseleave(function(){
-        let imageTarget = $(this).find('.cover')[0];
-        let bgTarget = $(this).find('.dark');
 
-        gsap.to(imageTarget,{duration:0.15,scaleY:0,transformOrigin:'center bottom'})
-        gsap.to(bgTarget,{duration:0.15,transformOrigin:'center bottom',y:"100%",onComplete:()=>{
-            gsap.set(bgTarget,{y:"-100%"})
-        }})
+        gsap.to(bgTarget,{duration:0.15,transformOrigin:'center top',y:0})
+        // -100줬으니깐 0은 원점으로 돌리는거였나
     })
+    // gsap에서는 세미콜론 안하나요?
+
+        .mouseleave(function(){
+            let imageTarget = $(this).find('.cover')[0];
+            let bgTarget = $(this).find('.dark');
+
+            gsap.to(imageTarget,{duration:0.15,scaleY:0,transformOrigin:'center top'})
+            gsap.to(bgTarget,{duration:0.15,transformOrigin:'center bottom',y:"100%",onComplete:()=>{
+                gsap.set(bgTarget,{y:"-100%"})
+                    // 왜 퍼센트 여기엔 붙는지??
+            }})
+
+
+        })
+
+
+
+
+
+    // $('.menuList > li').mouseenter(function(){
+    //
+    //     let idx = $(this).index();
+    //     console.log()
+    //     let imageTarget = $(this).find('.cover')[0];
+    //     let bgTarget = $(this).find('.dark');
+    //
+    //     gsap.to(imageTarget,{duration:0.15,scaleY:1,transformOrigin:'center top'})
+    //     gsap.to(bgTarget,{duration:0.15,transformOrigin:'center top',y:0})
+    //
+    // }).mouseleave(function(){
+    //     let imageTarget = $(this).find('.cover')[0];
+    //     let bgTarget = $(this).find('.dark');
+    //
+    //     gsap.to(imageTarget,{duration:0.15,scaleY:0,transformOrigin:'center bottom'})
+    //     gsap.to(bgTarget,{duration:0.15,transformOrigin:'center bottom',y:"100%",onComplete:()=>{
+    //         gsap.set(bgTarget,{y:"-100%"})
+    //     }})
+    // })
 
 
 
@@ -216,11 +244,38 @@ $(function () {
     // }})
     // tl.to(list[2],{opacity:1})
 
-    $('.menuList .last').mouseenter(function(){
-            
-        
 
+    // $('.menuList .last .img .cover_slider').mouseenter(function(){
+    //
+    //
+    //
+    //
+    // });
+
+
+
+    $('.cover').slick({
+        // dots: false,
+        // infinite: true,
+        // speed: 2000,
+        fade: true,
+        autoplay:true,
+        autoplaySpeed: 4000,
+        pauseOnHover:true,
+        // cssEase: 'linear'
     });
+
+
+    // $('.menuList .last .img .cover').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    // });
+
+
+
+
 
 
 
