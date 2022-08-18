@@ -24,16 +24,25 @@ $(function () {
 
     });
 
+    //  let cursorWidth = cursor.width() / 2;
+        // let cursorFWidth = cursorFollow.width() / 2;
+
+  
+        // gsap.to(cursorFollow, {duration: 1.4, left: e.pageX - cursorFollow.width() * 0.5, top: e.pageY - 20, ease: "back.out(2)"});
 
     let cursor = $('#cursor');
     // let cursorFollow = $('#cursor-follower');
 
     $(document).mousemove(function(e){
-        let cursorWidth = cursor.width() / 2;
-        // let cursorFWidth = cursorFollow.width() / 2;
+    
+        console.log(e.pageX ,  e.pageY);
+        gsap.to(cursor, {
+            duration: 0.9, 
+            left: e.pageX - cursor.width() * 0.5,  // 가운데 정렬 
+            top: e.pageY - cursor.height() * 0.5,  // 가운데 정렬 
+            ease: "back.out"
+        });
 
-        gsap.to(cursor, {duration: 0.9, left: e.pageX - cursor.width() * 0.5, top: e.pageY - cursor.height() * 0.5, ease: "back.out"});
-        // gsap.to(cursorFollow, {duration: 1.4, left: e.pageX - cursorFollow.width() * 0.5, top: e.pageY - 20, ease: "back.out(2)"});
     });
 
 
@@ -87,6 +96,86 @@ $(function () {
         //     el: '.swiper-scrollbar',
         // },
     });
+
+
+
+
+
+
+    const mailButton = document.querySelector('#section04 .mail_btn');
+
+    function mailAnimation(offsetX, div) {
+      let y = gsap.utils.random(-200, 400);
+      let x = gsap.utils.random(300, 500);
+      let rotation = gsap.utils.random(-360, 360);
+      let duration = gsap.utils.random(3, 4);
+      let ease = gsap.utils.random(['none', 'power2.out', 'expo.out']);
+    
+      gsap.set(div, { left: offsetX ,top:10});
+      gsap.to(div, {
+        keyframes: {
+          '0%': { opacity: 0 },
+          '20%': { opacity: 1 },
+          '50%': { y: y / 2 },
+          '80%': { opacity: 0 },
+          '100%': { y: y, x: x, rotation: rotation, opacity: 0 },
+        },
+        ease: ease,
+        duration: duration,
+        onComplete: () => {
+          div.remove();
+        },
+      });
+    }
+    
+    function makeMail(offsetX) {
+      let div = document.createElement('div');
+      div.classList.add('mail');
+      div.innerHTML = `✉️`;
+      mailButton.appendChild(div);
+    
+      mailAnimation(offsetX, div);
+    }
+
+    
+    function throttle(callback, limit = 100) {
+      let waiting = false;
+      return function () {
+        if (!waiting) {
+          callback.apply(this, arguments);
+          waiting = true;
+          setTimeout(() => {
+            waiting = false;
+          }, limit);
+        }
+      };
+    }
+    
+    function flyMail(e) {
+      let offsetX = e.offsetX;
+      makeMail(offsetX);
+    }
+    
+    mailButton.addEventListener(
+      'mousemove',
+      throttle((e) => {
+        flyMail(e);
+      }, 10) /*  생성 갯수   ( 숫자가 작아질수록 많아짐) */
+    );
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -183,53 +272,25 @@ $(function () {
         let idx = $(this).index();
         console.log()
         let imageTarget = $(this).find('.cover')[0];
-        // 대괄호 의미 모르겠음 배열의 인덱스는 0에서 부터 시작이라고 하는데 순서를 뜻하나?
         let bgTarget = $(this).find('.dark');
 
         gsap.to(imageTarget,{duration:0.15,scaleY:1,transformOrigin:'center top'})
 
         gsap.to(bgTarget,{duration:0.15,transformOrigin:'center top',y:0})
-        // -100줬으니깐 0은 원점으로 돌리는거였나
     })
-    // gsap에서는 세미콜론 안하나요?
+    // gsap에서는 세미콜론 안하나요? 그때그때 달라요 
 
         .mouseleave(function(){
             let imageTarget = $(this).find('.cover')[0];
             let bgTarget = $(this).find('.dark');
 
-            gsap.to(imageTarget,{duration:0.15,scaleY:0,transformOrigin:'center top'})
+            gsap.to(imageTarget,{duration:0.15,scaleY:0,transformOrigin:'center bottom'})
             gsap.to(bgTarget,{duration:0.15,transformOrigin:'center bottom',y:"100%",onComplete:()=>{
                 gsap.set(bgTarget,{y:"-100%"})
-                    // 왜 퍼센트 여기엔 붙는지??
             }})
 
 
         })
-
-
-
-
-
-    // $('.menuList > li').mouseenter(function(){
-    //
-    //     let idx = $(this).index();
-    //     console.log()
-    //     let imageTarget = $(this).find('.cover')[0];
-    //     let bgTarget = $(this).find('.dark');
-    //
-    //     gsap.to(imageTarget,{duration:0.15,scaleY:1,transformOrigin:'center top'})
-    //     gsap.to(bgTarget,{duration:0.15,transformOrigin:'center top',y:0})
-    //
-    // }).mouseleave(function(){
-    //     let imageTarget = $(this).find('.cover')[0];
-    //     let bgTarget = $(this).find('.dark');
-    //
-    //     gsap.to(imageTarget,{duration:0.15,scaleY:0,transformOrigin:'center bottom'})
-    //     gsap.to(bgTarget,{duration:0.15,transformOrigin:'center bottom',y:"100%",onComplete:()=>{
-    //         gsap.set(bgTarget,{y:"-100%"})
-    //     }})
-    // })
-
 
 
     // let tl = gsap.timeline({defaults:{
@@ -253,30 +314,32 @@ $(function () {
     // });
 
 
+    $("#menuSlider").slick({
+        dots: false, //navigation
+        arrows: false, //arrow
+        prevArrow: $(), //prev
+        nextArrow: $(), //next
+        autoplay:true, // autoplay mode
+        autoplaySpeed: 1000, // auto speed
+        pauseOnHover:true, // pause on mouse hover
+        fade: false, //fade mode only one slider
+        speed: 900, // speed
+        infinite: true, // infinite mode
+        // asNavFor: '', // another slider
+        centerMode: false, // center move
+        centerPadding: '0%', // center move padding
+        slidesToShow: 1, // show slider number
+        slidesToScroll: 1, // next slider number
+        swipe: false, // swiper
+        focusOnSelect: false, // click to slider
+        draggable:false,
+        vertical: false, // vertical slider
+        verticalSwiping: false, // vertical swiper
+        initialSlide:0,// slider number
+        cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)', //sub01_css transition��
+        variableWidth: false,
 
-    $('.cover').slick({
-        // dots: false,
-        // infinite: true,
-        // speed: 2000,
-        fade: true,
-        autoplay:true,
-        autoplaySpeed: 4000,
-        pauseOnHover:true,
-        // cssEase: 'linear'
     });
-
-
-    // $('.menuList .last .img .cover').slick({
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    // });
-
-
-
-
-
 
 
     /* slide, click event section */

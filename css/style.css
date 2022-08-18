@@ -1,4 +1,324 @@
 
+#menu_pp {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  position: fixed;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  background: white;
+  transform: translateY(-130%);
+  overflow: hidden;
+  /*background: url("../img02/section01/bg2.jpg");*/
+  /*display: none;*/
+}
+
+#menu_pp .left_box {
+  width: 436px;
+}
+
+#menu_pp .left_box {
+  /*height: 864px;*/
+  height: calc(100vh - 80px);
+  border-right: 1px solid black;
+}
+
+#menu_pp .right_box {
+  flex: 1;
+}
+
+#menu_pp .right_box .top {
+  position: relative;
+}
+
+#menu_pp .right_box .top .deco {
+  position: absolute;
+  right: 465px;
+  top: 12px;
+}
+
+#menu_pp .right_box .top .title_s {
+  position: absolute;
+  right: 193px;
+  top: 110px;
+}
+
+#menu_pp .right_box .menuList{
+  display: flex;
+  flex-direction: column;
+  padding-top: 140px;
+}
+
+#menu_pp .right_box .menuList > li{
+  padding: 16px 60px;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#menu_pp .right_box .menuList > li .title{
+  position: relative;
+  z-index: 10;
+  mix-blend-mode: difference;
+  filter: invert(1);
+}
+
+#menu_pp .right_box .menuList > li .bg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#menu_pp .right_box .menuList > li .dark{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transform: translateY(-100%);
+  /*-100%가 밑으로 100내리는 거였나? 일단 어둠 안 보여야 되니깐 밑으로 숨기기?*/
+}
+
+#menu_pp .right_box .menuList > li:nth-child(1){
+  border-top: 1px solid black;
+  box-sizing: border-box;
+}
+
+#menu_pp .right_box .menuList > li .img{
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  transform: translateX(-100%);
+}
+
+#menu_pp .right_box .menuList > li .img img{
+  transform: scaleY(0);
+  /*세로로 펼쳐져야해서 y사용 0은 안보이게 보이게는 자바스크립트에서 했었나?*/
+}
+
+#menu_pp .right_box .menuList .last .img{
+  width: 437px;
+  height: 138px;
+}
+
+#menu_pp .right_box .menuList .last .img .cover{
+  height: 138px;
+  transform: scaleY(0);
+}
+
+#menuSlider{
+  width: 437px;
+  height: 140px;
+}
+
+#menuSlider .slick-slide{
+  width: 437px;
+  height: 140px;
+  position: relative;
+}
+
+#menu_pp .right_box .menuList .last .img img{
+  transform: scaleY(1);
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+
+
+#menu_pp .bottom {
+  position: relative;
+  display: flex;
+}
+
+#menu_pp .bottom .icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  padding-top: 96px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu_pp .bottom .icon > div{
+  margin-right: 10px;
+}
+
+#menu_pp .bottom .info {
+  padding-top: 83px;
+  margin-left: 60px;
+}
+
+#menu_pp .bottom .num {
+  padding-top: 114px;
+  margin-left: 996px;
+}
+
+
+
+
+.logo_icon {
+  padding-top: 12px;
+  margin-left: 110px;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 9999;
+}
+
+
+
+body {
+  padding-top: 80px;
+}
+
+
+header {
+  background: url("../pp/img/section01/header_bg.jpg");
+
+  /*background: url("../img/section01/bg.jpg");*/
+
+  width: 100vw;
+  height: 80px;
+  border-bottom: 1px solid white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  /*display: flex;*/
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+
+  transition: top 0.2s ease-in-out;
+  /*display: none;*/
+  /*opacity: .5;*/
+}
+
+.nav-up {
+  top: -80px;
+}
+
+
+header .logo {
+  /*padding-top: 34px;*/
+  /*margin-left: 178px;*/
+  position: absolute;
+  left: 178px;
+  top: 34px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+header .nav_btn {
+  width: 222px;
+  height: 30px;
+  position: absolute;
+  left: 325px;
+  top: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /*visibility: hidden;*/
+}
+
+
+header .navbar {
+  width: 304px;
+  height: 37px;
+  position: absolute;
+  left: 50%;
+  top: 27%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  /*filter: invert(1);*/
+}
+
+header .navbar:hover {
+  border: 1px solid #006eff;
+}
+
+header .navbar .nav_title {
+  padding-top: 5px;
+  display: flex;
+  animation: text 3s infinite linear;
+}
+
+header .navbar .nav_title > div {
+  margin-right: 10px;
+}
+
+@keyframes text {
+  to {
+    transform: translateX(-138px);
+  }
+}
+
+
+header .menu {
+  display: flex;
+  align-items: center;
+  padding-top: 23px;
+  margin-left: 1696px;
+  /*z-index: 2000;*/
+  /*margin-right: 120px;*/
+
+  /*색반전 안됨*/
+  mix-blend-mode: difference;
+  position: relative;
+}
+
+header .menu .label {
+}
+
+header .menu .menu_bg {
+  width: 39px;
+  height: 39px;
+  margin-left: 16px;
+  background: url('../pp/img/section01/menu_bg.png') no-repeat center;
+  position: relative;
+  z-index: 2000;
+}
+
+header .menu .menu_bg .bar {
+  width: 19px;
+  height: 2px;
+  background: black;
+}
+
+header .menu .menu_bg .bar:nth-child(1) {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  transform-origin: left center;
+}
+
+header .menu .menu_bg .bar:nth-child(2) {
+  position: absolute;
+  left: 10px;
+  top: 23px;
+  transform-origin: right center;
+}
+
+
+
+
 .logo {
   position: absolute;
   left: 50%;

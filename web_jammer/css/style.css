@@ -1,0 +1,306 @@
+
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    transform: translateX(-50%);
+    z-index: 999;
+    cursor: pointer;
+}
+
+#header{
+    display: flex;
+    position: fixed;
+    width: 1920px;
+    height: 75px;
+    left: 0;
+    top: 0;
+    z-index: 190;
+    background: url("../img/contact/section01/gnb_bg.png");
+    /*background: url("../img/contact/section01/contact.jpg");*/
+}
+
+#header .gnb{
+    display: flex;
+    margin-left: 130px;
+    padding-top: 1px;
+    cursor: pointer;
+}
+
+#header .gnb > li{
+    position: relative;
+    opacity: .8;
+    margin: 31px;
+}
+
+#header .gnb > li::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background: #6c6965;
+    transition:all .5s;
+}
+
+#header .gnb > li:hover::after{
+    width: 100%;
+}
+
+#header .gnb > li:hover{
+    opacity: 1;
+}
+
+
+#header .menuBtn{
+    display: flex;
+    position: absolute;
+    right: 160px;
+    top: 31px;
+}
+
+#header .menuBtn .login{
+    margin-right: 37px;
+}
+
+
+#header .menuBtn .bagIcon{
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+    margin-right: -6px;
+}
+
+
+#header .menuBtn .bagIcon > div{
+    margin-right: 7px;
+}
+
+
+#header .menuBtn .bagIcon .bagCount{
+    padding-top: 5px;
+}
+
+
+#header .menuBtn .search{
+    margin-left: 39px;
+}
+
+
+#section01{
+    background: url("../img/contact/section01/bg.jpg");
+    position: relative;
+    display: flex;
+}
+
+#section01 .titleContainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    /*padding-top: 182px;*/
+}
+
+#section01 .titleContainer .txt{
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#section01 .titleContainer .title{
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+@font-face {
+    font-family: 'helvetica';
+    src: url("../../fonts/HelveticaNeueLTProRoman.otf") format('opentype');
+
+    /*font-size: 19px; 여기에 적용하면 한번에 될줄알았는데 적용안됩니다*/
+}
+
+#section02{
+    /*background: url("../img/contact/section02/bg3.jpg");*/
+    height: 1122px;
+    display: flex;
+    font-family: 'helvetica',sans-serif;
+    /*background: dodgerblue;*/
+}
+
+
+#section02 .contactFlex{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+#section02 .contactFlex .left{
+    width: 50%;
+    height: 100vh;
+}
+
+#section02 .contactFlex .formHolder{
+    position: relative;
+    width: 50%;
+    /*height: 100vh;*/
+    background: url("../img/contact/section02/right_bg.jpg");
+}
+
+#section02 .contactFlex .formHolder .formHeader{
+    position: relative;
+    padding-top: 203px;
+    margin-left: 171px;
+}
+
+#section02 .formHolder .formHeader .contactForm{
+    width: 661px;
+    height: 309px;
+    display: flex;
+}
+
+#section02 .formHolder .contactForm .top{
+    display: flex;
+    padding-top: 131px;
+    margin-left: 173px;
+}
+
+#section02 .formHolder .contactForm .top .lastName{
+    margin-left: 28px;
+}
+
+#section02 .formHolder .contactForm .center{
+    display: flex;
+    padding-top: 69px;
+    margin-left: 173px;
+}
+
+#section02 .formHolder .contactForm .center .phoneNumber{
+    margin-left: 28px;
+}
+
+#section02 .formHolder .contactForm .bottom{
+    display: flex;
+    padding-top: 68px;
+    margin-left: 173px;
+}
+
+.top input{
+    width: 305px;
+    padding-top: 33px;
+    margin-left: -3px;
+    background:none;
+    border: none;
+    border-bottom: 1px solid #72684a;
+    opacity: .8;
+    outline:none;
+    font-size: 19px;
+    color: #72684a;
+    /*글씨 쳤을때 색상변경*/
+
+}
+
+.center input{
+    width: 305px;
+    padding-top: 29px;
+    margin-left: -3px;
+    background:none;
+    border: none;
+    border-bottom: 1px solid #72684a;
+    opacity: .8;
+    outline:none;
+    font-size: 19px;
+    color: #72684a;
+}
+
+.bottom input{
+    width: 653px;
+    margin-left: -3px;
+    height: 153px;
+    padding-bottom: 36px;
+    margin-top: -39px;
+    background:none;
+    border: none;
+    border-bottom: 1px solid #72684a;
+    opacity: .8;
+    outline:none;
+    font-size: 19px;
+    color: #72684a;
+}
+
+input::placeholder {
+    color: #b6b2a0;
+}
+
+#section02 .formHolder .submitBtn{
+    display: flex;
+    padding-top: 68px;
+    margin-left: 173px;
+}
+
+#section02 .formHolder .arrow{
+    padding-top: 3px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#section02 .right{*/
+/*    !*background: url("../img/contact/section02/right_bg.jpg") no-repeat center;*!*/
+/*    width: 960px;*/
+/*    height: 1122px;*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*#section02 .right .title{*/
+/*    padding-top: 0;*/
+/*    margin-left: 0;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+#section03{
+    background: gray;
+}
+
+#section04{
+    background: hotpink;
+}
+
+
+#section05{
+    background: aqua;
+}
+
+
+
+
+
+
+
+
+
+
