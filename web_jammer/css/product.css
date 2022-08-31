@@ -234,6 +234,9 @@
     margin-right: 80px;
 }
 
+.big_slider{
+    width: 576px;
+}
 
 #main-slider .mainProduct .text{
     padding-top: 25px;
@@ -309,6 +312,7 @@
 #section03 .category .listContainer{
     display: flex;
     justify-content: space-between;
+    width: 300px;
 }
 
 
@@ -324,8 +328,26 @@
     content: "";
     /*flex: 1;*/
     border-bottom: 1px solid #9c9171;
-    width: 400px;
+    flex: 0;
+    transition: all 1.5s;
     margin: 10px 10px;
+    transform:scaleX(0);
+}
+
+
+.itemList:hover:before,
+.itemList:hover:after{
+    transform:scaleX(1);
+    flex: 1;
+}
+
+
+.itemList:before{
+    transform-origin: right center;
+}
+
+.itemList:after{
+    transform-origin: left center;
 }
 
 
@@ -374,18 +396,19 @@
     left: 0;
     top: 0;
     overflow: hidden;
+    border-radius: 100px 100px 0 0;
     /*마스킹효과 아녔나..*/
 
     /*z-index: 500;*/
     width: 361px;
     height: 491px;
     background-color: rgba(0, 0, 0, 0.5);
-    opacity: 1;
+    opacity: 0;
     transition: all .5s;
     /*display: flex;*/
 }
 
-#category_slider .itemContainer .img  > div:hover .dim{
+#category_slider .itemContainer .img:hover .dim{
     opacity: 1;
 }
 

@@ -31,12 +31,28 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
 
+    ScrollTrigger.create({
+        trigger: '.scroll-content',
+        start: 'top top',
+        end: 'bottom bototm',
+        onUpdate: ({direction})=>{
+            // 1 = 내림 ,  -1 = 올림
+            
+            if(direction < 0){
+                gsap.to('#header',{y:0})
+            }else{
+                gsap.to('#header',{y:-81})
+            }
+        }
+
+    })
+
 
 
     container.addListener((e) => {
 
         let scrollTop = container.scrollTop;
-        console.log(scrollTop);
+        // console.log(scrollTop);
 
 
         // $('.box1').css('transform', `translateY(${scrollTop * 0.7}px)`)

@@ -29,6 +29,7 @@
 #section01{
    background:url(../img/section01/01.png);
    Height:2137px;
+   padding-top: 100px;
 
 }
 
@@ -51,7 +52,7 @@
     Opacity:0;
     position: absolute;
     left: 74px;
-    top: 52px;
+    top: 52px;/* 
     z-index: 2;
 
     transform:translateY(20px);
@@ -205,7 +206,7 @@
 
 }
 
-
+ */
 
 
 

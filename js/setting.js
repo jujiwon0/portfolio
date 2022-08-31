@@ -99,6 +99,11 @@ window.addEventListener('DOMContentLoaded', function () {
         })
 
 
+         $('.close').click(function () {
+            $('#menu').fadeOut();
+          });
+        
+
         //     글자 항목들에게 마우스를 올리면 비디오가 보인다.
         // 첫 번째 글자에게 마우스를 올리면 첫 번재 비디오가 보인다.
 

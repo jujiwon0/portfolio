@@ -66,7 +66,7 @@ myHorizontalScrollbar.setPosition(0, 0);
 
 
 
-$('.startPoint').click(function () {
+$('.startPoint,.btn').click(function () {
 
   myHorizontalScrollbar.scrollTo(0, 0, 600, {
     callback: () => console.log('done!'),

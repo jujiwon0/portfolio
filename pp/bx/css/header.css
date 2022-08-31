@@ -1,0 +1,133 @@
+
+.logo_icon {
+  padding-top: 12px;
+  margin-left: 110px;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 99999;
+}
+
+
+#header {
+  /*background: url("../img/section01/01.jpg");*/
+  /*background: url("../img/section01/bg.jpg");*/
+
+  width: 100vw;
+  height: 80px;
+  border-bottom: 1px solid white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  /*display: flex;*/
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  /* mix-blend-mode: difference; */
+  /*opacity: .5;*/
+  background:gray ;
+}
+
+
+#header .logo {
+  position: absolute;
+  left: 178px;
+  top: 34px;
+  cursor: pointer;
+}
+
+
+#header .nav_btn {
+  width: 222px;
+  height: 30px;
+  position: absolute;
+  left: 325px;
+  top: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  /* visibility: hidden; */
+}
+
+
+#header .navbar {
+  width: 304px;
+  height: 37px;
+  position: absolute;
+  left: 50%;
+  top: 27%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  filter: invert(1);
+}
+
+#header .navbar:hover {
+  border: 1px solid #006eff;
+}
+
+#header .navbar .nav_title {
+  padding-top: 5px;
+  display: flex;
+  animation: text 3s infinite linear;
+}
+
+#header .navbar .nav_title > div {
+  margin-right: 10px;
+}
+
+@keyframes text {
+  to {
+      transform: translateX(-138px);
+  }
+}
+
+
+#header .menu {
+  display: flex;
+  align-items: center;
+  padding-top: 23px;
+  margin-left: 1696px;
+  /*margin-right: 120px;*/
+
+  /*색반전 안됨*/
+  mix-blend-mode: difference;
+}
+
+#header .menu .label {
+}
+
+#header .menu .menu_bg {
+  width: 39px;
+  height: 39px;
+  margin-left: 16px;
+  background: url('../img/section01/menu_bg.png') no-repeat center;
+  position: relative;
+}
+
+#header .menu .menu_bg .bar {
+  width: 19px;
+  height: 2px;
+  background: black;
+}
+
+#header .menu .menu_bg .bar:nth-child(1) {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  transform-origin: left center;
+}
+
+#header .menu .menu_bg .bar:nth-child(2) {
+  position: absolute;
+  left: 10px;
+  top: 23px;
+  transform-origin: right center;
+}

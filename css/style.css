@@ -165,21 +165,6 @@
 
 
 
-.logo_icon {
-  padding-top: 12px;
-  margin-left: 110px;
-  cursor: pointer;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  z-index: 9999;
-}
-
-
-
-body {
-  padding-top: 80px;
-}
 
 
 header {
